@@ -107,7 +107,7 @@ function read(item, hash, res) {
       release: res.results[0].release_date.substr(0, 4)
     };
 
-    return fetchMovieDetails(id, hash);
+    return fetchMovieDetails(res.results[0].id, hash);
   }
   else if (res.results[0].title.replace(':', ' -') != item.meta.title) {
     if (LOG_ERRORS)
@@ -120,21 +120,20 @@ function read(item, hash, res) {
       release: res.results[0].release_date.substr(0, 4)
     };
 
-    return fetchMovieDetails(id, hash);
+    return fetchMovieDetails(res.results[0].id, hash);
   }
   else {
-    var id = res.results[0].id;
-
-    if (_movie[id])
-      return;
-
-    return fetchMovieDetails(id, hash);
+    return fetchMovieDetails(res.results[0].id, hash);
   }
 }
 
 function fetchMovieDetails(id, hash) {
+  if (_movie[id])
+    return;
+
   var qs = node.qs.stringify({
-    api_key: KEY
+    api_key: KEY,
+    append_to_response: 'alternative_titles,credits,translations,external_ids'
   });
   var url = `http://api.themoviedb.org/3/movie/${id}?${qs}`;
 

@@ -48,15 +48,13 @@ while (list.length) {
       }
     }
   }
-  else if (re = line.match(/^(\d\d\.\d\d.\d\d\d\d  \d\d\:\d\d)\s+((?:\d{1,3}\s)+)(.+)$/)) {
-    if (! re[3].match(/^<DIR>/)) {
-      if (current) {
-        current.files.content.push({
-          name: (dir + '/' + re[3]).substr(current.files.location.length + 1),
-          time: convertDate(re[1]),
-          size: Number(re[2].replace(/\s/g, "")) // remove whitespace
-        });
-      }
+  else if (current && dir.startsWith(current.files.location)) {
+    if (re = line.match(/^(\d\d\.\d\d.\d\d\d\d  \d\d\:\d\d)([\d\s]{18}) (.+)$/)) {
+      current.files.content.push({
+        name: (dir + '/' + re[3]).substr(current.files.location.length + 1),
+        time: convertDate(re[1]),
+        size: Number(re[2].replace(/\s/g, "")) // remove whitespace
+      });
     }
   }
 }

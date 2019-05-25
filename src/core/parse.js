@@ -1,8 +1,3 @@
-/*
-chcp 65001
-dir x: /s/a/tc > foo.txt
-*/
-
 const node = {
   os: require("os"),
   fs: require("fs"),
@@ -27,13 +22,13 @@ while (list.length) {
     continue;
   }
   else if (re = line.match(/^ Directory of (.+)$/)) {
-    
+
     dir = re[1].replace(/\\/g, '/');
     var info = analyze(dir);
-    
+
     if (info) {
       current = info;
-    
+
       var check = entries.find(
         (item) => {
           return item.meta.title == info.meta.title

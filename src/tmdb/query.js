@@ -7,28 +7,23 @@ const node = {
   qs: require("querystring"),
   path: require("path")
 };
-//const remove_diacratics = require("./remove_letters.js");
-
-var cacheLocation = 'cache/tmdb/cache.json';
-var errorLocation = 'cache/tmdb/error.json';
-var movieLocation = 'cache/tmdb/movie.json';
 
 const LOG_ERRORS = false;
 
-var _cache = (
-  node.fs.existsSync(cacheLocation) && JSON.parse(node.fs.readFileSync(cacheLocation)) || {});
-var _error = (
-  node.fs.existsSync(errorLocation) && JSON.parse(node.fs.readFileSync(errorLocation)) || {});
-var _movie = (
-  node.fs.existsSync(movieLocation) && JSON.parse(node.fs.readFileSync(movieLocation)) || {});
+var _cache = load("cache/tmdb/cache.json");
+var _error = load("cache/tmdb/error.json");
+var _movie = load("cache/tmdb/movie.json");
 
+var list = JSON.parse(node.fs.readFileSync("out/list.json").toString());
+
+function load(location) {
+  return node.fs.existsSync(location) && JSON.parse(node.fs.readFileSync(location)) || {});
+}
 function flush() {
   node.fs.writeFileSync(cacheLocation, JSON.stringify(_cache, null, 2));
   node.fs.writeFileSync(errorLocation, JSON.stringify(_error, null, 2));
   node.fs.writeFileSync(movieLocation, JSON.stringify(_movie, null, 2));
 }
-
-var list = JSON.parse(node.fs.readFileSync("out/list.json").toString());
 
 async function main() {
   for (var i = 0; i < list.length; i++) {

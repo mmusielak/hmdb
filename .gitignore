@@ -1,3 +1,7 @@
+secret.js
+
+cache/tmdb/movie.json
+
 # Logs
 logs
 *.log

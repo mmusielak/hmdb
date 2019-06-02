@@ -42,6 +42,7 @@
       <b>Actors:</b> <span id=":actors"></span><br>
       <b>Location:</b> <span id=":location"></span><br>
       <b>Size:</b> <span id=":size"></span><br>
+      <b>IMDB:</b> <span id=":imdb"></span><br>
     </div>
   </main>
 
@@ -68,7 +69,8 @@
       writers: document.querySelector("#\\:writers"),
       actors: document.querySelector("#\\:actors"),
       location: document.querySelector("#\\:location"),
-      size: document.querySelector("#\\:size")
+      size: document.querySelector("#\\:size"),
+      imdb: document.querySelector("#\\:imdb")
     }
   };
 
@@ -156,6 +158,7 @@
     bindings.details.actors.innerHTML = formatNames(movie.actors);
     bindings.details.location.innerHTML = movie.files.location;
     bindings.details.size.innerHTML = formatFileSize(movie.files.content.reduce((acc, file) => acc + file.size, 0));
+    bindings.details.imdb.innerHTML = `<a href="https://www.imdb.com/title/${movie.imdb}">IMDB</a>`
   }
 
   function str_includes(a, b) {

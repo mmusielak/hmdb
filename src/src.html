@@ -1,0 +1,195 @@
+<html>
+<style>
+  main {
+    display: flex;
+  }
+
+  #details {
+    flex: 1;
+    margin: 1em;
+  }
+
+  #results {
+    flex: 1;
+    margin: 1em;
+  }
+</style>
+
+<body>
+  <header>
+    HMDB
+  </header>
+  <nav>
+    Title:<br>
+    <input type="text" id="title"><br>
+    Person:<br>
+    <input type="text" id="person"><br>
+    Genres:<br>
+    <div id="genre"></div><br>
+  </nav>
+
+  <main>
+    Results:
+    <div id="results"></div>
+    <div id="details">
+      <b>Title:</b> <span id=":title"></span><br>
+      <b>(*):</b> <span id=":alternative"></span><br>
+      <b>Rating:</b> <span id=":rating"></span><br>
+      <b>Release:</b> <span id=":release"></span><br>
+      <b>Plot:</b> <span id=":overview"></span><br>
+      <b>Director(s):</b> <span id=":directors"></span><br>
+      <b>Writer(s):</b> <span id=":writers"></span><br>
+      <b>Actors:</b> <span id=":actors"></span><br>
+      <b>Location:</b> <span id=":location"></span><br>
+      <b>Size:</b> <span id=":size"></span><br>
+    </div>
+  </main>
+
+
+</body>
+
+<script>
+  var db = [["DB"]];
+  var el = document.querySelector('#results');
+
+  var bindings = {
+    genre: document.querySelector('#genre'),
+    nav: {
+      title: document.querySelector('#title'),
+      person: document.querySelector('#person')
+    },
+    details: {
+      title: document.querySelector("#\\:title"),
+      alternative: document.querySelector("#\\:alternative"),
+      rating: document.querySelector("#\\:rating"),
+      release: document.querySelector("#\\:release"),
+      overview: document.querySelector("#\\:overview"),
+      directors: document.querySelector("#\\:directors"),
+      writers: document.querySelector("#\\:writers"),
+      actors: document.querySelector("#\\:actors"),
+      location: document.querySelector("#\\:location"),
+      size: document.querySelector("#\\:size")
+    }
+  };
+
+  addEventListener('keydown', (event) => {
+    if (event.keyCode == 13) {
+      invalidate();
+    }
+  });
+
+  var genres = {};
+  db.forEach((movie) => movie.genre && movie.genre.forEach((g) => genres[g] = true));
+
+  Object
+    .keys(genres)
+    .forEach((value) => {
+      var div = document.createElement('span');
+
+      var checkbox = document.createElement('input');
+      checkbox.type = "checkbox";
+      checkbox.id = value;
+      checkbox.name = value;
+      checkbox.checked = true;
+
+      var label = document.createElement('label');
+      label.htmlFor = value;
+      label.appendChild(document.createTextNode(value));
+
+      div.appendChild(checkbox);
+      div.appendChild(label);
+
+      checkbox.addEventListener('click', (e) => {
+        genres[value] = this.checked;
+        invalidate();
+      }, false);
+
+
+      bindings.genre.appendChild(div);
+    });
+
+  function invalidate() {
+    var time = new Date();
+
+    var local = db;
+    var title = bindings.nav.title.value.trim().toLowerCase();
+    var person = bindings.nav.person.value.trim().toLowerCase();
+
+    // genres
+    local = local.filter(
+      (movie) => movie.genre.length == 0 || movie.genre.some((genre) => genres[genre]));
+
+    if (title != "") {
+      local = local.filter(
+        (movie) => str_includes(movie.title, title) || arr_includes(movie.alternative_titles, title));
+    }
+    if (person) {
+      local = local.filter((movie) =>
+        arr_includes(movie.actors, person) ||
+        arr_includes(movie.directors, person) ||
+        arr_includes(movie.writers, person));
+      //movie.actors.some((name) => str_includes(name, person)) ||
+      //movie.directors.some((name) => str_includes(name, person)) ||
+      //movie.writers.some((name) => str_includes(name, person)));
+    }
+
+    local = local.sort((a, b) => a.title.localeCompare(b.title));
+
+    // benchmark time taken...
+    console.log(`${local.length} of ${db.length} in ${new Date() - time}ms.`);
+
+    el.innerHTML = local.slice(0, 1000).reduce((acc, movie, index) => {
+      return acc + `<div onclick = showMovieDetails(${movie.id})> ${movie.title || "[[NO_TITLE]]"}, ${movie.release && movie.release.substr(0, 4) || "[[NO_RELEASE]]"}</div> `
+    }, '');
+  }
+
+  function showMovieDetails(id) {
+    var movie = db.find((movie) => movie.id == id);
+
+    bindings.details.title.innerHTML = movie.title;
+    bindings.details.alternative.innerHTML = movie.alternative_titles.join(', ');
+    bindings.details.rating.innerHTML = movie.ratings.imdb || movie.ratings.tmdb;
+    bindings.details.release.innerHTML = movie.release.substr(0, 4);
+    bindings.details.overview.innerHTML = movie.plot;
+    bindings.details.directors.innerHTML = formatNames(movie.directors);
+    bindings.details.writers.innerHTML = formatNames(movie.writers);
+    bindings.details.actors.innerHTML = formatNames(movie.actors);
+    bindings.details.location.innerHTML = movie.files.location;
+    bindings.details.size.innerHTML = formatFileSize(movie.files.content.reduce((acc, file) => acc + file.size, 0));
+  }
+
+  function str_includes(a, b) {
+    return a.toLowerCase().includes(b.toLowerCase());
+  }
+  function arr_includes(arr, str) {
+    str = str.toLowerCase();
+    return arr.some((candidate) => candidate.toLowerCase().includes(str));
+  }
+  function formatFileSize(bytes) {
+    var index = 0;
+    var suffix = ['', 'KB', 'MB', 'TB', 'GB'];
+
+    while ((bytes /= 1000) > 1) {
+      index++;
+    }
+
+    return (bytes * 1000 | 0) + suffix[index];
+  }
+
+  function formatNames(list) {
+    return list
+      .map(
+        (name) => `<a onclick = "searchName('${name}')"> ${name}</a>`)
+      .join(', ');
+  }
+  function searchName(name) {
+    bindings.nav.title.value = "";
+    bindings.nav.person.value = name;
+
+    invalidate();
+  }
+
+  invalidate();
+</script>
+
+</html>

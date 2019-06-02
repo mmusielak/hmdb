@@ -14,11 +14,13 @@ var _error = load("cache/tmdb/error.json");
 var _movie = load("cache/tmdb/movie.json");
 
 var list = JSON.parse(node.fs.readFileSync("out/list.json").toString());
+var out = [];
 
 function load(location) {
   return node.fs.existsSync(location) && JSON.parse(node.fs.readFileSync(location)) || {};
 }
 function flush() {
+  node.fs.writeFileSync("out/db.json", JSON.stringify(out, null, 2));
   node.fs.writeFileSync("cache/tmdb/search.json", JSON.stringify(_search, null, 2));
   node.fs.writeFileSync("cache/tmdb/error.json", JSON.stringify(_error, null, 2));
   node.fs.writeFileSync("cache/tmdb/movie.json", JSON.stringify(_movie, null, 2));
@@ -27,7 +29,54 @@ function flush() {
 async function main() {
   for (var i = 0; i < list.length; i++) {
     await process(list[i]);
+    translate(list[i]);
   }
+}
+
+function translate(item) {
+  var hash = `${item.meta.title} // ${item.meta.directors} // ${item.meta.release}`;
+  var tmdb;
+  if (_search[hash] && _search[hash].id) {
+    tmdb = _movie[_search[hash].id];
+  }
+  if (!tmdb)
+    return;
+
+  out.push({
+    ...item,
+    //"_created": "",
+    //"_modified": "",
+
+    id: tmdb.id,
+    imdb: tmdb.imdb_id,
+
+    title: tmdb.title,
+    alternative_titles: [tmdb.original_title],
+    release: tmdb.release_date, //str
+    genre: tmdb.genres
+      .map((dto) => dto.name),
+    runtime: tmdb.runtime, // num
+    directors: tmdb.credits.crew
+      .filter((dto) => dto.department == "Directing" && dto.job == "Director")
+      .map((dto) => dto.name),
+    writers: tmdb.credits.crew
+      .filter((dto) => dto.department == "Writing")
+      .map((dto) => dto.name),
+    actors: tmdb.credits.cast.slice(0, 20)
+      .map((dto) => dto.name),
+    plot: tmdb.overview,
+    country: tmdb.production_countries
+      .map((dto) => dto.name),
+    language: tmdb.spoken_languages
+      .map((dto) => dto.name),
+    backdrop: tmdb.backdrop_path,
+    poster: tmdb.poster_path,
+    ratings: {
+      imdb: null,
+      metascore: null,
+      tmdb: tmdb.vote_average
+    }
+  });
 }
 
 main()
@@ -38,7 +87,7 @@ function process(item) {
   var hash = `${item.meta.title} // ${item.meta.directors} // ${item.meta.release}`;
 
   if (_search[hash]) {
-    return;//return read(item, hash, _search[hash]);
+    return //read(item, hash, _search[hash]);
   }
   else {
     var qs = node.qs.stringify({

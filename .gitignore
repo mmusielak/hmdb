@@ -2,6 +2,10 @@ secret.js
 
 cache/tmdb/movie.json
 
+# IDE
+.idea
+*.iml
+
 # Logs
 logs
 *.log

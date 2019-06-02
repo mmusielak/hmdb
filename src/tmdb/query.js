@@ -51,7 +51,7 @@ function process(item) {
   else {
     var qs = node.qs.stringify({
       api_key: KEY,
-      query: item.meta.title,//remove_diacratics(title),
+      query: item.meta.title,//remove_diacritics(title),
       year: item.meta.release
     });
     var url = `http://api.themoviedb.org/3/search/movie?${qs}`;

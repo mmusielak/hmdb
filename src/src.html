@@ -34,6 +34,7 @@
     <div id="details">
       <b>Title:</b> <span id=":title"></span><br>
       <b>(*):</b> <span id=":alternative"></span><br>
+      <b>Genre:</b> <span id=":genre"></span><br>
       <b>Rating:</b> <span id=":rating"></span><br>
       <b>Release:</b> <span id=":release"></span><br>
       <b>Plot:</b> <span id=":overview"></span><br>
@@ -62,6 +63,7 @@
     details: {
       title: document.querySelector("#\\:title"),
       alternative: document.querySelector("#\\:alternative"),
+      genre: document.querySelector("#\\:genre"),
       rating: document.querySelector("#\\:rating"),
       release: document.querySelector("#\\:release"),
       overview: document.querySelector("#\\:overview"),
@@ -83,6 +85,10 @@
   var genres = {};
   db.forEach((movie) => movie.genre && movie.genre.forEach((g) => genres[g] = true));
 
+  for (var k in genres) {
+    console.log(k)
+  }
+
   Object
     .keys(genres)
     .forEach((value) => {
@@ -102,7 +108,8 @@
       div.appendChild(label);
 
       checkbox.addEventListener('click', (e) => {
-        genres[value] = this.checked;
+        console.log(value, checkbox.checked)
+        genres[value] = checkbox.checked;
         invalidate();
       }, false);
 
@@ -113,19 +120,24 @@
   function invalidate() {
     var time = new Date();
 
-    var local = db;
+    var local = db.slice();
     var title = bindings.nav.title.value.trim().toLowerCase();
     var person = bindings.nav.person.value.trim().toLowerCase();
 
+
+    console.log(local.filter((movie) => movie.genre.includes("TV Movie")));
+
+
     // genres
     local = local.filter(
-      (movie) => movie.genre.length == 0 || movie.genre.some((genre) => genres[genre]));
+      (movie) => movie.genre.length == 0 || movie.genre.filter((genre) => genres[genre]).length > 0);
+    //      (movie) => movie.genre.length == 0 || movie.genre.some((genre) => genres[genre]));
 
     if (title != "") {
       local = local.filter(
         (movie) => str_includes(movie.title, title) || arr_includes(movie.alternative_titles, title));
     }
-    if (person) {
+    if (person != "") {
       local = local.filter((movie) =>
         arr_includes(movie.actors, person) ||
         arr_includes(movie.directors, person) ||
@@ -150,6 +162,7 @@
 
     bindings.details.title.innerHTML = movie.title;
     bindings.details.alternative.innerHTML = movie.alternative_titles.join(', ');
+    bindings.details.genre.innerHTML = movie.genre.join(', ');
     bindings.details.rating.innerHTML = movie.ratings.imdb || movie.ratings.tmdb;
     bindings.details.release.innerHTML = movie.release.substr(0, 4);
     bindings.details.overview.innerHTML = movie.plot;

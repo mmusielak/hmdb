@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Holy Grail Layout solved by flexbox - Flexbox.ninja</title>
+
+    <meta name="viewport" content="initial-scale=1.0; width=device-width">
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            ;
+            font-size: 1.0em;
+            text-align: left;
+            color: #FFF;
+        }
+        
+        .holy-grail header,
+        .holy-grail footer,
+        .holy-grail-sidebar,
+        .holy-grail-content {
+            padding: 20px;
+        }
+        
+        .holy-grail header,
+        .holy-grail footer {
+            background: #FED0D1;
+        }
+        
+        .holy-grail-sidebar {
+            background: #F34A4E;
+        }
+        
+        .holy-grail-content {
+            color: #777;
+        }
+        /**
+			 * Flex things:
+			 * — Mobile first
+			 * — Responsive
+			 */
+        
+        .holy-grail {
+            min-height: 100vh;
+        }
+        
+        .holy-grail,
+        .holy-grail-body {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+        }
+        
+        .holy-grail-content {
+            flex: 1 1 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .holy-grail-body {
+                flex-direction: row;
+            }
+            .holy-grail-sidebar {
+                flex: 0 0 480px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="holy-grail">
+
+    <header>
+        <p>Header</p>
+    </header>
+
+    <div class="holy-grail-body">
+
+        <section class="holy-grail-content">
+            <table style="width:100%">
+                <tr>
+                    <th>Title</th>
+                    <th>Release</th>
+                </tr>
+                <tr>
+                    <td>A Bag of Marbles</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>A Beautiful Mind</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>A Blade in the Dark</td>
+                    <td>1983</td>
+                </tr>
+                <tr>
+                    <td>A Boy and His Dog</td>
+                    <td>1975</td>
+                </tr>
+                <tr>
+                    <td>A Bridge Too Far</td>
+                    <td>1977</td>
+                </tr>
+                <tr>
+                    <td>A Clockwork Orange</td>
+                    <td>1971</td>
+                </tr>
+                <tr>
+                    <td>A Dangerous Method</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>A Few Good Men</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>A Field of Honor</td>
+                    <td>1973</td>
+                </tr>
+                <tr>
+                    <td>A Fish Called Wanda</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <td>A Fistful of Dollars</td>
+                    <td>1964</td>
+                </tr>
+                <tr>
+                    <td>A Good Day to Die Hard</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>A Guide to Recognizing Your Saints</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>A Hijacking</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>A History of Violence</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td>A Hologram for the King</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>A Home at the End of the World</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>A Lady Takes a Chance</td>
+                    <td>1943</td>
+                </tr>
+                <tr>
+                    <td>A Lesson in Love</td>
+                    <td>1954</td>
+                </tr>
+                <tr>
+                    <td>A Midsummer Night's Dream</td>
+                    <td>1981</td>
+                </tr>
+                <tr>
+                    <td>A Mighty Heart</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>A Monster Calls</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>A Most Violent Year</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>A Most Wanted Man</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>A Night to Remember</td>
+                    <td>1958</td>
+                </tr>
+                <tr>
+                    <td>A Perfect Murder</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>A Perfect World</td>
+                    <td>1993</td>
+                </tr>
+                <tr>
+                    <td>A Personal Journey with Martin Scorsese Through American Movies</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>A Private War</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>A Prophet</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>À propos de Nice</td>
+                    <td>1930</td>
+                </tr>
+                <tr>
+                    <td>A Quiet Place</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>A Royal Affair</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>A Scanner Darkly</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>A Secret Handshake</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>A Serious Man</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>A Simple Favor</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>A Single Man</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>A Single Shot</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>A Star Is Born</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>A Streetcar Named Desire</td>
+                    <td>1951</td>
+                </tr>
+                <tr>
+                    <td>A Study in Terror</td>
+                    <td>1965</td>
+                </tr>
+                <tr>
+                    <td>A Time to Kill</td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                    <td>A Trip to the Moon</td>
+                    <td>1902</td>
+                </tr>
+                <tr>
+                    <td>A View to a Kill</td>
+                    <td>1985</td>
+                </tr>
+                <tr>
+                    <td>A Walk Among the Tombstones</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>A Woman in Berlin</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>A Woman of Paris</td>
+                    <td>1923</td>
+                </tr>
+                <tr>
+                    <td>A Zed & Two Noughts</td>
+                    <td>1985</td>
+                </tr>
+                <tr>
+                    <td>A.I. Artificial Intelligence</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>Abduction</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>About Time</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Above the Law</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <td>Abraham Lincoln: Vampire Hunter</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Accattone</td>
+                    <td>1961</td>
+                </tr>
+                <tr>
+                    <td>Ace Ventura: Pet Detective</td>
+                    <td>1994</td>
+                </tr>
+                <tr>
+                    <td>Ace Ventura: When Nature Calls</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Addams Family Values</td>
+                    <td>1993</td>
+                </tr>
+                <tr>
+                    <td>Adrift</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Adventureland</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Æon Flux</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td>After</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>After Earth</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>After the Storm</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Aftermath</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Agora</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Airport</td>
+                    <td>1970</td>
+                </tr>
+                <tr>
+                    <td>Airport '77</td>
+                    <td>1977</td>
+                </tr>
+                <tr>
+                    <td>Airport 1975</td>
+                    <td>1974</td>
+                </tr>
+                <tr>
+                    <td>Alaska</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Albatross</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Alexander</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>1990</td>
+                </tr>
+                <tr>
+                    <td>Alice in Wonderland</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>Alice Through the Looking Glass</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Alien</td>
+                    <td>1979</td>
+                </tr>
+                <tr>
+                    <td>Alien Blood</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Alien Outpost</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Alien Resurrection</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>Alien: Covenant</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Alien³</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>Aliens</td>
+                    <td>1986</td>
+                </tr>
+                <tr>
+                    <td>Aliens vs Predator: Requiem</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>All Quiet on the Western Front</td>
+                    <td>1930</td>
+                </tr>
+                <tr>
+                    <td>All the King's Men</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>All the Money in the World</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>All the Right Moves</td>
+                    <td>1983</td>
+                </tr>
+                <tr>
+                    <td>All These Women</td>
+                    <td>1964</td>
+                </tr>
+                <tr>
+                    <td>All's Well That Ends Well</td>
+                    <td>1981</td>
+                </tr>
+                <tr>
+                    <td>Allegheny Uprising</td>
+                    <td>1939</td>
+                </tr>
+                <tr>
+                    <td>Allegiant</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Almost Famous</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Alone in Berlin</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Alone in the Dark</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td>Alone in the Dark 2</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Along with the Gods: The Two Worlds</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Alpha Dog</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>Alphaville</td>
+                    <td>1965</td>
+                </tr>
+                <tr>
+                    <td>Altered States</td>
+                    <td>1980</td>
+                </tr>
+                <tr>
+                    <td>Always Shine</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Amadeus</td>
+                    <td>1984</td>
+                </tr>
+                <tr>
+                    <td>Amarcord</td>
+                    <td>1973</td>
+                </tr>
+                <tr>
+                    <td>Amazing Grace</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>Amelia</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Amélie</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>America America</td>
+                    <td>1963</td>
+                </tr>
+                <tr>
+                    <td>American Animals</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>American Assassin</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>American Beauty</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>American Gangster</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>American History X</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>American Honey</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>American Hustle</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>American Made</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>American Psycho</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>American Sniper</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>American: The Bill Hicks Story</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>Amityville 3-D</td>
+                    <td>1983</td>
+                </tr>
+                <tr>
+                    <td>Amityville II: The Possession</td>
+                    <td>1982</td>
+                </tr>
+                <tr>
+                    <td>Amityville: The Awakening</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Amok</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Amores Perros</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>An American Crime</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>An Autumn Afternoon</td>
+                    <td>1962</td>
+                </tr>
+                <tr>
+                    <td>An Education</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>An Empress and the Warriors</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Anatomy</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Anchorman: The Legend of Ron Burgundy</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>And Along Come Tourists</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>And the Ship Sails On</td>
+                    <td>1983</td>
+                </tr>
+                <tr>
+                    <td>Andrei Rublev</td>
+                    <td>1966</td>
+                </tr>
+                <tr>
+                    <td>Anemic Cinema</td>
+                    <td>1926</td>
+                </tr>
+                <tr>
+                    <td>Angel and the Badman</td>
+                    <td>1947</td>
+                </tr>
+                <tr>
+                    <td>Angel Heart</td>
+                    <td>1987</td>
+                </tr>
+                <tr>
+                    <td>Angela's Ashes</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Angels & Demons</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Animal Factory</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Annie Hall</td>
+                    <td>1977</td>
+                </tr>
+                <tr>
+                    <td>Annihilation</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Anomalisa</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Anonymous</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Another Earth</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Another Woman</td>
+                    <td>1988</td>
+                </tr>
+                <tr>
+                    <td>Another Year</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>Ant-Man</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Ant-Man and the Wasp</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Anthropoid</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Antichrist</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Antony & Cleopatra</td>
+                    <td>1981</td>
+                </tr>
+                <tr>
+                    <td>Any Given Sunday</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Anything Else</td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td>Aparajito</td>
+                    <td>1956</td>
+                </tr>
+                <tr>
+                    <td>Apocalypse Now</td>
+                    <td>1979</td>
+                </tr>
+                <tr>
+                    <td>Apocalypto</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>Apollo 13</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Appaloosa</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Appunti per un film sull'India</td>
+                    <td>1968</td>
+                </tr>
+                <tr>
+                    <td>Apt Pupil</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>Apur Sansar</td>
+                    <td>1959</td>
+                </tr>
+                <tr>
+                    <td>Aquaman</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Argo</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Arizona Dream</td>
+                    <td>1993</td>
+                </tr>
+                <tr>
+                    <td>Armageddon</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>Army of Darkness</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Article 99</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>As Above, So Below</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>As You Like It</td>
+                    <td>1978</td>
+                </tr>
+                <tr>
+                    <td>Ashes and Diamonds</td>
+                    <td>1958</td>
+                </tr>
+                <tr>
+                    <td>Assassin's Creed</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Assassins</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Assault on Precinct 13</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <td>Assault on Precinct 13</td>
+                    <td>1976</td>
+                </tr>
+                <tr>
+                    <td>Assault on Wall Street</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Asylum</td>
+                    <td>1972</td>
+                </tr>
+                <tr>
+                    <td>At Eternity's Gate</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>At First Light</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Atlas Shrugged: Part I</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Atomic Blonde</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Atonement</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>Attenberg</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>Au Revoir les Enfants</td>
+                    <td>1987</td>
+                </tr>
+                <tr>
+                    <td>August Rush</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Auto Focus</td>
+                    <td>2002</td>
+                </tr>
+                <tr>
+                    <td>Automata</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Autumn Sonata</td>
+                    <td>1978</td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Avengers: Age of Ultron</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Avengers: Infinity War</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Aventure Malgache</td>
+                    <td>1944</td>
+                </tr>
+                <tr>
+                    <td>AVP: Alien vs. Predator</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>Awakenings</td>
+                    <td>1990</td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="holy-grail-sidebar">
+            <h1>10 Cloverfield Lane</h1>
+            <p>2016 | Thriller, Science Fiction, Drama</p>
+
+            <p><b>Director(s):</b> Dan Trachtenberg</p>
+            <p><b>Writer(s):</b> Josh Campbell, Matthew Stuecken, Damien Chazelle</p>
+            <p><b>Actor(s):</b> Mary Elizabeth Winstead, John Goodman, John Gallagher Jr., Douglas M. Griffin, Suzanne Cryer, Sumalee Montano, Bradley Cooper, Frank Mottek</p>
+
+
+            Rating: 6.9
+
+            <p>After getting in a car accident, a woman is held in a shelter with two men, who claim the outside world is affected by a widespread chemical attack.</p>
+            <p>
+                <b>Location:</b> X:/10 Cloverfield Lane (Dan Trachtenberg, 2016)<br/>
+                <b>Size:</b> 16TB<br/>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

@@ -21,3 +21,6 @@ node src/core/parse.js
 
 This will produce a `out/list.json` file.
 
+### Additional tools
+
+https://v2.sg.media-imdb.com/suggestion/t/<query>.json

@@ -1,7 +1,7 @@
 const http = require("http");
 const https = require("https");
 
-function request(url) {
+export function request(url) {
   return new Promise((resolve, reject) => {
     (url.startsWith("https") ? https : http)
     .get(url, (res) => {

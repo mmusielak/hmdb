@@ -1,0 +1,15 @@
+{
+    "name": "hmdb",
+    "description": "A bunch of scripts for cataloging home movie collection",
+    "author": "Mikolaj Musielak",
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "index.mjs",
+    "scripts": {
+        "install": "node install.mjs",
+        "start": "node index.mjs"
+    },
+    "dependencies": {
+        "better-sqlite3": "^11.5.0"
+    }
+}

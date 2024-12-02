@@ -1,0 +1,6 @@
+cache/
+local/
+
+secrets.mjs
+
+node_modules/

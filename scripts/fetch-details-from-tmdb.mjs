@@ -1,5 +1,4 @@
 import * as fs from "node:fs";
-import path from "node:path";
 import { stringify } from "node:querystring";
 import { TMDB_SECRET } from "../secrets.mjs";
 
@@ -29,15 +28,22 @@ export default async function (limit = Number.MAX_SAFE_INTEGER) {
         } else {
             let details = ids[hash] ? await fetchDetailsByFind(ids[hash]) : await fetchDetailsBySearch(item);
 
+            // TODO: verify data
             if (details) {
                 stats.fetch++;
-
-                // TODO: verify data
-                // TODO: add imdb id?
                 cache[hash] = details;
             } else {
                 stats.error++;
                 console.error("✘ MISS", item.files.location);
+            }
+        }
+
+        // update IMDB ID
+        if (cache[hash]?.imdb_id) {
+            if (!ids[hash]) {
+                ids[hash] = cache[hash].imdb_id;
+            } else if (cache[hash].imdb_id != ids[hash]) {
+                console.error("✘ MISMATCH", item.files.location);
             }
         }
 
@@ -67,7 +73,7 @@ async function fetchDetailsBySearch(item) {
 
 async function callFind(id, qs) {
     return fetch(`https://api.themoviedb.org/3/find/${id}?${qs}`)
-        .then((res) => res.json())
+        .then((res) => (res.ok ? res.json() : null))
         .then((res) => {
             if (res?.tv_results?.[0]?.id) return callDetails("tv", res?.tv_results?.[0]?.id, qs);
             if (res?.movie_results?.[0]?.id) return callDetails("movie", res?.movie_results?.[0]?.id, qs);
@@ -76,12 +82,11 @@ async function callFind(id, qs) {
 
 async function callSearch(type, qs) {
     return fetch(`https://api.themoviedb.org/3/search/${type}?${qs}`)
-        .then((res) => res.json())
+        .then((res) => (res.ok ? res.json() : null))
         .then((res) => res?.results?.[0]?.id)
         .then((id) => (id ? callDetails(type, id, qs) : null));
 }
 
 async function callDetails(type, id, qs) {
-    console.log("details", id);
-    return fetch(`https://api.themoviedb.org/3/${type}/${id}?${qs}`).then((res) => res.json());
+    return fetch(`https://api.themoviedb.org/3/${type}/${id}?${qs}`).then((res) => (res.ok ? res.json() : null));
 }

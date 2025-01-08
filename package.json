@@ -7,9 +7,7 @@
     "main": "index.mjs",
     "scripts": {
         "install": "node install.mjs",
-        "start": "node index.mjs"
+        "start": "node --experimental-sqlite index.mjs"
     },
-    "dependencies": {
-        "better-sqlite3": "^11.5.0"
-    }
+    "dependencies": {}
 }

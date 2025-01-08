@@ -1,37 +1,43 @@
 import * as fs from "node:fs";
-import path from "node:path";
-import Database from "better-sqlite3";
+import sqlite from "node:sqlite";
 
 const IMDB_SQL = "cache/imdb.sqlite";
 const IMDB_IDS = "cache/imdb-ids.json";
 const MOVIES_JSON = "cache/movies.json";
 
-export default async function (basePath) {
-    let counter = 0;
+export default async function () {
+    let db = new sqlite.DatabaseSync(IMDB_SQL);
 
-    let db = new Database(IMDB_SQL);
     let ids = (fs.existsSync(IMDB_IDS) && JSON.parse(fs.readFileSync(IMDB_IDS))) || {};
     let movies = (fs.existsSync(MOVIES_JSON) && JSON.parse(fs.readFileSync(MOVIES_JSON))) || [];
 
-    let statement = db.prepare(
+    let counter = 0;
+
+    /**
+     * Query Plan:
+     *  SEARCH title USING INDEX idx_title_year (startYear=?)
+     *  SEARCH principals USING INDEX idx_principals_tconst_category (tconst=? AND category=?)
+     *  SEARCH person USING COVERING INDEX idx_person_primary (primaryName=? AND nconst=?)
+     */
+    let strictStatement = db.prepare(
         `SELECT title.tconst FROM title
             JOIN principals ON title.tconst = principals.tconst
             JOIN person ON principals.nconst = person.nconst
             WHERE 
                 title.startYear = ?
                 AND principals.category = 'director'
-                AND person.primaryName = ?
-                AND (title.primaryTitle = ? OR title.originalTitle = ?)`
+                AND person.primaryName COLLATE NOCASE = ?
+                AND (title.primaryTitle COLLATE NOCASE = ? OR title.originalTitle COLLATE NOCASE = ?)`
     );
-    let statement3 = db.prepare(
+    let fuzzyStatement = db.prepare(
         `SELECT title.tconst FROM title
             JOIN principals ON title.tconst = principals.tconst
             JOIN person ON principals.nconst = person.nconst
             WHERE 
                 title.startYear = ?
                 AND principals.category = 'director'
-                AND person.primaryName = ?
-                AND (title.primaryTitle LIKE ? OR title.originalTitle LIKE ?)`
+                AND person.primaryName COLLATE NOCASE = ?
+                AND (title.primaryTitle COLLATE NOCASE LIKE ? OR title.originalTitle COLLATE NOCASE LIKE ?)`
     );
 
     for (var i = 0; i < movies.length; i++) {
@@ -52,14 +58,15 @@ export default async function (basePath) {
             title = title.replace(" -", ":");
         }
 
+        // write progress
+        process.stdout.write(` > ${i} / ${movies.length} \x1b[1G`);
+
         // if title has more than one word let's try LIKE query with first one
         let slice = title.includes(" ") && title.substring(0, title.indexOf(" ")) + "%";
 
-        process.stdout.write(` > ${i} \x1b[0G`);
-
         let result =
-            statement.get(release, director, title, title) ||
-            (slice && statement3.get(release, director, slice, slice));
+            strictStatement.get(release, director, title, title) ||
+            (slice && fuzzyStatement.get(release, director, slice, slice));
 
         if (result) {
             counter++;
@@ -68,6 +75,11 @@ export default async function (basePath) {
     }
 
     fs.writeFileSync(IMDB_IDS, JSON.stringify(ids, null, 2));
+
+    db.close();
+
+    // clear progress line
+    process.stdout.write(`\x1b[1G`);
 
     console.info(">", movies.length);
     console.info("<", counter);

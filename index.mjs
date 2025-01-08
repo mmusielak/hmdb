@@ -24,8 +24,8 @@ let scripts = [
         run: false,
         label: "■ download tables and build imdb sql",
         function: async () => {
-            await downloadImdbTsv("cache/");
-            await buildImdbSql("cache/");
+            await downloadImdbTsv();
+            await buildImdbSql();
         },
     },
     {

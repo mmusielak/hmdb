@@ -1,10 +1,10 @@
 import * as os from "node:os";
 import * as fs from "node:fs";
-import path from "node:path";
+import * as path from "node:path";
 
 const MOVIES_JSON = "cache/movies.json";
 
-export default function (...files) {
+export default async function (...files) {
     // read files and concat content into a single stream
     let list = files.reduce((acc, file) => acc.concat(fs.readFileSync(file).toString().split(os.EOL)), []);
 
@@ -42,7 +42,7 @@ export default function (...files) {
             // match(/^(\d\d\d\d-\d\d-\d\d  \d\d\:\d\d)([\d\s,]{18})
             if ((re = line.match(/^(\d\d\d\d-\d\d-\d\d  \d\d\:\d\d [A|P]M)([\d\s,]{18}) (.+)$/))) {
                 current.files.content.push({
-                    name: (dir + "/" + re[3]).substring(current.files.location.length + 1),
+                    name: path.join(dir, re[3]).substring(current.files.location.length + 1),
                     date: re[1].substring(0, 10),
                     size: Number(re[2].replace(/,/g, "")), // remove whitespace
                 });

@@ -1,0 +1,212 @@
+<html>
+    <style>
+        main {
+            display: flex;
+        }
+
+        #details {
+            flex: 1;
+            margin: 1em;
+        }
+
+        #results {
+            flex: 1;
+            margin: 1em;
+        }
+    </style>
+
+    <body>
+        <header>HMDB</header>
+        <nav>
+            Title:<br />
+            <input type="text" id="title" /><br />
+            Person:<br />
+            <input type="text" id="person" /><br />
+            Genres:<br />
+            <select id="genre" onchange="invalidate()">
+                <option value="All" selected>All</option></select
+            ><br />
+        </nav>
+
+        <main>
+            Results:
+            <div id="results"></div>
+            <div id="details">
+                <b>Title:</b> <span id=":title"></span><br />
+                <b>(*):</b> <span id=":alternative"></span><br />
+                <b>Genre:</b> <span id=":genre"></span><br />
+                <b>Rating:</b> <span id=":rating"></span><br />
+                <b>Release:</b> <span id=":release"></span><br />
+                <b>Plot:</b> <span id=":overview"></span><br />
+                <b>Director(s):</b> <span id=":directors"></span><br />
+                <b>Writer(s):</b> <span id=":writers"></span><br />
+                <b>Actors:</b> <span id=":actors"></span><br />
+                <b>Location:</b> <span id=":location"></span><br />
+                <b>Size:</b> <span id=":size"></span><br />
+                <b>IMDB:</b> <span id=":imdb"></span><br />
+                <img id=":poster" src="" />
+            </div>
+        </main>
+    </body>
+
+    <script>
+        var db = [["DB"]];
+        var el = document.querySelector("#results");
+
+        var bindings = {
+            genre: document.querySelector("#genre"),
+            nav: {
+                title: document.querySelector("#title"),
+                person: document.querySelector("#person"),
+            },
+            details: {
+                title: document.querySelector("#\\:title"),
+                alternative: document.querySelector("#\\:alternative"),
+                genre: document.querySelector("#\\:genre"),
+                rating: document.querySelector("#\\:rating"),
+                release: document.querySelector("#\\:release"),
+                overview: document.querySelector("#\\:overview"),
+                directors: document.querySelector("#\\:directors"),
+                writers: document.querySelector("#\\:writers"),
+                actors: document.querySelector("#\\:actors"),
+                location: document.querySelector("#\\:location"),
+                size: document.querySelector("#\\:size"),
+                imdb: document.querySelector("#\\:imdb"),
+                poster: document.querySelector("#\\:poster"),
+            },
+        };
+
+        addEventListener("keydown", (event) => {
+            if (event.keyCode == 13) {
+                invalidate();
+            }
+        });
+
+        var genres = {};
+        db.forEach((movie) => movie.genres && movie.genres.forEach((g) => (genres[g] = true)));
+
+        for (var k in genres) {
+            console.log(k);
+        }
+
+        Object.keys(genres).forEach((value) => {
+            var option = document.createElement("option");
+
+            option.value = value;
+            option.innerText = value;
+
+            option.addEventListener(
+                "change",
+                (e) => {
+                    console.log(1, value);
+                    invalidate();
+                },
+                false
+            );
+
+            bindings.genre.appendChild(option);
+        });
+
+        function invalidate() {
+            var time = new Date();
+
+            var local = db.slice();
+            var title = bindings.nav.title.value.trim().toLowerCase();
+            var person = bindings.nav.person.value.trim().toLowerCase();
+
+            // genres
+            if (bindings.genre.selectedIndex != 0) {
+                var genre = Object.keys(genres)[bindings.genre.selectedIndex - 1];
+                console.log(bindings.genre.selectedIndex, genre);
+                local = local.filter((movie) => movie.genres.length == 0 || movie.genres.includes(genre));
+                //      (movie) => movie.genre.length == 0 || movie.genre.some((genre) => genres[genre]));
+            }
+            if (title != "") {
+                local = local.filter(
+                    (movie) => str_includes(movie.title, title) || str_includes(movie.originalTitle, title)
+                );
+            }
+            if (person != "") {
+                local = local.filter(
+                    (movie) =>
+                        arr_includes(movie.actors, person) ||
+                        arr_includes(movie.directors, person) ||
+                        arr_includes(movie.writers, person)
+                );
+                //movie.actors.some((name) => str_includes(name, person)) ||
+                //movie.directors.some((name) => str_includes(name, person)) ||
+                //movie.writers.some((name) => str_includes(name, person)));
+            }
+
+            //local = local.sort((a, b) => a.title.localeCompare(b.title));
+
+            local = local.sort((a, b) => {
+                var adate = new Date(a.local.date);
+                var bdate = new Date(b.local.date);
+
+                if (adate == bdate) {
+                    return a.title.localeCompare(b.title);
+                } else if (adate > bdate) return -1;
+                else if (adate < bdate) return 1;
+            });
+
+            // benchmark time taken...
+            el.innerHTML = local.slice(0, 1000).reduce((acc, movie, index) => {
+                return (
+                    acc +
+                    `<div onclick="showMovieDetails('${movie.external.imdb}')"> ${movie.title}, ${movie.release}</div> `
+                );
+            }, "");
+
+            console.log(`${local.length} of ${db.length} in ${new Date() - time}ms.`);
+        }
+
+        function showMovieDetails(id) {
+            var movie = db.find((movie) => movie.external.imdb == id);
+
+            bindings.details.title.innerHTML = movie.title;
+            bindings.details.alternative.innerHTML = movie.originalTitle;
+            bindings.details.genre.innerHTML = movie.genres.join(", ");
+            bindings.details.rating.innerHTML = movie.rating.imdb;
+            bindings.details.release.innerHTML = movie.release; //.substr(0, 4);
+            bindings.details.overview.innerHTML = movie.overview;
+            bindings.details.directors.innerHTML = formatNames(movie.directors);
+            bindings.details.writers.innerHTML = formatNames(movie.writers);
+            bindings.details.actors.innerHTML = formatNames(movie.actors);
+            bindings.details.location.innerHTML = movie.local.location;
+            bindings.details.size.innerHTML = formatFileSize(movie.local.size);
+            bindings.details.imdb.innerHTML = `<a href="https://www.imdb.com/title/${movie.external.imdb}">IMDB</a>`;
+            bindings.details.poster.src = movie.poster;
+        }
+
+        function str_includes(a, b) {
+            return a.toLowerCase().includes(b.toLowerCase());
+        }
+        function arr_includes(arr, str) {
+            str = str.toLowerCase();
+            return arr.some((candidate) => candidate.toLowerCase().includes(str));
+        }
+        function formatFileSize(bytes) {
+            var index = 0;
+            var suffix = ["", "KB", "MB", "TB", "GB"];
+
+            while ((bytes /= 1000) > 1) {
+                index++;
+            }
+
+            return Math.floor(bytes * 1000) + suffix[index];
+        }
+
+        function formatNames(list) {
+            return list.map((name) => `<a onclick = "searchName('${name}')"> ${name}</a>`).join(", ");
+        }
+        function searchName(name) {
+            bindings.nav.title.value = "";
+            bindings.nav.person.value = name;
+            bindings.genre.selectedIndex = 0;
+            invalidate();
+        }
+
+        invalidate();
+    </script>
+</html>

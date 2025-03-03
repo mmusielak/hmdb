@@ -62,22 +62,18 @@ export default async function (limit = Number.MAX_SAFE_INTEGER) {
 }
 
 async function fetchDetailsByFind(id) {
-    const qs = stringify({ api_key: TMDB_SECRET, external_source: "imdb_id" });
-    return callFind(id, qs);
-}
-
-async function fetchDetailsBySearch(item) {
-    const qs = stringify({ api_key: TMDB_SECRET, query: item.meta.title, year: item.meta.release });
-    return (await callSearch("tv", qs)) || (await callSearch("movie", qs));
-}
-
-async function callFind(id, qs) {
+    let qs = stringify({ api_key: TMDB_SECRET, external_source: "imdb_id" });
     return fetch(`https://api.themoviedb.org/3/find/${id}?${qs}`)
         .then((res) => (res.ok ? res.json() : null))
         .then((res) => {
             if (res?.tv_results?.[0]?.id) return callDetails("tv", res?.tv_results?.[0]?.id, qs);
             if (res?.movie_results?.[0]?.id) return callDetails("movie", res?.movie_results?.[0]?.id, qs);
         });
+}
+
+async function fetchDetailsBySearch(item) {
+    let qs = stringify({ api_key: TMDB_SECRET, query: item.meta.title, year: item.meta.release });
+    return (await callSearch("tv", qs)) || (await callSearch("movie", qs));
 }
 
 async function callSearch(type, qs) {

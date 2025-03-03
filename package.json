@@ -8,6 +8,7 @@
     "type": "module",
     "scripts": {
         "install": "node install.mjs",
+        "build": "node --experimental-sqlite web/build-web.mjs",
         "start": "node --experimental-sqlite index.mjs"
     },
     "dependencies": {}

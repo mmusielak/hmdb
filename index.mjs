@@ -22,7 +22,7 @@ let scripts = [
         },
     },
     {
-        run: true,
+        run: 0,
         label: "■ Download tables and build IMDB SQL",
         function: async () => {
             await downloadImdbTsv();
@@ -30,14 +30,14 @@ let scripts = [
         },
     },
     {
-        run: true,
+        run: 1,
         label: "■ Query IMDB SQL for IDs",
         function: async () => {
             await queryIdsFromImdbSql();
         },
     },
     {
-        run: true,
+        run: 1,
         label: "■ Fetch movie details from TMDB",
         function: async () => {
             await fetchDetailsFromTmdb();
@@ -47,7 +47,7 @@ let scripts = [
         run: true,
         label: "■ Fetch movie details from OMDB",
         function: async () => {
-            await fetchDetailsFromOmdb(1000);
+            await fetchDetailsFromOmdb();
         },
     },
 ];

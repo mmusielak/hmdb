@@ -88,17 +88,17 @@ export default async function () {
         ) WITHOUT ROWID`
     );
 
-    await read(db, "cache/name.basics.tsv", "person");
-    await read(db, "cache/title.basics.tsv", "title");
-    //await read(db, "cache/title.akas.tsv", "akas");
-    await read(db, "cache/title.principals.tsv", "principals");
-    await read(db, "cache/title.ratings.tsv", "rating");
-    await read(db, "cache/title.crew.tsv", "crew");
+    await readTable(db, "cache/name.basics.tsv", "person");
+    await readTable(db, "cache/title.basics.tsv", "title");
+    //await readTable(db, "cache/title.akas.tsv", "akas");
+    await readTable(db, "cache/title.principals.tsv", "principals");
+    await readTable(db, "cache/title.ratings.tsv", "rating");
+    await readTable(db, "cache/title.crew.tsv", "crew");
 
     console.time("clean");
     console.log("clean");
 
-    // remove unnecessary entires (adult, tv shows, misc) and...
+    // remove unnecessary entries (adult, tv shows, misc) and...
     db.exec(
         `DELETE FROM title WHERE genres = '' OR isAdult <> 0 OR titleType IN ('tvEpisode', 'tvPilot', 'tvShort', 'tvSpecial', 'videoGame')`
     );
@@ -129,7 +129,7 @@ export default async function () {
     db.close();
 }
 
-async function read(db, filePath, tableName) {
+async function readTable(db, filePath, tableName) {
     let fileName = path.basename(filePath);
     let fileHandle = await fs.open(filePath, "r");
 
@@ -154,6 +154,8 @@ async function read(db, filePath, tableName) {
     }
 
     db.exec(`COMMIT`);
+
+    await fs.close(fileHandle);
 
     console.timeEnd(fileName);
     console.info(`${fileName}: ${lines.toLocaleString()} lines`);

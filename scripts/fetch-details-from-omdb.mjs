@@ -53,7 +53,7 @@ export default async function (limit = Number.MAX_SAFE_INTEGER) {
 }
 
 async function fetchDetails(id) {
-    var qs = stringify({
+    let qs = stringify({
         apikey: OMDB_SECRET,
         i: id,
         plot: "full",

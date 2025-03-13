@@ -8,8 +8,9 @@
     "type": "module",
     "scripts": {
         "install": "node install.mjs",
-        "build": "node --experimental-sqlite web/build-web.mjs",
-        "start": "node --experimental-sqlite index.mjs"
+        "build": "node --title=hmdb --experimental-transform-types web/build-web.mjs",
+        "start": "node --title=hmdb --experimental-transform-types index.mjs",
+        "test": "node --title=hmdb --experimental-transform-types --test"
     },
     "dependencies": {}
 }

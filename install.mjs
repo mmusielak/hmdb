@@ -9,8 +9,11 @@ if (!fs.existsSync("secrets.mjs")) {
         "secrets.mjs",
         `
             throw new Error("Invalid API secrets");
-            export const TMDB_SECRET = "DUMMY";
-            export const OMDB_SECRET = "DUMMY";
+            const SECRETS = {
+                TMDB: "",
+                OMDB: "",
+            };
+            export default SECRETS;
         `.trim()
     );
 }

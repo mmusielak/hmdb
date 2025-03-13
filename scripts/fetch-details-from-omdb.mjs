@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import { stringify } from "node:querystring";
-import { OMDB_SECRET } from "../secrets.mjs";
+import SECRETS from "../secrets.mjs";
 
 const IMDB_IDS = "cache/imdb-ids.json";
 const OMDB_CACHE = "cache/omdb-details.json";
@@ -54,7 +54,7 @@ export default async function (limit = Number.MAX_SAFE_INTEGER) {
 
 async function fetchDetails(id) {
     let qs = stringify({
-        apikey: OMDB_SECRET,
+        apikey: SECRETS.OMDB,
         i: id,
         plot: "full",
     });

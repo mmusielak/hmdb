@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import { stringify } from "node:querystring";
-import { TMDB_SECRET } from "../secrets.mjs";
+import SECRETS from "../secrets.mjs";
 
 const IMDB_IDS = "cache/imdb-ids.json";
 const TMDB_CACHE = "cache/tmdb-details.json";
@@ -62,7 +62,7 @@ export default async function (limit = Number.MAX_SAFE_INTEGER) {
 }
 
 async function fetchDetailsByFind(id) {
-    let qs = stringify({ api_key: TMDB_SECRET, external_source: "imdb_id" });
+    let qs = stringify({ api_key: SECRETS.TMDB, external_source: "imdb_id" });
     return fetch(`https://api.themoviedb.org/3/find/${id}?${qs}`)
         .then((res) => (res.ok ? res.json() : null))
         .then((res) => {
@@ -72,7 +72,7 @@ async function fetchDetailsByFind(id) {
 }
 
 async function fetchDetailsBySearch(item) {
-    let qs = stringify({ api_key: TMDB_SECRET, query: item.meta.title, year: item.meta.release });
+    let qs = stringify({ api_key: SECRETS.TMDB, query: item.meta.title, year: item.meta.release });
     return (await callSearch("tv", qs)) || (await callSearch("movie", qs));
 }
 

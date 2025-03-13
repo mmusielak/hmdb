@@ -155,7 +155,7 @@ async function readTable(db, filePath, tableName) {
 
     db.exec(`COMMIT`);
 
-    await fs.close(fileHandle);
+    await fileHandle.close();
 
     console.timeEnd(fileName);
     console.info(`${fileName}: ${lines.toLocaleString()} lines`);

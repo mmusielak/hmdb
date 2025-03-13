@@ -1,12 +1,11 @@
-import * as os from "node:os";
 import * as fs from "node:fs";
 import * as path from "node:path";
 
 const MOVIES_JSON = "cache/movies.json";
 
 export default async function (...files) {
-    // read files and concat content into a single stream
-    let list = files.reduce((acc, file) => acc.concat(fs.readFileSync(file).toString().split(os.EOL)), []);
+    // read files and concat content into a single list
+    let list = files.reduce((acc, file) => acc.concat(fs.readFileSync(file).toString().split("\r\n")), []);
 
     let movies = [];
 

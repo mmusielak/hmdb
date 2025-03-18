@@ -2,7 +2,7 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import sqlite from "node:sqlite";
 
-const IMDB_SQL = "cache/imdb.sqlite";
+const IMDB_SQL : string = "cache/imdb.sqlite";
 
 export default async function () {
     let db = new sqlite.DatabaseSync(IMDB_SQL);

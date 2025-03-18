@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import { stringify } from "node:querystring";
-import SECRETS from "../secrets.mjs";
+import SECRETS from "../secrets.ts";
 
 const IMDB_IDS = "cache/imdb-ids.json";
 const OMDB_CACHE = "cache/omdb-details.json";

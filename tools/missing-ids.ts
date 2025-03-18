@@ -1,8 +1,8 @@
 import * as fs from "node:fs";
 
-const IMDB_IDS = "cache/imdb-ids.json";
-const TMDB_CACHE = "cache/tmdb-details.json";
-const MOVIES_JSON = "cache/movies.json";
+const IMDB_IDS : string = "cache/imdb-ids.json";
+const TMDB_CACHE : string = "cache/tmdb-details.json";
+const MOVIES_JSON : string = "cache/movies.json";
 
 let ids = (fs.existsSync(IMDB_IDS) && JSON.parse(fs.readFileSync(IMDB_IDS))) || {};
 let tmdb = (fs.existsSync(TMDB_CACHE) && JSON.parse(fs.readFileSync(TMDB_CACHE))) || {};

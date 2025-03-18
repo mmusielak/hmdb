@@ -1,12 +1,12 @@
 import * as fs from "node:fs";
 import { stringify } from "node:querystring";
-import SECRETS from "../secrets.mjs";
+import SECRETS from "../secrets.ts";
 
-const IMDB_IDS = "cache/imdb-ids.json";
-const TMDB_CACHE = "cache/tmdb-details.json";
-const MOVIES_JSON = "cache/movies.json";
+const IMDB_IDS : string = "cache/imdb-ids.json";
+const TMDB_CACHE : string = "cache/tmdb-details.json";
+const MOVIES_JSON : string = "cache/movies.json";
 
-export default async function (limit = Number.MAX_SAFE_INTEGER) {
+export default async function (limit : number = Number.MAX_SAFE_INTEGER) {
     let stats = {
         cache: 0,
         fetch: 0,

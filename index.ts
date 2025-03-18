@@ -1,10 +1,10 @@
-import createCatalogueFromDisk from "./scripts/create-catalogue-from-disk.mjs";
-import createCatalogueFromDosList from "./scripts/create-catalogue-from-dos-list.mjs";
-import downloadImdbTsv from "./scripts/download-imdb-tsv.mjs";
-import buildImdbSql from "./scripts/build-imdb-sql.mjs";
-import queryIdsFromImdbSql from "./scripts/query-ids-from-imdb-sql.mjs";
-import fetchDetailsFromTmdb from "./scripts/fetch-details-from-tmdb.mjs";
-import fetchDetailsFromOmdb from "./scripts/fetch-details-from-omdb.mjs";
+import createCatalogueFromDisk from "./scripts/create-catalogue-from-disk.ts";
+import createCatalogueFromDosList from "./scripts/create-catalogue-from-dos-list.ts";
+import downloadImdbTsv from "./scripts/download-imdb-tsv.ts";
+import buildImdbSql from "./scripts/build-imdb-sql.ts";
+import queryIdsFromImdbSql from "./scripts/query-ids-from-imdb-sql.ts";
+import fetchDetailsFromTmdb from "./scripts/fetch-details-from-tmdb.ts";
+import fetchDetailsFromOmdb from "./scripts/fetch-details-from-omdb.ts";
 
 let scripts = [
     {
@@ -57,7 +57,7 @@ for (let chapter of scripts) {
         console.group(chapter.label);
         console.time(chapter.label);
 
-        await chapter.function();
+        chapter.function();
 
         console.groupEnd();
         console.timeEnd(chapter.label);

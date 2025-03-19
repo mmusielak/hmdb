@@ -1,10 +1,10 @@
-import createCatalogueFromDisk from "./scripts/create-catalogue-from-disk.ts";
-import createCatalogueFromDosList from "./scripts/create-catalogue-from-dos-list.ts";
-import downloadImdbTsv from "./scripts/download-imdb-tsv.ts";
-import buildImdbSql from "./scripts/build-imdb-sql.ts";
-import queryIdsFromImdbSql from "./scripts/query-ids-from-imdb-sql.ts";
-import fetchDetailsFromTmdb from "./scripts/fetch-details-from-tmdb.ts";
-import fetchDetailsFromOmdb from "./scripts/fetch-details-from-omdb.ts";
+import createCatalogueFromDisk from "./scripts/create-catalogue-from-disk.js";
+import createCatalogueFromDosList from "./scripts/create-catalogue-from-dos-list.js";
+import downloadImdbTsv from "./scripts/download-imdb-tsv.js";
+import buildImdbSql from "./scripts/build-imdb-sql.js";
+import queryIdsFromImdbSql from "./scripts/query-ids-from-imdb-sql.js";
+import fetchDetailsFromTmdb from "./scripts/fetch-details-from-tmdb.js";
+import fetchDetailsFromOmdb from "./scripts/fetch-details-from-omdb.js";
 
 let scripts = [
     {
@@ -22,7 +22,7 @@ let scripts = [
         },
     },
     {
-        run: 0,
+        run: true,
         label: "■ Download tables and build IMDB SQL",
         function: async () => {
             await downloadImdbTsv();
@@ -30,21 +30,21 @@ let scripts = [
         },
     },
     {
-        run: 1,
+        run: true,
         label: "■ Query IMDB SQL for IDs",
         function: async () => {
             await queryIdsFromImdbSql();
         },
     },
     {
-        run: 1,
+        run: false,
         label: "■ Fetch movie details from TMDB",
         function: async () => {
             await fetchDetailsFromTmdb();
         },
     },
     {
-        run: true,
+        run: false,
         label: "■ Fetch movie details from OMDB",
         function: async () => {
             await fetchDetailsFromOmdb();
@@ -57,7 +57,7 @@ for (let chapter of scripts) {
         console.group(chapter.label);
         console.time(chapter.label);
 
-        chapter.function();
+        await chapter.function();
 
         console.groupEnd();
         console.timeEnd(chapter.label);

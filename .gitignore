@@ -1,6 +1,6 @@
 cache/
 local/
 
-secrets.mjs
+secrets.*
 
 node_modules/

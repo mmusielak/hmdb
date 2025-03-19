@@ -6,14 +6,11 @@ const MOVIES_JSON = "cache/movies.json";
 export default async function (...directories) {
     let movies = [];
 
-    let dir;
-    let dirents;
-
     while (directories.length) {
-        dir = directories.shift();
+        let dir = directories.shift();
 
         try {
-            dirents = await fs.readdir(dir, { withFileTypes: true });
+            let dirents = await fs.readdir(dir, { withFileTypes: true });
 
             for (let dirent of dirents) {
                 if (dirent.isDirectory()) {

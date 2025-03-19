@@ -4,6 +4,8 @@ import * as https from "node:https";
 import * as zlib from "node:zlib";
 import * as stream from "node:stream/promises";
 
+const CACHE_FOLDER = "cache/";
+
 export default async function () {
     const datasets = [
         "https://datasets.imdbws.com/name.basics.tsv.gz",
@@ -16,7 +18,7 @@ export default async function () {
 
     for (let url of datasets) {
         let fileName = path.basename(url, ".gz");
-        let filePath = path.join("cache/", fileName);
+        let filePath = path.join(CACHE_FOLDER, fileName);
 
         console.time(fileName);
         console.info(url);
@@ -26,7 +28,7 @@ export default async function () {
             https
                 .get(url, (res) => {
                     if (res.statusCode == 200) {
-                        let totalBytes = res.headers["content-length"];
+                        let totalBytes = res.headers["content-length"] || 0;
 
                         let zlibStream = zlib.createGunzip();
                         let writeStream = fs.createWriteStream(filePath);
@@ -39,7 +41,7 @@ export default async function () {
                             console.timeEnd(fileName);
                             console.info(`${fileName}: ${totalBytes.toLocaleString()} bytes`);
 
-                            resolve();
+                            resolve(true);
                         });
                     } else {
                         // hic sunt dracones

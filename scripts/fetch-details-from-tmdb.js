@@ -1,21 +1,21 @@
 import * as fs from "node:fs";
 import { stringify } from "node:querystring";
-import SECRETS from "../secrets.ts";
+import SECRETS from "../secrets.js";
 
-const IMDB_IDS : string = "cache/imdb-ids.json";
-const TMDB_CACHE : string = "cache/tmdb-details.json";
-const MOVIES_JSON : string = "cache/movies.json";
+const IMDB_IDS = "cache/imdb-ids.json";
+const TMDB_CACHE = "cache/tmdb-details.json";
+const MOVIES_JSON = "cache/movies.json";
 
-export default async function (limit : number = Number.MAX_SAFE_INTEGER) {
+export default async function (limit = Number.MAX_SAFE_INTEGER) {
     let stats = {
         cache: 0,
         fetch: 0,
         error: 0,
     };
 
-    let ids = (fs.existsSync(IMDB_IDS) && JSON.parse(fs.readFileSync(IMDB_IDS))) || {};
-    let cache = (fs.existsSync(TMDB_CACHE) && JSON.parse(fs.readFileSync(TMDB_CACHE))) || {};
-    let movies = (fs.existsSync(MOVIES_JSON) && JSON.parse(fs.readFileSync(MOVIES_JSON))) || [];
+    let ids = (fs.existsSync(IMDB_IDS) && JSON.parse(fs.readFileSync(IMDB_IDS).toString())) || {};
+    let cache = (fs.existsSync(TMDB_CACHE) && JSON.parse(fs.readFileSync(TMDB_CACHE).toString())) || {};
+    let movies = (fs.existsSync(MOVIES_JSON) && JSON.parse(fs.readFileSync(MOVIES_JSON).toString())) || [];
 
     for (var i = 0; i < movies.length; i++) {
         if (i > limit) break;

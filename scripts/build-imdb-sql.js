@@ -2,7 +2,8 @@ import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import sqlite from "node:sqlite";
 
-const IMDB_SQL : string = "cache/imdb.sqlite";
+const CACHE_FOLDER = "cache/";
+const IMDB_SQL = "cache/imdb.sqlite";
 
 export default async function () {
     let db = new sqlite.DatabaseSync(IMDB_SQL);
@@ -11,6 +12,7 @@ export default async function () {
     db.exec("PRAGMA synchronous = OFF");
     db.exec("PRAGMA journal_mode = OFF");
 
+    // create tables
     db.exec(`DROP TABLE IF EXISTS person`);
     db.exec(
         `CREATE TABLE IF NOT EXISTS person (
@@ -46,11 +48,11 @@ export default async function () {
             language            VARCHAR,
             types               VARCHAR,
             attributes          VARCHAR,
-            isOriginalTitle     BOOLEAN
+            isOriginalTitle     BOOLEAN,
 
-            -- PRIMARY KEY (tconst, ordering),
+            PRIMARY KEY (tconst, ordering)
             -- FOREIGN KEY (tconst) REFERENCES title(tconst)
-        )`
+        ) WITHOUT ROWID`
     );
     db.exec(`DROP TABLE IF EXISTS principals`);
     db.exec(
@@ -60,12 +62,12 @@ export default async function () {
             nconst              CHAR(9),
             category            VARCHAR,
             job                 VARCHAR,
-            characters          VARCHAR
+            characters          VARCHAR,
 
-            -- PRIMARY KEY (tconst, ordering),
+            PRIMARY KEY (tconst, ordering)
             -- FOREIGN KEY (tconst) REFERENCES title(tconst),
             -- FOREIGN KEY (nconst) REFERENCES person(nconst)
-        )`
+        ) WITHOUT ROWID`
     );
     db.exec(`DROP TABLE IF EXISTS rating`);
     db.exec(
@@ -88,6 +90,7 @@ export default async function () {
         ) WITHOUT ROWID`
     );
 
+    // read data from tsv files
     await readTable(db, "cache/name.basics.tsv", "person");
     await readTable(db, "cache/title.basics.tsv", "title");
     //await readTable(db, "cache/title.akas.tsv", "akas");
@@ -113,16 +116,16 @@ export default async function () {
     console.timeLog("clean");
 
     // create indexes for known query scenarios
-    db.exec(`CREATE INDEX idx_title_year ON title(startYear)`);
-    db.exec(`CREATE INDEX idx_title_primary ON title(primaryTitle COLLATE NOCASE)`);
-    db.exec(`CREATE INDEX idx_title_original ON title(originalTitle COLLATE NOCASE)`);
-    db.exec(`CREATE INDEX idx_person_primary ON person(primaryName COLLATE NOCASE)`);
-    db.exec(`CREATE INDEX idx_principals_tconst_category ON principals(tconst, category)`);
+    db.exec(`CREATE INDEX IF NOT EXISTS idx_title_year ON title(startYear)`);
+    db.exec(`CREATE INDEX IF NOT EXISTS idx_title_primary ON title(primaryTitle COLLATE NOCASE)`);
+    db.exec(`CREATE INDEX IF NOT EXISTS idx_title_original ON title(originalTitle COLLATE NOCASE)`);
+    db.exec(`CREATE INDEX IF NOT EXISTS idx_person_primary ON person(primaryName COLLATE NOCASE)`);
+    db.exec(`CREATE INDEX IF NOT EXISTS idx_principals_tconst_category ON principals(tconst, category)`);
 
     console.timeLog("clean");
 
     // shrink before closing, this can take some time
-    db.exec(`vacuum`);
+    // db.exec(`vacuum`);
 
     console.timeEnd("clean");
 
@@ -134,7 +137,9 @@ async function readTable(db, filePath, tableName) {
     let fileHandle = await fs.open(filePath, "r");
 
     let lines = 0;
-    let statement, values;
+
+    let statement;
+    let values;
 
     console.time(fileName);
     console.info(fileName);

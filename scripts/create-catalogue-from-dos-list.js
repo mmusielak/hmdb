@@ -10,7 +10,7 @@ export default async function (...files) {
     let movies = [];
 
     let dir;
-    let current;
+    let current = null;
 
     for (let re, line, i = 0; i < list.length; i++) {
         line = list[i];

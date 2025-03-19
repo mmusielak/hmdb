@@ -4,15 +4,12 @@
     "author": "Mikolaj Musielak",
     "license": "MIT",
     "version": "0.1.0",
-    "main": "index.ts",
+    "main": "index.js",
     "type": "module",
     "scripts": {
-        "install": "node install.mjs",
-        "build": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings web/build-web.ts",
-        "start": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings index.ts",
+        "install": "node install.js",
+        "build": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings web/build-web.js",
+        "start": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings index.js",
         "test": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings --test"
-    },
-    "devDependencies": {
-        "@types/node": "^22.13.10"
     }
 }

@@ -1,10 +1,10 @@
-import * as fs from "node:fs";
-import * as path from "node:path";
-import * as https from "node:https";
-import * as zlib from "node:zlib";
-import * as stream from "node:stream/promises";
+import fs from "node:fs";
+import path from "node:path";
+import https from "node:https";
+import zlib from "node:zlib";
+import stream from "node:stream/promises";
 
-const CACHE_FOLDER = "cache/";
+import { CACHE_FOLDER } from "../settings.js";
 
 export default async function () {
     const datasets = [
@@ -27,7 +27,7 @@ export default async function () {
         await new Promise((resolve, reject) => {
             https
                 .get(url, (res) => {
-                    if (res.statusCode == 200) {
+                    if (res.statusCode === 200) {
                         let totalBytes = res.headers["content-length"] || 0;
 
                         let zlibStream = zlib.createGunzip();
@@ -45,6 +45,7 @@ export default async function () {
                         });
                     } else {
                         // hic sunt dracones
+                        reject();
                     }
                 })
                 .on("error", reject);

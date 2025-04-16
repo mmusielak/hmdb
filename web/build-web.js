@@ -7,12 +7,12 @@ const MOVIES_JSON = "cache/movies.json";
 const TMDB_CACHE = "cache/tmdb-details.json";
 const OMDB_CACHE = "cache/omdb-details.json";
 
-var appData = [];
+let appData = [];
 
-var localData = JSON.parse(fs.readFileSync(MOVIES_JSON));
-var imdbIds = JSON.parse(fs.readFileSync(IMDB_IDS));
-var tmdbDetails = JSON.parse(fs.readFileSync(TMDB_CACHE));
-var omdbDetails = JSON.parse(fs.readFileSync(OMDB_CACHE));
+let localData = JSON.parse(fs.readFileSync(MOVIES_JSON));
+let imdbIds = JSON.parse(fs.readFileSync(IMDB_IDS));
+let tmdbDetails = JSON.parse(fs.readFileSync(TMDB_CACHE));
+let omdbDetails = JSON.parse(fs.readFileSync(OMDB_CACHE));
 
 console.time("total");
 
@@ -22,9 +22,9 @@ let queryTitle = db.prepare("SELECT * FROM title WHERE tconst = ?");
 let queryCrew = db.prepare("SELECT * FROM crew WHERE tconst = ?");
 
 let query;
-var count = 0;
+let count = 0;
 
-var _genres = new Set();
+let _genres = new Set();
 
 for (let item of localData) {
     if (count++ > 10) {
@@ -50,7 +50,7 @@ for (let item of localData) {
     }
 
     let queryTitle = db.prepare("SELECT * FROM title WHERE tconst = ?");
-    var imdb = queryTitle.get(imdbId);
+    let imdb = queryTitle.get(imdbId);
 
     if (!imdb) {
         console.log("wtf", hash, imdbId);
@@ -62,7 +62,7 @@ for (let item of localData) {
         continue;
     }
 
-    var date = item.files.content[0].date;
+    let date = item.files.content[0].date;
     for (let i = 0; i < item.files.content.length; i++) {
         if (new Date(item.files.content[i].date) > new Date(date)) {
             date = item.files.content[i].date;
@@ -130,7 +130,7 @@ for (let item of localData) {
     appData.push(result);
 }
 
-var src = fs.readFileSync("web/web-src.html").toString();
+let src = fs.readFileSync("web/web-src.html").toString();
 fs.writeFileSync("web/hmdb.html", src.replace('[["DB"]]', JSON.stringify(appData, null, 2)));
 
 console.log(localData.length, appData.length);

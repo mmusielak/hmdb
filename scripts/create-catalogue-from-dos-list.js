@@ -1,7 +1,7 @@
-import * as fs from "node:fs";
-import * as path from "node:path";
+import fs from "node:fs";
+import path from "node:path";
 
-const MOVIES_JSON = "cache/movies.json";
+import { MOVIES_JSON } from "../settings.js";
 
 export default async function (...files) {
     // read files and concat content into a single list

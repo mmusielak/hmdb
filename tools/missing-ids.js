@@ -11,7 +11,7 @@ let movies = (fs.existsSync(MOVIES_JSON) && JSON.parse(fs.readFileSync(MOVIES_JS
 let fixed = 0;
 let missing = 0;
 
-for (var i = 0; i < movies.length; i++) {
+for (let i = 0; i < movies.length; i++) {
     let item = movies[i];
     let hash = `${item.meta.title} // ${item.meta.directors} // ${item.meta.release}`;
 

@@ -1,18 +1,26 @@
-import * as fs from "node:fs/promises";
-import * as path from "node:path";
+import fs from "node:fs/promises";
+import path from "node:path";
 import sqlite from "node:sqlite";
 
-const CACHE_FOLDER = "cache/";
-const IMDB_SQL = "cache/imdb.sqlite";
+import { CACHE_FOLDER, IMDB_SQL, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE } from "../settings.js";
 
-export default async function () {
+// run the script if invoked directly
+if (import.meta.filename == process.argv[1]) {
+    buildImdbSql();
+}
+
+export default async function buildImdbSql() {
     let db = new sqlite.DatabaseSync(IMDB_SQL);
 
     // full throtle
-    db.exec("PRAGMA synchronous = OFF");
-    db.exec("PRAGMA journal_mode = OFF");
+    db.exec(`PRAGMA locking_mode = EXCLUSIVE`);
+    db.exec(`PRAGMA synchronous = OFF`);
+    db.exec(`PRAGMA journal_mode = OFF`);
+    db.exec(`PRAGMA cache_size = 1000000`);
+    db.exec(`PRAGMA temp_store = MEMORY`);
 
-    // create tables
+    console.time("⏱");
+
     db.exec(`DROP TABLE IF EXISTS person`);
     db.exec(
         `CREATE TABLE IF NOT EXISTS person (
@@ -24,6 +32,7 @@ export default async function () {
             knownForTitles      VARCHAR
         ) WITHOUT ROWID`
     );
+
     db.exec(`DROP TABLE IF EXISTS title`);
     db.exec(
         `CREATE TABLE IF NOT EXISTS title (
@@ -38,6 +47,7 @@ export default async function () {
             genres             VARCHAR
         ) WITHOUT ROWID`
     );
+
     db.exec(`DROP TABLE IF EXISTS akas`);
     db.exec(
         `CREATE TABLE IF NOT EXISTS akas (
@@ -54,6 +64,7 @@ export default async function () {
             -- FOREIGN KEY (tconst) REFERENCES title(tconst)
         ) WITHOUT ROWID`
     );
+
     db.exec(`DROP TABLE IF EXISTS principals`);
     db.exec(
         `CREATE TABLE IF NOT EXISTS principals (
@@ -69,9 +80,10 @@ export default async function () {
             -- FOREIGN KEY (nconst) REFERENCES person(nconst)
         ) WITHOUT ROWID`
     );
-    db.exec(`DROP TABLE IF EXISTS rating`);
+
+    db.exec(`DROP TABLE IF EXISTS ratings`);
     db.exec(
-        `CREATE TABLE IF NOT EXISTS rating (
+        `CREATE TABLE IF NOT EXISTS ratings (
             tconst              CHAR(9) PRIMARY KEY,
             averageRating       FLOAT,
             numVotes            INTEGER
@@ -79,6 +91,7 @@ export default async function () {
             -- FOREIGN KEY (tconst) REFERENCES title(tconst)
         ) WITHOUT ROWID`
     );
+
     db.exec(`DROP TABLE IF EXISTS crew`);
     db.exec(
         `CREATE TABLE IF NOT EXISTS crew (
@@ -90,51 +103,71 @@ export default async function () {
         ) WITHOUT ROWID`
     );
 
+    console.timeLog("⏱", "create tables");
+
     // read data from tsv files
-    await readTable(db, "cache/name.basics.tsv", "person");
-    await readTable(db, "cache/title.basics.tsv", "title");
-    //await readTable(db, "cache/title.akas.tsv", "akas");
-    await readTable(db, "cache/title.principals.tsv", "principals");
-    await readTable(db, "cache/title.ratings.tsv", "rating");
-    await readTable(db, "cache/title.crew.tsv", "crew");
+    await importTableFromTsv(db, "name.basics.tsv", "person");
+    await importTableFromTsv(db, "title.basics.tsv", "title");
+    //await importTableFromTsv(db, "title.akas.tsv", "akas");
+    await importTableFromTsv(db, "title.principals.tsv", "principals");
+    await importTableFromTsv(db, "title.ratings.tsv", "ratings");
+    await importTableFromTsv(db, "title.crew.tsv", "crew");
 
-    console.time("clean");
-    console.log("clean");
+    console.timeLog("⏱", "import tsv files");
 
-    // remove unnecessary entries (adult, tv shows, misc) and...
-    db.exec(
-        `DELETE FROM title WHERE genres = '' OR isAdult <> 0 OR titleType IN ('tvEpisode', 'tvPilot', 'tvShort', 'tvSpecial', 'videoGame')`
-    );
-    // ... trim orphaned data
-    db.exec(`DELETE from principals WHERE category NOT IN ('director', 'writer', 'actor', 'actress')`);
-    db.exec(`DELETE from principals WHERE principals.tconst NOT IN (SELECT title.tconst FROM title)`);
-    db.exec(`DELETE FROM person WHERE person.nconst NOT IN (SELECT principals.nconst FROM principals)`);
-    db.exec(`DELETE FROM rating WHERE rating.tconst NOT IN (SELECT title.tconst FROM title)`);
-    db.exec(`DELETE FROM akas WHERE akas.tconst NOT IN (SELECT title.tconst FROM title)`);
-    db.exec(`DELETE FROM crew WHERE crew.tconst NOT IN (SELECT title.tconst FROM title)`);
+    if (PRAGMA_DB_DELETE) {
+        // remove unnecessary entries (adult, tv shows, misc) and...
+        db.exec(`DELETE FROM title WHERE titleType NOT IN ('movie', 'short', 'video', 'tvMovie') OR isAdult <> 0`);
+        db.exec(`DELETE FROM principals WHERE category NOT IN ('director', 'writer', 'actor', 'actress')`);
 
-    console.timeLog("clean");
+        console.timeLog("⏱", "delete non-movie entries");
 
-    // create indexes for known query scenarios
-    db.exec(`CREATE INDEX IF NOT EXISTS idx_title_year ON title(startYear)`);
-    db.exec(`CREATE INDEX IF NOT EXISTS idx_title_primary ON title(primaryTitle COLLATE NOCASE)`);
-    db.exec(`CREATE INDEX IF NOT EXISTS idx_title_original ON title(originalTitle COLLATE NOCASE)`);
-    db.exec(`CREATE INDEX IF NOT EXISTS idx_person_primary ON person(primaryName COLLATE NOCASE)`);
-    db.exec(`CREATE INDEX IF NOT EXISTS idx_principals_tconst_category ON principals(tconst, category)`);
+        // ... trim orphaned data
+        db.exec(`DELETE FROM principals WHERE principals.tconst NOT IN (SELECT title.tconst FROM title)`);
+        db.exec(`DELETE FROM person WHERE person.nconst NOT IN (SELECT principals.nconst FROM principals)`);
+        db.exec(`DELETE FROM ratings WHERE ratings.tconst NOT IN (SELECT title.tconst FROM title)`);
+        db.exec(`DELETE FROM akas WHERE akas.tconst NOT IN (SELECT title.tconst FROM title)`);
+        db.exec(`DELETE FROM crew WHERE crew.tconst NOT IN (SELECT title.tconst FROM title)`);
 
-    console.timeLog("clean");
+        // this should be faster but it's not?
+        // db.exec(`DELETE FROM principals WHERE NOT EXISTS (SELECT 1 FROM title WHERE title.tconst = principals.tconst)`);
+        // db.exec(`DELETE FROM person WHERE NOT EXISTS (SELECT 1 FROM principals WHERE principals.nconst = person.nconst)`);
+        // db.exec(`DELETE FROM ratings WHERE NOT EXISTS (SELECT 1 FROM title WHERE title.tconst = ratings.tconst)`);
+        // db.exec(`DELETE FROM akas WHERE NOT EXISTS (SELECT 1 FROM title WHERE title.tconst = akas.tconst)`);
+        // db.exec(`DELETE FROM crew WHERE NOT EXISTS (SELECT 1 FROM title WHERE title.tconst = crew.tconst)`);
 
-    // shrink before closing, this can take some time
-    // db.exec(`vacuum`);
+        console.timeLog("⏱", "delete orphaned entries");
+    }
 
-    console.timeEnd("clean");
+    if (PRAGMA_DB_OPTIMIZE) {
+        // create indexes for known query scenarios
+        db.exec(`CREATE INDEX IF NOT EXISTS idx_title_year ON title(startYear)`);
+        db.exec(`CREATE INDEX IF NOT EXISTS idx_title_primary ON title(primaryTitle COLLATE NOCASE)`);
+        db.exec(`CREATE INDEX IF NOT EXISTS idx_title_original ON title(originalTitle COLLATE NOCASE)`);
+        db.exec(`CREATE INDEX IF NOT EXISTS idx_person_primary ON person(primaryName COLLATE NOCASE)`);
+        db.exec(`CREATE INDEX IF NOT EXISTS idx_principals_tconst_category ON principals(tconst, category)`);
+
+        console.timeLog("⏱", "create indexes");
+
+        // optimize database
+        db.exec(`PRAGMA optimize`);
+
+        console.timeLog("⏱", "optimize");
+
+        // shrink before closing, this can take some time
+        db.exec(`vacuum`);
+
+        console.timeLog("⏱", "vacuum");
+    }
 
     db.close();
+
+    console.timeEnd("⏱");
 }
 
-async function readTable(db, filePath, tableName) {
-    let fileName = path.basename(filePath);
-    let fileHandle = await fs.open(filePath, "r");
+async function importTableFromTsv(db, fileName, tableName) {
+    let filePath = path.join(CACHE_FOLDER, fileName);
+    let fileHandle = await fs.open(filePath, fs.constants.O_RDONLY);
 
     let lines = 0;
 
@@ -144,6 +177,7 @@ async function readTable(db, filePath, tableName) {
     console.time(fileName);
     console.info(fileName);
 
+    // https://www.sqlite.org/faq.html#q19
     db.exec(`BEGIN IMMEDIATE`);
 
     for await (let line of fileHandle.readLines()) {

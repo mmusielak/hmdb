@@ -37,14 +37,14 @@ let scripts = [
         },
     },
     {
-        run: false,
+        run: true,
         label: "■ Fetch movie details from TMDB",
         function: async () => {
             await fetchDetailsFromTmdb();
         },
     },
     {
-        run: false,
+        run: true,
         label: "■ Fetch movie details from OMDB",
         function: async () => {
             await fetchDetailsFromOmdb();

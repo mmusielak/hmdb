@@ -8,8 +8,8 @@
     "type": "module",
     "scripts": {
         "install": "node install.js",
-        "build": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings web/build-web.js",
-        "start": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings index.js",
-        "test": "node --title=hmdb --experimental-transform-types --use-largepages=silent --no-warnings --test"
+        "build": "node --no-warnings web/build-web.js",
+        "start": "node --no-warnings index.js",
+        "test": "node --no-warnings --test"
     }
 }

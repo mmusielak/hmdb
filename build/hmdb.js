@@ -1,10 +1,9 @@
-var el = document.querySelector("#results");
+var results = document.querySelector("#results");
 
 var bindings = {
     genre: document.querySelector("#genre"),
     nav: {
-        title: document.querySelector("#title"),
-        person: document.querySelector("#person"),
+        search: document.querySelector("#search"),
     },
     details: {
         title: document.querySelector("#\\:title"),
@@ -23,6 +22,17 @@ var bindings = {
     },
 };
 
+var ENG = 0;
+var FRESH = 0;
+var SUPERB = 0;
+var SELECTED;
+
+document.querySelector("#btnEng").addEventListener("click", () => {
+    ENG = ENG == 0 ? 1 : 0;
+    document.querySelector("#btnEng").classList.toggle("selected");
+    invalidate();
+});
+
 document.querySelector("#btnFresh").addEventListener("click", () => {
     FRESH = FRESH == 0 ? 1 : 0;
     document.querySelector("#btnFresh").classList.toggle("selected");
@@ -34,10 +44,21 @@ document.querySelector("#btnSuperb").addEventListener("click", () => {
     invalidate();
 });
 
-var FRESH = 0;
-var SUPERB = 0;
+document.querySelector("#search").addEventListener("input", (event) => {
+    onInput(event.target.value);
+});
 
-addEventListener("keydown", (event) => {
+var debounce = (fn, delay = 1000) => {
+    let timerId = null;
+    return (...args) => {
+        clearTimeout(timerId);
+        timerId = setTimeout(() => fn(...args), delay);
+    };
+};
+
+var onInput = debounce(invalidate, 500);
+
+window.addEventListener("keydown", (event) => {
     if (event.keyCode == 13) {
         invalidate();
     }
@@ -47,33 +68,28 @@ var genres = {};
 db.forEach((movie) => movie.genres && movie.genres.forEach((g) => (genres[g] = true)));
 
 for (var k in genres) {
-    console.log(k);
-}
-
-Object.keys(genres).forEach((value) => {
     var option = document.createElement("option");
 
-    option.value = value;
-    option.innerText = value;
+    option.value = k;
+    option.innerText = k;
 
     option.addEventListener(
         "change",
         (e) => {
-            console.log(1, value);
+            console.log(1, k);
             invalidate();
         },
         false
     );
 
     bindings.genre.appendChild(option);
-});
+}
 
 function invalidate() {
     var time = new Date();
 
     var local = db.slice();
-    var title = bindings.nav.title.value.trim().toLowerCase();
-    var person; // = bindings.nav.person.value.trim().toLowerCase();
+    var search = bindings.nav.search.value.trim().toLowerCase();
 
     // genres
     if (bindings.genre.selectedIndex != 0) {
@@ -83,19 +99,15 @@ function invalidate() {
         //      (movie) => movie.genre.length == 0 || movie.genre.some((genre) => genres[genre]));
     }
 
-    if (title) {
-        local = local.filter((movie) => str_includes(movie.title, title) || str_includes(movie.originalTitle, title));
-    }
-    if (person) {
+    if (search) {
         local = local.filter(
             (movie) =>
-                arr_includes(movie.actors, person) ||
-                arr_includes(movie.directors, person) ||
-                arr_includes(movie.writers, person)
+                str_includes(movie.title, search) ||
+                str_includes(movie.originalTitle, search) ||
+                arr_includes(movie.actors, search) ||
+                arr_includes(movie.directors, search) ||
+                arr_includes(movie.writers, search)
         );
-        //movie.actors.some((name) => str_includes(name, person)) ||
-        //movie.directors.some((name) => str_includes(name, person)) ||
-        //movie.writers.some((name) => str_includes(name, person)));
     }
 
     //local = local.sort((a, b) => a.title.localeCompare(b.title));
@@ -109,6 +121,10 @@ function invalidate() {
         } else if (adate > bdate) return -1;
         else if (adate < bdate) return 1;
     });
+
+    if (ENG) {
+        local = local.filter((movie) => movie.languages.length == 0 || movie.languages.includes("English"));
+    }
 
     if (FRESH) {
         local = local.sort((a, b) => {
@@ -127,12 +143,30 @@ function invalidate() {
     }
 
     // benchmark time taken...
-    el.innerHTML = local.slice(0, 1000).reduce((acc, movie, index) => {
+    results.innerHTML = local.slice(0, 1000).reduce((acc, movie, index) => {
         let feat = !SUPERB && movie.rating.imdb >= 80 ? "featured" : "";
         return (
             acc +
             //`<div onclick="showMovieDetails('${movie.external.imdb}')"> ${movie.title}, ${movie.release}</div> `
-            `<div class="movie-item ${feat}" onclick="showMovieDetails('${movie.external.imdb}')"><img loading="lazy" src="${movie.poster}" class="movie-poster" /></div>`
+            //`<div class="movie-item ${feat}" onclick="showMovieDetails('${movie.external.imdb}')"><img loading="lazy" src="${movie.poster}" class="movie-poster" /></div>`
+            `
+            <div class="movie-item ${feat}" 
+     onclick="showMovieDetails('${movie.external.imdb}')">
+    <img src="${movie.poster}" class="movie-poster">
+    <div class="movie-overlay">
+        <div class="overlay-top">
+            <span>${movie.release}</span>
+            <span>${movie.rating.imdb / 10} | ${movie.rating.rotten}</span>
+        </div>
+        <div class="overlay-bottom">
+            <div class="movie-title">${movie.title}</div>
+            <div class="movie-info">
+                <div>Dir: ${movie.directors[0]}</div>
+                <div>${movie.actors.slice(0, 3).join(", ")}</div>
+            </div>
+        </div>
+    </div>
+</div>`
         );
     }, "");
 
@@ -140,29 +174,38 @@ function invalidate() {
 }
 
 function showMovieDetails(id) {
-    var movie = db.find((movie) => movie.external.imdb == id);
+    if (SELECTED == id) {
+        SELECTED = null;
+    } else {
+        SELECTED = id;
 
-    bindings.details.title.innerHTML = movie.title;
-    bindings.details.alternative.innerHTML = movie.originalTitle;
-    bindings.details.genre.innerHTML = movie.genres.join(", ");
-    bindings.details.rating.innerHTML = movie.rating.imdb;
-    bindings.details.release.innerHTML = movie.release; //.substr(0, 4);
-    bindings.details.overview.innerHTML = movie.overview;
-    bindings.details.directors.innerHTML = formatNames(movie.directors);
-    bindings.details.writers.innerHTML = formatNames(movie.writers);
-    bindings.details.actors.innerHTML = formatNames(movie.actors);
-    bindings.details.location.innerHTML = movie.local.location;
-    bindings.details.size.innerHTML = formatFileSize(movie.local.size);
-    bindings.details.imdb.innerHTML = `<a href="https://www.imdb.com/title/${movie.external.imdb}">IMDB</a>`;
-    bindings.details.poster.src = movie.poster;
+        var movie = db.find((movie) => movie.external.imdb == id);
+
+        bindings.details.title.innerHTML = movie.title;
+        bindings.details.alternative.innerHTML = movie.originalTitle;
+        bindings.details.genre.innerHTML = movie.genres.join(", ");
+        bindings.details.rating.innerHTML = movie.rating.imdb / 10 + " | " + movie.rating.rotten;
+        bindings.details.release.innerHTML = movie.release; //.substr(0, 4);
+        bindings.details.overview.innerHTML = movie.overview;
+        bindings.details.directors.innerHTML = formatNames(movie.directors);
+        bindings.details.writers.innerHTML = formatNames(movie.writers);
+        bindings.details.actors.innerHTML = formatNames(movie.actors);
+        bindings.details.location.innerHTML = movie.local.location;
+        bindings.details.size.innerHTML = formatFileSize(movie.local.size);
+        bindings.details.imdb.innerHTML = `<a href="https://www.imdb.com/title/${movie.external.imdb}">IMDB</a>`;
+        //bindings.details.poster.src = movie.poster;
+    }
 }
 
 function str_includes(a, b) {
+    a = removeDiacritics(a);
+    b = removeDiacritics(b);
     return a.toLowerCase().includes(b.toLowerCase());
 }
 function arr_includes(arr, str) {
     str = str.toLowerCase();
-    return arr.some((candidate) => candidate.toLowerCase().includes(str));
+    str = removeDiacritics(str);
+    return arr.some((candidate) => removeDiacritics(candidate.toLowerCase()).includes(str));
 }
 function formatFileSize(bytes) {
     var index = 0;
@@ -179,8 +222,7 @@ function formatNames(list) {
     return list.map((name) => `<a onclick = "searchName('${name}')"> ${name}</a>`).join(", ");
 }
 function searchName(name) {
-    bindings.nav.title.value = "";
-    bindings.nav.person.value = name;
+    bindings.nav.search.value = name;
     bindings.genre.selectedIndex = 0;
     invalidate();
 }

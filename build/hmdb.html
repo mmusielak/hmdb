@@ -16,13 +16,19 @@
                     <option value="All" selected>All Genres</option>
                 </select>
                 <button class="btn-toggle">☰</button>
-                <input type="text" placeholder="Search movies..." id="title" />
+                <button class="btn-toggle" id="btnEng">EN</button>
+                <button class="btn-toggle" id="btnFresh">Fresh</button>
+                <button class="btn-toggle" id="btnSuperb">Superb</button>
+                <button class="btn-toggle">Seen</button>
+                <button class="btn-toggle">Watchlist</button>
+
+                <input type="text" placeholder="Search movies..." id="search" />
+
                 <button class="btn-filter">Search</button>
                 <button class="btn-toggle">Grid</button>
                 <button class="btn-toggle">List</button>
-                <button class="btn-toggle" id="btnFresh">Fresh</button>
-                <button class="btn-toggle" id="btnSuperb">Superb</button>
             </div>
+
             <div class="header-right">
                 <button class="btn-login">Login</button>
             </div>
@@ -45,11 +51,11 @@
             </div>
 
             <aside class="item-details" id="itemDetails">
-                <img
+                <!--<img
                     src="https://m.media-amazon.com/images/M/MV5BM2U0MDJkYWMtYmU0NS00ZjFkLWE2MTMtNzA5OTQ5ZWZiODI3XkEyXkFqcGdeQXVyNzY1NDgwNjQ@._V1_SX300.jpg"
                     class="detail-poster"
                     id=":poster"
-                />
+                />-->
                 <div class="detail-info">
                     <h1><span id=":title"></span></h1>
                     <b>(*):</b> <span id=":alternative"></span><br />
@@ -66,6 +72,7 @@
                 </div>
             </aside>
         </div>
+        <script src="remove-diacritics.js"></script>
         <script src="hmdb-db.js"></script>
         <script src="hmdb.js"></script>
     </body>

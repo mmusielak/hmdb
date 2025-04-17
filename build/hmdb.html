@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HMDB</title>
+        <style rel="stylesheet">
+            @import url("hmdb.css");
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <select id="genre" onchange="invalidate()">
+                    <option value="All" selected>All Genres</option>
+                </select>
+                <button class="btn-toggle">☰</button>
+                <input type="text" placeholder="Search movies..." id="title" />
+                <button class="btn-filter">Search</button>
+                <button class="btn-toggle">Grid</button>
+                <button class="btn-toggle">List</button>
+                <button class="btn-toggle" id="btnFresh">Fresh</button>
+                <button class="btn-toggle" id="btnSuperb">Superb</button>
+            </div>
+            <div class="header-right">
+                <button class="btn-login">Login</button>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <div class="item-list">
+                <div class="movies-grid" id="results">
+                    <!-- 
+                    <div
+                        class="movie-item"
+                        onclick="showMovieDetails('The Dark Knight', 2008, 9.0, 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham...')"
+                    >
+                        <img
+                            src="https://m.media-amazon.com/images/M/MV5BM2U0MDJkYWMtYmU0NS00ZjFkLWE2MTMtNzA5OTQ5ZWZiODI3XkEyXkFqcGdeQXVyNzY1NDgwNjQ@._V1_SX300.jpg"
+                            class="movie-poster"
+                        />
+                    </div>  -->
+                </div>
+            </div>
+
+            <aside class="item-details" id="itemDetails">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BM2U0MDJkYWMtYmU0NS00ZjFkLWE2MTMtNzA5OTQ5ZWZiODI3XkEyXkFqcGdeQXVyNzY1NDgwNjQ@._V1_SX300.jpg"
+                    class="detail-poster"
+                    id=":poster"
+                />
+                <div class="detail-info">
+                    <h1><span id=":title"></span></h1>
+                    <b>(*):</b> <span id=":alternative"></span><br />
+                    <b>Genre:</b> <span id=":genre"></span><br />
+                    <b>Rating:</b> <span id=":rating"></span><br />
+                    <b>Release:</b> <span id=":release"></span><br />
+                    <b>Plot:</b> <span id=":overview"></span><br />
+                    <b>Director(s):</b> <span id=":directors"></span><br />
+                    <b>Writer(s):</b> <span id=":writers"></span><br />
+                    <b>Actors:</b> <span id=":actors"></span><br />
+                    <b>Location:</b> <span id=":location"></span><br />
+                    <b>Size:</b> <span id=":size"></span><br />
+                    <b>IMDB:</b> <span id=":imdb"></span><br />
+                </div>
+            </aside>
+        </div>
+        <script src="hmdb-db.js"></script>
+        <script src="hmdb.js"></script>
+    </body>
+</html>

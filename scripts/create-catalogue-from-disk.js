@@ -1,9 +1,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import { MOVIES_JSON } from "../settings.js";
+import { DIR_LOCATIONS, MOVIES_JSON } from "../settings.js";
 
-export default async function (...directories) {
+export default async function () {
+    let directories = arguments.length ? arguments : DIR_LOCATIONS;
+
     let movies = [];
 
     while (directories.length) {

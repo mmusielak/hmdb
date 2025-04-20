@@ -1,9 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { MOVIES_JSON } from "../settings.js";
+import { DIR_LISTINGS, MOVIES_JSON } from "../settings.js";
 
-export default async function (...files) {
+export default async function () {
+    let files = arguments.length ? arguments : DIR_LISTINGS;
+
     // read files and concat content into a single list
     let list = files.reduce((acc, file) => acc.concat(fs.readFileSync(file).toString().split("\r\n")), []);
 

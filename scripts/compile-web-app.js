@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import sqlite from "node:sqlite";
 
-import { IMDB_SQL, MOVIES_JSON, IMDB_IDS, TMDB_CACHE, OMDB_CACHE } from "../settings.js";
+import { IMDB_DATABASE_PATH, MOVIES_JSON, IMDB_IDS, TMDB_CACHE, OMDB_CACHE } from "../settings.js";
 
 console.time("⏱");
 
-let db = new sqlite.DatabaseSync(IMDB_SQL);
+let db = new sqlite.DatabaseSync(IMDB_DATABASE_PATH);
 
 let movies = JSON.parse(fs.readFileSync(MOVIES_JSON));
 let imdbIds = JSON.parse(fs.readFileSync(IMDB_IDS));

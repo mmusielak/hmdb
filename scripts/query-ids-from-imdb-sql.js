@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import sqlite from "node:sqlite";
 
-import { IMDB_SQL, MOVIES_JSON, FUZZY_IDS, IMDB_IDS } from "../settings.js";
+import { IMDB_DATABASE_PATH, MOVIES_JSON, FUZZY_IDS, IMDB_IDS } from "../settings.js";
 
 export default async function (limit = Number.MAX_SAFE_INTEGER) {
-    let db = new sqlite.DatabaseSync(IMDB_SQL);
+    let db = new sqlite.DatabaseSync(IMDB_DATABASE_PATH);
     let imdb = (fs.existsSync(IMDB_IDS) && JSON.parse(fs.readFileSync(IMDB_IDS).toString())) || {};
     let movies = (fs.existsSync(MOVIES_JSON) && JSON.parse(fs.readFileSync(MOVIES_JSON).toString())) || [];
     let fuzzy = {};

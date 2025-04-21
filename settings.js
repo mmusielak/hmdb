@@ -1,5 +1,5 @@
 export const CACHE_FOLDER = "cache/";
-export const IMDB_SQL = "cache/imdb.sqlite";
+export const IMDB_DATABASE_PATH = "cache/imdb.sqlite";
 
 export const MOVIES_JSON = "cache/movies.json";
 

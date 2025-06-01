@@ -4,12 +4,7 @@ import sqlite from "node:sqlite";
 
 import { CACHE_FOLDER, IMDB_SQL, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE } from "../settings.js";
 
-// run the script if invoked directly
-if (import.meta.filename == process.argv[1]) {
-    buildImdbSql();
-}
-
-export default async function buildImdbSql() {
+export default async function () {
     let db = new sqlite.DatabaseSync(IMDB_SQL);
 
     // full throtle

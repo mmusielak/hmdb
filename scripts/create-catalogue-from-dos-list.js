@@ -3,6 +3,8 @@ import path from "node:path";
 
 import { DIR_LISTINGS, MOVIES_JSON } from "../settings.js";
 
+const FILE_CONTENT_REGEXP = /^(?<DD>\d{2})\/(?<MM>\d{2})\/(?<YYYY>\d{4})  \d\d\:\d\d(?<size>[\d\s,]{18}) (?<name>.+)$/;
+
 export default async function () {
     let files = arguments.length ? arguments : DIR_LISTINGS;
 
@@ -32,20 +34,18 @@ export default async function () {
                 });
 
                 if (exists) {
-                    console.warn("✘ duplicate", exists.files.location, info.files.location);
+                    console.warn("✘ DUPLICATE", exists.files.location, info.files.location);
                 } else {
                     movies.push(info);
                 }
             }
         } else if (current && dir.startsWith(current.files.location)) {
             // Make sure that the regexp matches locale!
-            // match(/^(\d\d\.\d\d.\d\d\d\d  \d\d\:\d\d)([\d\s]{18})
-            // match(/^(\d\d\d\d-\d\d-\d\d  \d\d\:\d\d)([\d\s,]{18})
-            if ((re = line.match(/^(\d\d\d\d-\d\d-\d\d  \d\d\:\d\d [A|P]M)([\d\s,]{18}) (.+)$/))) {
+            if ((re = line.match(FILE_CONTENT_REGEXP))) {
                 current.files.content.push({
-                    name: path.join(dir, re[3]).substring(current.files.location.length + 1),
-                    date: re[1].substring(0, 10),
-                    size: Number(re[2].replace(/,/g, "")), // remove whitespace
+                    name: path.join(dir, re.groups.name).substring(current.files.location.length + 1),
+                    date: re.groups.YYYY + "-" + re.groups.MM + "-" + re.groups.DD, // reconstruct date
+                    size: Number(re.groups.size.replace(/,/g, "")), // remove whitespace
                 });
             }
         }

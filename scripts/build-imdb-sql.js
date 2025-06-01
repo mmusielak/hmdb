@@ -2,10 +2,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import sqlite from "node:sqlite";
 
-import { CACHE_FOLDER, IMDB_SQL, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE } from "../settings.js";
+import { CACHE_FOLDER, IMDB_DATABASE_PATH, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE } from "../settings.js";
 
 export default async function () {
-    let db = new sqlite.DatabaseSync(IMDB_SQL);
+    let db = new sqlite.DatabaseSync(IMDB_DATABASE_PATH);
 
     // full throtle
     db.exec(`PRAGMA locking_mode = EXCLUSIVE`);
@@ -166,8 +166,7 @@ async function importTableFromTsv(db, fileName, tableName) {
 
     let lines = 0;
 
-    let statement;
-    let values;
+    let insertStatement;
 
     console.time(fileName);
     console.info(fileName);
@@ -177,13 +176,13 @@ async function importTableFromTsv(db, fileName, tableName) {
 
     for await (let line of fileHandle.readLines()) {
         if (lines++) {
-            values = line.split("\t");
+            let values = line.split("\t");
             // convert \N character to a NULL
             values = values.map((val) => (val == "\\N" ? "" : val));
-            statement.run(...values);
+            insertStatement.run(...values);
         } else {
             let columns = line.split("\t").length;
-            statement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
+            insertStatement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
         }
     }
 

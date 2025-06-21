@@ -1,6 +1,6 @@
 {
     "name": "hmdb",
-    "description": "A bunch of scripts for cataloging home movie collection",
+    "description": "A bunch of Node scripts for cataloging home movie collection",
     "author": "Mikolaj Musielak",
     "license": "MIT",
     "version": "0.1.0",

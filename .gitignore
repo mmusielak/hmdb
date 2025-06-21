@@ -4,3 +4,6 @@ local/
 secrets.*
 
 node_modules/
+
+.idea
+.vscode

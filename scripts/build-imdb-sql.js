@@ -7,7 +7,7 @@ import { CACHE_FOLDER, IMDB_DATABASE_PATH, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE 
 export default async function () {
     let db = new sqlite.DatabaseSync(IMDB_DATABASE_PATH);
 
-    // full throtle
+    // full throttle
     db.exec(`PRAGMA locking_mode = EXCLUSIVE`);
     db.exec(`PRAGMA synchronous = OFF`);
     db.exec(`PRAGMA journal_mode = OFF`);
@@ -178,7 +178,7 @@ async function importTableFromTsv(db, fileName, tableName) {
         if (lines++) {
             let values = line.split("\t");
             // convert \N character to a NULL
-            values = values.map((val) => (val == "\\N" ? "" : val));
+            values = values.map((val) => (val === "\\N" ? "" : val));
             insertStatement.run(...values);
         } else {
             let columns = line.split("\t").length;

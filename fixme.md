@@ -1,3 +1,0 @@
--   add central store for data access
--   remove files before creating new ones
--   make sure directories exist

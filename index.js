@@ -7,7 +7,8 @@ let scripts = [
     //"./scripts/build-imdb-sql.js",
     //"./scripts/query-ids-from-imdb-sql.js",
     //"./scripts/fetch-details-from-tmdb.js",
-    //"./scripts/fetch-details-from-omdb.js",
+    "./scripts/fetch-details-from-omdb.js",
+    "./scripts/compile-web-app.js",
 ];
 
 for (let script of scripts) {

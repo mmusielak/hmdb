@@ -163,3 +163,17 @@ clean: 16:29.297 (m:ss.mmm)
 ---
 
 explain query plan DELETE FROM crew WHERE crew.tconst NOT IN (SELECT title.tconst FROM title)
+
+---
+
+25/07/09 benchmark @ notebook
+
+(new) download imdb (raw) \_ 00:59 / 00:51 / 01:15
+
+(old) download imdb and unzip \_ 06:40 / 07:35
+(new) download imdb and unzip \_ 8:58
+
+(new) just unzip imdb \_ 07:08
+
+(new) name 5:20 title 5:02
+(old) name 5:28 title 6:02

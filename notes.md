@@ -177,3 +177,30 @@ explain query plan DELETE FROM crew WHERE crew.tconst NOT IN (SELECT title.tcons
 
 (new) name 5:20 title 5:02
 (old) name 5:28 title 6:02
+
+benchmark @ desktop
+
+(new) download imdb (raw) 00:52
+(old) download imdb (raw) 01:33
+
+(new) name 0:50 title 0:51
+(old) name 0:47 title 0:50
+
+--
+
+v1 @ desktop
+01:31 download-imdb-tsv.js
+09:28 build-imdb-sql.js
+00:02 query-ids-from-imdb-sql.js
+fetch-details-from-tmdb.js
+
+25/07/13 
+v2 @ desktop
+00:48 download-imdb-tsv.js
+15:34 build-imdb-sql.js (+akas 3:11 event)
+15:39 build-imdb-sql.js (+akas 3:16 await)
+00:10 query-ids-from-imdb-sql.js
+28:35 fetch-details-from-tmdb.js
+23:11 fetch-details-from-omdb.js
+
+

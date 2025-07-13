@@ -1,8 +1,8 @@
-import fs from "node:fs/promises";
+import fs from "node:fs";
 import path from "node:path";
 import sqlite from "node:sqlite";
 
-import { CACHE_FOLDER, IMDB_DATABASE_PATH, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE } from "../settings.js";
+import { DATASETS, CACHE_FOLDER, IMDB_DATABASE_PATH, PRAGMA_DB_DELETE, PRAGMA_DB_OPTIMIZE } from "../settings.js";
 
 export default async function () {
     let db = new sqlite.DatabaseSync(IMDB_DATABASE_PATH);
@@ -100,14 +100,19 @@ export default async function () {
 
     console.timeLog("⏱", "create tables");
 
+    for (let dataset of DATASETS) {
+        await importTableFromTsv3(db, dataset);
+    }
+
+    /*
     // read data from tsv files
     await importTableFromTsv(db, "name.basics.tsv.gz", "person");
     await importTableFromTsv(db, "title.basics.tsv.gz", "title");
-    //await importTableFromTsv(db, "title.akas.tsv.gz", "akas");
+    await importTableFromTsv(db, "title.akas.tsv.gz", "akas");
     await importTableFromTsv(db, "title.principals.tsv.gz", "principals");
     await importTableFromTsv(db, "title.ratings.tsv.gz", "ratings");
     await importTableFromTsv(db, "title.crew.tsv.gz", "crew");
-
+    */
     console.timeLog("⏱", "import tsv files");
 
     if (PRAGMA_DB_DELETE) {
@@ -160,13 +165,12 @@ export default async function () {
     console.timeEnd("⏱");
 }
 import events from "node:events";
-import { createInterface } from "node:readline/promises";
+import { createInterface } from "node:readline";
 import zlib from "node:zlib";
-import stream from "node:stream/promises";
 
 async function importTableFromTsv(db, fileName, tableName) {
-    let filePath = path.join(CACHE_FOLDER, fileName);
-    //   let fileHandle = await fs.open(filePath, fs.constants.O_RDONLY);
+    //let filePath = path.join(CACHE_FOLDER, fileName);
+    //let fileHandle = await fs.open(filePath, fs.constants.O_RDONLY);
 
     let lines = 0;
 
@@ -217,6 +221,126 @@ async function importTableFromTsv(db, fileName, tableName) {
     db.exec(`COMMIT`);
 
     await fileHandle.close();
+
+    console.timeEnd(fileName);
+    console.info(`${fileName}: ${lines.toLocaleString()} lines`);
+}
+
+async function importTableFromTsv2(db, dataset) {
+    let tableName = dataset.table;
+    let fileName = path.basename(dataset.url);
+    let filePath = path.join(CACHE_FOLDER, fileName);
+
+    console.time(fileName);
+    console.info(fileName);
+
+    // https://www.sqlite.org/faq.html#q19
+    db.exec(`BEGIN IMMEDIATE`);
+
+    let zlibStream = zlib.createGunzip();
+    let tsvStream = fs.createReadStream(filePath); //await fs.open(filePath, "r");
+
+    let rl = createInterface({
+        input: tsvStream.pipe(zlibStream),
+        crlfDelay: Infinity, // recognize all instances of CR LF as a single line break
+    });
+
+    let lines = 0;
+    let insertStatement;
+
+    rl.on("line", (line) => {
+        if (lines++) {
+            let values = line.split("\t");
+            // convert \N character to a NULL
+            values = values.map((val) => (val === "\\N" ? "" : val));
+            insertStatement.run(...values);
+        } else {
+            let columns = line.split("\t").length;
+            insertStatement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
+        }
+    });
+
+    await events.once(rl, "close");
+    /*
+    for await (let line of fileHandle.readLines()) {
+        if (lines++) {
+            let values = line.split("\t");
+            // convert \N character to a NULL
+            values = values.map((val) => (val === "\\N" ? "" : val));
+            insertStatement.run(...values);
+        } else {
+            let columns = line.split("\t").length;
+            insertStatement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
+        }
+    }
+*/
+    db.exec(`COMMIT`);
+
+    console.timeEnd(fileName);
+    console.info(`${fileName}: ${lines.toLocaleString()} lines`);
+}
+
+async function importTableFromTsv3(db, dataset) {
+    let tableName = dataset.table;
+    let fileName = path.basename(dataset.url);
+    let filePath = path.join(CACHE_FOLDER, fileName);
+
+    console.time(fileName);
+    console.info(fileName);
+
+    // https://www.sqlite.org/faq.html#q19
+    db.exec(`BEGIN IMMEDIATE`);
+
+    let zlibStream = zlib.createGunzip();
+    let tsvStream = fs.createReadStream(filePath); //await fs.open(filePath, "r");
+
+    let readLinesInterface = createInterface({
+        input: tsvStream.pipe(zlibStream),
+        crlfDelay: Infinity, // recognize all instances of CR LF as a single line break
+    });
+
+    let lines = 0;
+    let insertStatement;
+
+    for await (let line of readLinesInterface) {
+        if (lines++) {
+            let values = line.split("\t");
+            // convert \N character to a NULL
+            values = values.map((val) => (val === "\\N" ? "" : val));
+            insertStatement.run(...values);
+        } else {
+            let columns = line.split("\t").length;
+            insertStatement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
+        }
+    }
+    /*
+    rl.on("line", (line) => {
+        if (lines++) {
+            let values = line.split("\t");
+            // convert \N character to a NULL
+            values = values.map((val) => (val === "\\N" ? "" : val));
+            insertStatement.run(...values);
+        } else {
+            let columns = line.split("\t").length;
+            insertStatement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
+        }
+    });
+*/
+    //await events.once(rl, "close");
+    /*
+    for await (let line of fileHandle.readLines()) {
+        if (lines++) {
+            let values = line.split("\t");
+            // convert \N character to a NULL
+            values = values.map((val) => (val === "\\N" ? "" : val));
+            insertStatement.run(...values);
+        } else {
+            let columns = line.split("\t").length;
+            insertStatement = db.prepare(`INSERT INTO '${tableName}' VALUES (?${",?".repeat(columns - 1)})`);
+        }
+    }
+*/
+    db.exec(`COMMIT`);
 
     console.timeEnd(fileName);
     console.info(`${fileName}: ${lines.toLocaleString()} lines`);

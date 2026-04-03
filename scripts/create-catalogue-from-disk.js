@@ -10,7 +10,7 @@ export default async function () {
 
     while (directories.length) {
         let dir = directories.shift();
-
+        console.log(directories.length);
         try {
             let dirents = await fs.readdir(dir, { withFileTypes: true });
 
@@ -40,7 +40,7 @@ export default async function () {
                 }
             }
         } catch (err) {
-            //console.error(err);
+            console.error(err);
         }
     }
 

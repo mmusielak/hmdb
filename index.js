@@ -4,7 +4,7 @@ let scripts = [
     "./scripts/create-catalogue-from-dos-list.js",
     //"./scripts/create-catalogue-from-disk.js",
     //"./scripts/download-imdb-tsv.js",
-    "./scripts/build-imdb-sql.js",
+    //"./scripts/build-imdb-sql.js",
     //"./scripts/query-ids-from-imdb-sql.js",
     //"./scripts/fetch-details-from-tmdb.js",
     //"./scripts/fetch-details-from-omdb.js",

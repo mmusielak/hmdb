@@ -1,0 +1,152 @@
+import { Parser } from "./parser.js";
+
+const defaultParser = new Parser();
+addDefaults(defaultParser);
+
+export let parse = (title) => defaultParser.parse(title);
+
+function addDefaults(parser) {
+    parser.addHandler("year", /(?!^)[([]?((?:19[0-9]|20[012])[0-9])[)\]]?/, { type: "integer" });
+
+    // Resolution
+    parser.addHandler("resolution", /([0-9]{3,4}[pi])/i, { type: "lowercase" });
+    parser.addHandler("resolution", /(4k)/i, { type: "lowercase" });
+    parser.addHandler("resolution", /FHD/i, { value: "1080p" });
+    parser.addHandler("resolution", /UHD/i, { value: "4k" });
+
+    // Extended
+    parser.addHandler("extended", /EXTENDED(?:[\s.]CUT)?/i, { type: "boolean" });
+
+    // Open Matte
+    parser.addHandler("openmatte", /OPEN[. ]MATTE/i, { type: "boolean" });
+
+    // Convert
+    parser.addHandler("convert", /CONVERT/, { type: "boolean" });
+
+    // Hardcoded
+    parser.addHandler("hardcoded", /HC|HARDCODED/, { type: "boolean" });
+
+    // Remux
+    parser.addHandler("remux", /REMUX/i, { type: "boolean" });
+
+    // Proper
+    parser.addHandler("proper", /(?:REAL.)?PROPER/, { type: "boolean" });
+
+    // Repack
+    parser.addHandler("repack", /REPACK|RERIP/, { type: "boolean" });
+
+    // Retail
+    parser.addHandler("retail", /\bRetail\b/i, { type: "boolean" });
+
+    // Remastered
+    parser.addHandler("remastered", /\bRemaster(?:ed)?\b/i, { type: "boolean" });
+
+    // Unrated
+    parser.addHandler("unrated", /\bunrated|uncensored\b/i, { type: "boolean" });
+
+    // Region
+    parser.addHandler("region", /R[0-9]/);
+
+    // Container
+    parser.addHandler("container", /\b(MKV|AVI|MP4)\b/i, { type: "lowercase" });
+
+    // Source
+    parser.addHandler("source", /\b(?:HD-?)?CAM\b/, { type: "lowercase" });
+    parser.addHandler("source", /\b(?:HD-?)?T(?:ELE)?S(?:YNC)?\b/i, { value: "telesync" });
+    parser.addHandler("source", /\bHD-?Rip\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bBRRip\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bBDRip|BluRayRip\b/i, { value: "bdrip" });
+    parser.addHandler("source", /\bDVDRip\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bDVD(?:R[0-9])?\b/i, { value: "dvd" });
+    parser.addHandler("source", /\bDVDscr\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\b(?:HD-?)?TVRip\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bTC\b/, { type: "lowercase" });
+    parser.addHandler("source", /\bPPVRip\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bR5\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bVHSSCR\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bBluray\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bWEB-?DL\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\bWEB-?Rip\b/i, { type: "lowercase" });
+    parser.addHandler("source", /\b(?:DL|WEB|BD|BR)MUX\b/i, { type: "lowercase" });
+    parser.addHandler("source", /[\s.[-](WEB)[\s.\]-]/i, { type: "lowercase" });
+    parser.addHandler("source", /\b(DivX|XviD)\b/, { type: "lowercase" });
+    parser.addHandler("source", /HDTV/i, { type: "lowercase" });
+
+    // Service
+    parser.addHandler("service", /\bAMZN|Amazon\b/i, { value: "AMZN" });
+    parser.addHandler("service", /\bATVP\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bBNGE\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bDLWP\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bDSNP\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bFDNG\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bHULU\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bMAX\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bNFLX|NF\b/i, { value: "NFLX" });
+    parser.addHandler("service", /\bPCOK\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bROKU\b/i, { type: "uppercase" });
+    parser.addHandler("service", /\bSTAN\b/i, { type: "uppercase" });
+
+    // Codec
+    parser.addHandler("codec", /dvix|mpeg2|divx|xvid|[xh][-. ]?26[45]|avc|hevc/i, { type: "lowercase" });
+    parser.addHandler("codec", ({ result }) => {
+        if (result.codec) {
+            result.codec = result.codec.replace(/[ .-]/, "");
+        }
+    });
+
+    // Audio
+    parser.addHandler("audio", /DTS-HD[\s-.]MA/, { value: "dts-hd-ma" });
+    parser.addHandler("audio", /MD|MP3|mp3|FLAC|Atmos|DTS(?:-HD)?|TrueHD/, { type: "lowercase" });
+    parser.addHandler("audio", /Dual[- ]Audio/i, { type: "lowercase" });
+    parser.addHandler("audio", /EAC-?3(?:\.5\.1)?/i, { value: "eac3" });
+    parser.addHandler("audio", /AC-?3(?:\.5\.1)?/i, { value: "ac3" });
+    parser.addHandler("audio", /\bDD(?:\+|P)/i, { value: "ddp" });
+    parser.addHandler("audio", /\bDD[\b\d]/i, { value: "dd" });
+    parser.addHandler("audio", /AAC(?:[. ]?2[. ]0)?/, { value: "aac" });
+
+    // Channels
+    parser.addHandler("channels", /\d+[.\s](?:1|0)\b/i, {
+        transform: (match) => parseFloat(match[1]),
+    });
+    parser.addHandler("channels", /2(?:ch)/, { value: 2.0 });
+    parser.addHandler("channels", /6(?:ch)/, { value: 5.1 });
+    parser.addHandler("channels", /8(?:ch)/, { value: 7.1 });
+
+    // Bit depth
+    parser.addHandler("bitdepth", /\b(8|10|12|16|24)[-\s.]?bits?\b/i, { type: "integer" });
+
+    // Group
+    parser.addHandler("group", /- ?\(?([^\-. )[]+)\)?(?:\[.*\])?\)?$/);
+
+    // Tracker
+    parser.addHandler("tracker", /[^\-. )]+\[([^\]]+)\]$/);
+
+    // Season
+    parser.addHandler("season", /([0-9]{1,2})xall/i, { type: "integer" });
+    parser.addHandler("season", /S([0-9]{1,2}) ?E[0-9]{1,2}/i, { type: "integer" });
+    parser.addHandler("season", /([0-9]{1,2})x[0-9]{1,2}/, { type: "integer" });
+    parser.addHandler("season", /(?:Saison|Season)[. _-]?([0-9]{1,2})/i, { type: "integer" });
+    parser.addHandler("season", /S([0-9]{1,2})(?![0-9])/i, { type: "integer" });
+
+    // Episode
+    parser.addHandler("episode", /S[0-9]{1,2} ?E([0-9]{1,5})/i, { type: "integer" });
+    parser.addHandler("episode", /[0-9]{1,2}x([0-9]{1,5})/, { type: "integer" });
+    parser.addHandler("episode", /[ée]p(?:isode)?[. _-]?([0-9]{1,5})/i, { type: "integer" });
+
+    // Language
+    parser.addHandler("language", /\bRUS\b/i, { type: "lowercase" });
+    parser.addHandler("language", /\bUKR\b/i, { type: "lowercase" });
+    parser.addHandler("language", /\bJPN\b/i, { type: "lowercase" });
+    parser.addHandler("language", /\bENG\b/i, { type: "lowercase" });
+    parser.addHandler("language", /\bNL\b/, { type: "lowercase" });
+    parser.addHandler("language", /\bNORDiC\b/, { type: "lowercase" });
+    parser.addHandler("language", /\bViETNAM\b/, { type: "lowercase" });
+    parser.addHandler("language", /\bFLEMISH\b/, { type: "lowercase" });
+    parser.addHandler("language", /\bGERMAN\b/, { type: "lowercase" });
+    parser.addHandler("language", /\bDUBBED\b/, { type: "lowercase" });
+    parser.addHandler("language", /\b(ITA(?:LIAN)?|iT(?:A(?:LiAN)?)?)\b/, { value: "ita" });
+    parser.addHandler("language", /\bFR(?:ENCH)?\b/, { type: "lowercase" });
+    parser.addHandler("language", /\bTruefrench|VF(?:[FI])\b/i, { type: "lowercase" });
+    parser.addHandler("language", /\bVOST(?:(?:F(?:R)?)|A)?|SUBFRENCH\b/i, { type: "lowercase" });
+    parser.addHandler("language", /\bMULTi(?:Lang|-VF2)?\b/i, { type: "lowercase" });
+}

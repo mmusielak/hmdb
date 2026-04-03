@@ -13,43 +13,72 @@
  *   6. if download or network fails or the process is interrupted - attempt to remove the temporary file
  */
 
-import fs from "node:fs";
+import { createWriteStream } from "node:fs";
+import fs from "node:fs/promises";
 import path from "node:path";
 import { Readable } from "node:stream";
 import stream from "node:stream/promises";
 
 import { CACHE_FOLDER, DATASETS } from "../settings.js";
 
-const TEMP_FILEPATH = path.join(CACHE_FOLDER, "temp.imdb.tsv.gz");
+const TEMP_FILEPATH = path.join(CACHE_FOLDER, "%.imdb.tsv.gz");
+const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 export default async function () {
-    process.addListener("SIGINT", onExitHandler);
-
     for (let dataset of DATASETS) {
         let fileName = path.basename(dataset.url);
         let filePath = path.join(CACHE_FOLDER, fileName);
 
-        let isStaleOrMissing = await staleOrMissing(dataset.url, fileName, filePath);
+        try {
+            let localDate = await fs.stat(filePath).birthtime;
+            let timeSinceBirth = Date.now() - Date.parse(localDate);
 
-        if (isStaleOrMissing) {
-            await downloadFile(dataset.url, fileName, filePath);
-        } else {
-            console.info();
+            if (timeSinceBirth < SEVEN_DAYS_MS) {
+                continue;
+            } else {
+                // download
+            }
+        } catch (error) {
+            if (error.code != "ENOENT") {
+                console.error(`File system error while processing ${filename}: ${error.message}`);
+                throw error;
+            } else {
+                // download
+            }
+        }
+
+        try {
+            const response = await fetch(dataset.url);
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            const fileStream = createWriteStream(TEMP_FILEPATH);
+            const webStream = Readable.fromWeb(response.body);
+
+            await stream.pipeline(webStream, fileStream);
+            await fs.rename(TEMP_FILEPATH, filePath);
+
+            console.log(`Download Success! Saved to ${filePath}`);
+        } catch (error) {
+            console.error(`Failed to download ${dataset.url}: ${error.message}`);
+            throw error;
+        } finally {
+            try {
+                await fs.unlink(TEMP_FILEPATH);
+            } catch {}
         }
     }
-
-    process.removeListener("SIGINT", onExitHandler);
 }
 
-async function staleOrMissing(url, fileName, filePath) {
-    const staleDataTreshold = 48 * 60 * 60 * 1000; // 48 hours
-
-    if (fs.existsSync(filePath)) {
-        let localDate = fs.statSync(filePath).birthtime;
+async function checkIfFileExists(url, fileName, filePath) {
+    try {
+        let localDate = await fs.stat(filePath).birthtime;
         let timeSinceBirth = Date.now() - Date.parse(localDate);
 
-        if (timeSinceBirth < staleDataTreshold) {
-            return false; // File is fresh
+        if (timeSinceBirth < SEVEN_DAYS_MS) {
+            return true; // File is fresh
         } else {
             let res = await fetch(url, { method: "HEAD" });
 
@@ -60,36 +89,36 @@ async function staleOrMissing(url, fileName, filePath) {
                 if (remoteSize && remoteSize == localSize) {
                     console.info("File is up to date, skipping download.");
 
-                    return false;
+                    return true;
                 } else {
                     console.info("File is outdated, downloading again.");
                     console.info(`Remote date: ${remoteDate}, remote size: ${remoteSize}, local size: ${localSize}`);
 
-                    fs.unlinkSync(filePath); // Remove the outdated file
+                    // Remove the outdated file
+                    await fs.unlink(filePath);
                 }
             } else {
-                //handleNetworkError(res, null);
+                throw Error("Network error");
             }
         }
-    }
-
-    return true;
+    } catch {}
+    return false;
 }
 
-async function downloadFile(url, fileName, filePath) {
+async function downloadFile2(url, fileName, filePath) {
     let res = await fetch(url);
 
     if (res.ok) {
-        if (fs.existsSync(TEMP_FILEPATH)) {
-            fs.unlinkSync(TEMP_FILEPATH);
-        }
+        try {
+            await fs.unlink(TEMP_FILEPATH);
+        } catch {}
 
         let webStream = Readable.fromWeb(res.body);
         let fileStream = fs.createWriteStream(TEMP_FILEPATH);
 
         await stream.pipeline(webStream, fileStream);
 
-        fs.renameSync(TEMP_FILEPATH, filePath);
+        await fs.rename(TEMP_FILEPATH, filePath);
 
         let etag = res.headers.get("etag") || "unknown";
         let bytes = res.headers.get("content-length") || 0;
@@ -97,16 +126,6 @@ async function downloadFile(url, fileName, filePath) {
 
         console.info(`${fileName}: ${etag} ${bytes} bytes`);
     } else {
-        //handleNetworkError(res, null);
+        throw Error("Network error");
     }
-}
-
-function handleNetworkError(res, err) {}
-
-function onExitHandler() {
-    if (fs.existsSync(TEMP_FILEPATH)) {
-        fs.unlinkSync(TEMP_FILEPATH);
-        console.info("Temporary file removed on exit.");
-    }
-    process.exit(0);
 }

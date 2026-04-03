@@ -7,7 +7,6 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "install": "node install.js",
         "build": "node --no-warnings web/build-web.js",
         "start": "node --no-warnings index.js",
         "test": "node --no-warnings --test"

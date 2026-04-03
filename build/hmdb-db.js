@@ -59,7 +59,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 83,
-      "rotten": 90
+      "rotten": 91
     },
     "external": {
       "imdb": "tt0046672",
@@ -143,7 +143,7 @@ const db = [
       "location": "U:/# Disney/A Goofy Movie (Kevin Lima, 1995)"
     },
     "rating": {
-      "imdb": 60,
+      "imdb": 70,
       "meta": 53,
       "rotten": 64
     },
@@ -591,7 +591,7 @@ const db = [
     "local": {
       "date": "2021-08-15",
       "size": 4688539584,
-      "location": "U:/# Disney/Bambi and the Great Prince of the Forest (Brian Pimental, 2006)"
+      "location": "U:/# Disney/Bambi 2 (Brian Pimental, 2006)"
     },
     "rating": {
       "imdb": 60,
@@ -736,7 +736,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 59,
-      "rotten": 67
+      "rotten": 66
     },
     "external": {
       "imdb": "tt0066817",
@@ -968,7 +968,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 48,
-      "rotten": 37
+      "rotten": 38
     },
     "external": {
       "imdb": "tt0328880",
@@ -1197,7 +1197,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 69
+      "rotten": 70
     },
     "external": {
       "imdb": "tt3606752",
@@ -1240,7 +1240,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 48,
-      "rotten": 37
+      "rotten": 36
     },
     "external": {
       "imdb": "tt0371606",
@@ -1592,7 +1592,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": null,
-      "rotten": 100
+      "rotten": 67
     },
     "external": {
       "imdb": "tt0099472",
@@ -2118,7 +2118,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 50,
-      "rotten": 52
+      "rotten": 51
     },
     "external": {
       "imdb": "tt0299172",
@@ -2150,8 +2150,8 @@ const db = [
     ],
     "writers": [
       "Will Finn",
-      "Chris Williams",
-      "John Sanford"
+      "John Sanford",
+      "Michael LaBash"
     ]
   },
   {
@@ -2472,7 +2472,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 78,
-      "rotten": 93
+      "rotten": 91
     },
     "external": {
       "imdb": "tt0048280",
@@ -2602,13 +2602,56 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-07-04",
+      "size": 16508715150,
+      "location": "U:/# Disney/Lightyear (Angus MacLane, 2022)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 60,
+      "rotten": 74
+    },
+    "external": {
+      "imdb": "tt10298810",
+      "tmdb": 718789
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGI3ZjUyM2ItNmFjYy00NGE3LTg2OTYtMTI2MDk0MjIxNDA1XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Lightyear",
+    "originalTitle": "Lightyear",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
+    ],
+    "overview": "While spending years attempting to return home, marooned Space Ranger Buzz Lightyear encounters an army of ruthless robots commanded by Zurg who are attempting to steal the fuel source of his ship.",
+    "release": 2022,
+    "runtime": 105,
+    "actors": [
+      "Chris Evans",
+      "Keke Palmer",
+      "Peter Sohn"
+    ],
+    "directors": [
+      "Angus MacLane"
+    ],
+    "writers": [
+      "Angus MacLane",
+      "Matthew Aldrich",
+      "Jason Headley"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-15",
       "size": 4733019685,
       "location": "U:/# Disney/Lilo & Stitch (Chris Sanders, Dean DeBlois, 2002)"
     },
     "rating": {
       "imdb": 70,
-      "meta": 74,
+      "meta": 75,
       "rotten": 86
     },
     "external": {
@@ -2831,7 +2874,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 69,
-      "rotten": 75
+      "rotten": 69
     },
     "external": {
       "imdb": "tt0040580",
@@ -3468,7 +3511,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 58,
-      "rotten": 53
+      "rotten": 52
     },
     "external": {
       "imdb": "tt0095776",
@@ -3644,7 +3687,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 62,
-      "rotten": 70
+      "rotten": 71
     },
     "external": {
       "imdb": "tt0323642",
@@ -3865,7 +3908,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 64,
-      "rotten": 81
+      "rotten": 80
     },
     "external": {
       "imdb": "tt0407121",
@@ -3998,7 +4041,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 49,
-      "rotten": 45
+      "rotten": 46
     },
     "external": {
       "imdb": "tt0280030",
@@ -4585,7 +4628,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 74,
-      "rotten": 88
+      "rotten": 89
     },
     "external": {
       "imdb": "tt0041094",
@@ -5197,7 +5240,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 88,
-      "rotten": 93
+      "rotten": 92
     },
     "external": {
       "imdb": "tt0110357",
@@ -5665,7 +5708,7 @@ const db = [
     },
     "poster": "https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Nightmare Before Christmas",
-    "originalTitle": "The Nightmare Before Christmas",
+    "originalTitle": "Tim Burton's the Nightmare Before Christmas",
     "languages": [
       "English"
     ],
@@ -5935,7 +5978,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 61,
-      "rotten": 66
+      "rotten": 65
     },
     "external": {
       "imdb": "tt0057546",
@@ -6324,54 +6367,13 @@ const db = [
   {
     "local": {
       "date": "2021-08-15",
-      "size": 2904381195,
-      "location": "U:/# Disney/Toy Story That Time Forgot (Steve Purcell, 2014)"
-    },
-    "rating": {
-      "imdb": 70,
-      "meta": null,
-      "rotten": 92
-    },
-    "external": {
-      "imdb": "tt3473654",
-      "tmdb": 256835
-    },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTc2OTA1MDM4M15BMl5BanBnXkFtZTgwNjczMDk5MjE@._V1_SX300.jpg",
-    "title": "Toy Story That Time Forgot",
-    "originalTitle": "Toy Story That Time Forgot",
-    "languages": [
-      "English"
-    ],
-    "genres": [
-      "Adventure",
-      "Animation",
-      "Comedy"
-    ],
-    "overview": "The story takes place after a Christmas holiday with the regular toys finding themselves trapped in unusual territory with a group of new and delusional action figures. Together they must find their way back to their child's bedroom and to safety.",
-    "release": 2014,
-    "runtime": 22,
-    "actors": [
-      "Tom Hanks",
-      "Tim Allen",
-      "Kristen Schaal"
-    ],
-    "directors": [
-      "Steve Purcell"
-    ],
-    "writers": [
-      "Steve Purcell"
-    ]
-  },
-  {
-    "local": {
-      "date": "2021-08-15",
       "size": 4684825611,
       "location": "U:/# Disney/Treasure Planet (Ron Clements, John Musker, 2002)"
     },
     "rating": {
       "imdb": 70,
       "meta": 60,
-      "rotten": 69
+      "rotten": 68
     },
     "external": {
       "imdb": "tt0133240",
@@ -6932,7 +6934,7 @@ const db = [
     "directors": [
       "Motonobu Hori",
       "Shinji Itadaki",
-      "Kazuchika Kise"
+      "Toshiyuki Kôno"
     ],
     "writers": [
       "Shirow Masamune",
@@ -7000,7 +7002,7 @@ const db = [
     },
     "poster": "https://m.media-amazon.com/images/M/MV5BMTVmYzNkMjItMTcxZC00YTZmLWFjZWQtOTNkYzQxMWVhMTFmXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Ghost in the Shell: Arise - Border 1: Ghost Pain",
-    "originalTitle": "Ghost in the Shell: Arise - Border 1: Ghost Pain",
+    "originalTitle": "Kôkaku Kidôtai Araizu Bôdâ:1 Gôsuto Pein",
     "languages": [
       "日本語"
     ],
@@ -7043,7 +7045,7 @@ const db = [
     },
     "poster": "https://m.media-amazon.com/images/M/MV5BNjlhZmQwNTItMmQ3Zi00Mzc3LWJmZTEtMTg1Mjc2NjBmNjUwXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Ghost in the Shell: Arise - Border 2: Ghost Whispers",
-    "originalTitle": "Ghost in the Shell: Arise - Border 2: Ghost Whispers",
+    "originalTitle": "Kôkaku Kidôtai Araizu Bôdâ:2 Gôsuto Uisupâzu",
     "languages": [
       "日本語"
     ],
@@ -7086,7 +7088,7 @@ const db = [
     },
     "poster": "https://m.media-amazon.com/images/M/MV5BZTM5MGZmZjMtOWQxMC00YWVjLWE3YzEtZmY5NmM4ZTk2ZmZiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Ghost in the Shell: Arise - Border 3: Ghost Tears",
-    "originalTitle": "Ghost in the Shell: Arise - Border 3: Ghost Tears",
+    "originalTitle": "Kôkaku Kidôtai Araizu Bôdâ:3 Gôsuto Tiâzu",
     "languages": [
       "日本語"
     ],
@@ -7127,8 +7129,8 @@ const db = [
       "tmdb": 279254
     },
     "poster": "https://m.media-amazon.com/images/M/MV5BNmM0NjI4OTAtZGQxYy00NzNmLWJmZWMtM2MzMTkxZWNiNmVjXkEyXkFqcGc@._V1_SX300.jpg",
-    "title": "Ghost in the Shell: Arise - Border 4: Ghost Stands Alone",
-    "originalTitle": "Ghost in the Shell: Arise - Border 4: Ghost Stands Alone",
+    "title": "Ghost in the Shell Arise - Border 4: Ghost Stands Alone",
+    "originalTitle": "Kôkaku Kidôtai Araizu Bôdâ:4 Gôsuto Sutando Arôn",
     "languages": [
       "日本語"
     ],
@@ -7260,7 +7262,7 @@ const db = [
       "imdb": "tt0092067",
       "tmdb": 10515
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTJhNWIxNmUtYThlYy00NGNmLWE4NTItZWY5MmI4ZWNhMTNkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Castle in the Sky",
     "originalTitle": "Tenkû no shiro Rapyuta",
     "languages": [
@@ -7504,7 +7506,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 72,
-      "rotten": 96
+      "rotten": 95
     },
     "external": {
       "imdb": "tt0079833",
@@ -7679,7 +7681,7 @@ const db = [
       "imdb": "tt0108432",
       "tmdb": 21057
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGQ4NmQ0NGYtMTk0NS00YmFjLTk0MmItNDY5OGYzMzRhYjI0XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmI5Nzk4ZGMtNWY2ZS00MzBiLWFkMmMtYjI3ZjYxM2NiNzRlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Ocean Waves",
     "originalTitle": "Umi ga kikoeru",
     "languages": [
@@ -7764,7 +7766,7 @@ const db = [
       "imdb": "tt0110008",
       "tmdb": 15283
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjE3MmU3NTAtNDQ0NC00OTIyLWJiM2YtOGU5ODUzMGYyZTc0XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk2ODEzNzYtZTczMS00NmFhLWJmOTgtYmFhNzAwYTVkYmI5XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Pom Poko",
     "originalTitle": "Heisei tanuki gassen ponpoko",
     "languages": [
@@ -7846,7 +7848,7 @@ const db = [
       "imdb": "tt0104652",
       "tmdb": 11621
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMmZjOGJmOGYtYjA4Mi00ZTc5LTk1MTUtOWZlNDg2YmNmMDYzXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGNjMDM1NWEtMzI4OC00YzdlLWJmMjktNmJiYTlkNTNlODM0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Porco Rosso",
     "originalTitle": "Kurenai no buta",
     "languages": [
@@ -7880,7 +7882,7 @@ const db = [
     },
     "rating": {
       "imdb": 80,
-      "meta": 76,
+      "meta": 78,
       "rotten": 93
     },
     "external": {
@@ -7969,7 +7971,7 @@ const db = [
       "imdb": "tt0495596",
       "tmdb": 37933
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzcyNTEwMjMtN2ZlYi00YjQ0LThhYTMtMGRlMzM5MzRkNGFmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmI0OWI1OGEtM2Y5Zi00MWViLWE5ZjctMDNlNGE1OWJiZTU1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Tales from Earthsea",
     "originalTitle": "Gedo senki",
     "languages": [
@@ -8349,7 +8351,7 @@ const db = [
       "imdb": "tt0113824",
       "tmdb": 37797
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGE2NTc3Y2YtZTQ5Zi00NzZkLWIyNDUtZmZkZjQ2NWU0ZTIzXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWVlOGNlYjgtYWE4Yi00MjdiLWE1MTEtZTRmNzI1ODk5NzMzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Whisper of the Heart",
     "originalTitle": "Mimi wo sumaseba",
     "languages": [
@@ -8428,7 +8430,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 75,
-      "rotten": 75
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0363771",
@@ -8472,7 +8474,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 49
+      "rotten": 50
     },
     "external": {
       "imdb": "tt0980970",
@@ -8605,8 +8607,8 @@ const db = [
     "title": "Man of Iron",
     "originalTitle": "Czlowiek z zelaza",
     "languages": [
-      "Polski",
-      "Magyar"
+      "Magyar",
+      "Polski"
     ],
     "genres": [
       "Drama",
@@ -9573,8 +9575,8 @@ const db = [
     "title": "Cosmos",
     "originalTitle": "Cosmos",
     "languages": [
-      "Français",
       "English",
+      "Français",
       "Português"
     ],
     "genres": [
@@ -13900,9 +13902,9 @@ const db = [
     "title": "A Greyhound of a Girl",
     "originalTitle": "Mary e lo spirito di mezzanotte",
     "languages": [
+      "Italiano",
       "English",
       "Deutsch",
-      "Italiano",
       ""
     ],
     "genres": [
@@ -14068,7 +14070,7 @@ const db = [
       "imdb": "tt0094625",
       "tmdb": 149
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BM2NiMTIzZWEtM2Y2ZS00NTg1LTlhZTgtOThjMTkwNzQ4NzBlXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWUxMGRhZDQtMTBmMi00N2IxLWE5NmYtMDMyMWExODAwNWYzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Akira",
     "originalTitle": "Akira",
     "languages": [
@@ -14186,13 +14188,13 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 77
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0090633",
       "tmdb": 4978
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjQ2MzBlMzktNDExYy00YWIyLWI2OWEtNzI4N2IwYjRiZmFhXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2Q4YTcyOTItNjE3OC00MjFkLTk0YjktNmYxNGI0OTI0OTI1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "An American Tail",
     "originalTitle": "An American Tail",
     "languages": [
@@ -14244,7 +14246,7 @@ const db = [
     "genres": [
       "Adventure",
       "Animation",
-      "Family"
+      "Comedy"
     ],
     "overview": "Some time after the Mousekewitz's have settled in America, they find that they are still having problems with the threat of cats. That makes them eager to try another home out in the west, where they are promised that mice and cats live in peace. Unfortunately, the one making this claim is an oily con artist named Cat R. Waul who is intent on his own sinister plan. Unaware of this, the Mousekewitz's begin their journey west, while their true cat friend, Tiger, follows intent on following his girlfriend gone in the same direction.",
     "release": 1991,
@@ -15134,7 +15136,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 49,
-      "rotten": 59
+      "rotten": 58
     },
     "external": {
       "imdb": "tt3469046",
@@ -15178,7 +15180,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 52,
-      "rotten": 56
+      "rotten": 55
     },
     "external": {
       "imdb": "tt7510222",
@@ -15231,8 +15233,8 @@ const db = [
     "title": "Dolittle",
     "originalTitle": "Dolittle",
     "languages": [
-      "Français",
-      "English"
+      "English",
+      "Français"
     ],
     "genres": [
       "Adventure",
@@ -15483,7 +15485,7 @@ const db = [
       "imdb": "tt2953050",
       "tmdb": 568124
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTY1YmU1ZTItMzNjZC00ZGU0LTk0MTEtZDgzN2QwOWVlNjZhXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGEyNzk2M2MtNjBhZS00MzYwLWI0Y2YtYjc5ZWE2MjM0YWE5XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Encanto",
     "originalTitle": "Encanto",
     "languages": [
@@ -16308,8 +16310,8 @@ const db = [
     "title": "Harvie Krumpet",
     "originalTitle": "Harvie Krumpet",
     "languages": [
-      "English",
-      "Español"
+      "Español",
+      "English"
     ],
     "genres": [
       "Animation",
@@ -16386,7 +16388,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": null,
-      "rotten": 89
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0070165",
@@ -16478,7 +16480,7 @@ const db = [
       "imdb": "tt0443536",
       "tmdb": 10982
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTE4ZDU2MzYtM2Y0Yy00YWI5LTlhM2EtZjJlYjBmMzI3NWVmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjQ2ODc0MjI5M15BMl5BanBnXkFtZTYwMzMxMTc3._V1_SX300.jpg",
     "title": "Hoodwinked",
     "originalTitle": "Hoodwinked!",
     "languages": [
@@ -16592,6 +16594,49 @@ const db = [
       "Dr. Seuss",
       "Jeffrey Price",
       "Peter S. Seaman"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 5203420467,
+      "location": "U:/How to Train Your Dragon (Dean DeBlois, 2025)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 61,
+      "rotten": 76
+    },
+    "external": {
+      "imdb": "tt26743210",
+      "tmdb": 1087192
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "How to Train Your Dragon",
+    "originalTitle": "How to Train Your Dragon",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "overview": "As an ancient threat endangers both Vikings and dragons alike on the isle of Berk, the friendship between Hiccup, an inventive Viking, and Toothless, a Night Fury dragon, becomes the key to both species forging a new future together.",
+    "release": 2025,
+    "runtime": 125,
+    "actors": [
+      "Mason Thames",
+      "Nico Parker",
+      "Gerard Butler"
+    ],
+    "directors": [
+      "Dean DeBlois"
+    ],
+    "writers": [
+      "Dean DeBlois",
+      "Cressida Cowell",
+      "William Davies"
     ]
   },
   {
@@ -16819,7 +16864,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 61,
-      "rotten": 77
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0268380",
@@ -17122,7 +17167,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 50
+      "rotten": 51
     },
     "external": {
       "imdb": "tt11152168",
@@ -17171,7 +17216,7 @@ const db = [
       "imdb": "tt0465502",
       "tmdb": 14248
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzcwMjBjZDItMzgwMC00OTNlLTk5NzUtMzY5MzMwNWQ0NjQ4XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDYwNjM1ODkxOV5BMl5BanBnXkFtZTcwMTQyMzI5MQ@@._V1_SX300.jpg",
     "title": "Igor",
     "originalTitle": "Igor",
     "languages": [
@@ -17295,7 +17340,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 73,
-      "rotten": 91
+      "rotten": 90
     },
     "external": {
       "imdb": "tt22022452",
@@ -17687,7 +17732,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 61,
-      "rotten": 65
+      "rotten": 64
     },
     "external": {
       "imdb": "tt1640718",
@@ -18000,7 +18045,7 @@ const db = [
       "imdb": "tt0070544",
       "tmdb": 16306
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjUyMzZhOTgtMzE4YS00MWUxLTlhYmYtMzlkYTc1NmUxZDA0XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDRkN2MwZmEtZjEwYS00NGY3LTkyZTItNzYyNWIzNTFlOTRiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Fantastic Planet",
     "originalTitle": "La planète sauvage",
     "languages": [
@@ -18154,6 +18199,49 @@ const db = [
     "writers": [
       "Yoru Sumino",
       "Tomoko Yoshida"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 20124321280,
+      "location": "U:/Lilo & Stitch (Dean Fleischer Camp, 2025)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 53,
+      "rotten": 72
+    },
+    "external": {
+      "imdb": "tt11655566",
+      "tmdb": 552524
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmFmZjM1ZTEtYzQ5ZS00MTRmLTkzMDktYWMxNTg2NGE3YjY4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Lilo & Stitch",
+    "originalTitle": "Lilo & Stitch",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "overview": "A lonely Hawaiian girl befriends a runaway alien, helping to mend her fragmented family.",
+    "release": 2025,
+    "runtime": 108,
+    "actors": [
+      "Maia Kealoha",
+      "Sydney Agudong",
+      "Chris Sanders"
+    ],
+    "directors": [
+      "Dean Fleischer Camp"
+    ],
+    "writers": [
+      "Chris Kekaniokalani Bright",
+      "Mike Van Waes",
+      "Chris Sanders"
     ]
   },
   {
@@ -18585,7 +18673,7 @@ const db = [
     "runtime": 103,
     "actors": [
       "Hana Sugisaki",
-      "Ryunosuke Kamiki",
+      "Ryûnosuke Kamiki",
       "Yûki Amami"
     ],
     "directors": [
@@ -18777,7 +18865,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 56,
-      "rotten": 72
+      "rotten": 73
     },
     "external": {
       "imdb": "tt6495056",
@@ -18803,8 +18891,7 @@ const db = [
       "Elizabeth Banks"
     ],
     "directors": [
-      "Benjamin Renner",
-      "Guylo Homsy"
+      "Benjamin Renner"
     ],
     "writers": [
       "Mike White",
@@ -19023,6 +19110,49 @@ const db = [
     ],
     "writers": [
       "Dash Shaw"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-07-03",
+      "size": 13079377383,
+      "location": "U:/Ne Zha (Yu Yang, 2019)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 56,
+      "rotten": 88
+    },
+    "external": {
+      "imdb": "tt10627720",
+      "tmdb": 615453
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmRlODVlZDAtNzcxOC00N2U2LWE4MmQtZTYzZjg3Yjg1MzUxXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Ne Zha",
+    "originalTitle": "Nezha: Mo tong jiang shi",
+    "languages": [
+      "普通话"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
+    ],
+    "overview": "The Primus extracts a Mixed Yuan Bead into a spirit bead and a demon bead. The spirit bead can be reincarnated in human to help King Zhou establish a new dynasty, the demon bead will create a devil and harm human. Ne Zha is the one who should be spirit bead hero but he becomes a devil incarnate, because the spirit bead and the demon bead is switched.",
+    "release": 2019,
+    "runtime": 110,
+    "actors": [
+      "Yanting Lü",
+      "Joseph",
+      "Mo Han"
+    ],
+    "directors": [
+      "Yu Yang"
+    ],
+    "writers": [
+      "Yu Yang",
+      "Yunyun Wei",
+      "Xixing Lu"
     ]
   },
   {
@@ -19583,9 +19713,9 @@ const db = [
       "Satoshi Kon"
     ],
     "writers": [
-      "Yoshikazu Takeuchi",
+      "Sadayuki Murai",
       "Satoshi Kon",
-      "Sadayuki Murai"
+      "Yoshikazu Takeuchi"
     ]
   },
   {
@@ -19607,9 +19737,9 @@ const db = [
     "title": "Persepolis",
     "originalTitle": "Persepolis",
     "languages": [
+      "Deutsch",
       "Français",
-      "فارسی",
-      "Deutsch"
+      "فارسی"
     ],
     "genres": [
       "Animation",
@@ -19857,7 +19987,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 86
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0448694",
@@ -20415,6 +20545,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 1465387545,
+      "location": "U:/Sketch (Seth Worley, 2024)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 78,
+      "rotten": 97
+    },
+    "external": {
+      "imdb": "tt26238710",
+      "tmdb": 1319969
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk4OTkzNGEtYWU1Yy00ZGM5LWE0ZDMtYzY3NjU1NjIwOGY2XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Sketch",
+    "originalTitle": "Sketch",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "overview": "When a young girl's sketchbook falls into a strange pond, her drawings come to life-chaotic, real and on the loose. As the town descends into chaos, her family must reunite and stop the monsters they never meant to unleash.",
+    "release": 2024,
+    "runtime": 92,
+    "actors": [
+      "Tony Hale",
+      "D'Arcy Carden",
+      "Bianca Belle"
+    ],
+    "directors": [
+      "Seth Worley"
+    ],
+    "writers": [
+      "Seth Worley"
+    ]
+  },
+  {
+    "local": {
       "date": "2023-01-17",
       "size": 5592835651,
       "location": "U:/Slumberland (Francis Lawrence, 2022)"
@@ -20462,7 +20633,7 @@ const db = [
       "location": "U:/Snow White (Marc Webb, 2025)"
     },
     "rating": {
-      "imdb": 10,
+      "imdb": 20,
       "meta": 50,
       "rotten": null
     },
@@ -20893,7 +21064,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 31,
-      "rotten": 21
+      "rotten": 20
     },
     "external": {
       "imdb": "tt1291150",
@@ -21061,6 +21232,92 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 1948750730,
+      "location": "U:/The Bad Guys (Pierre Perifel, 2022)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 64,
+      "rotten": 88
+    },
+    "external": {
+      "imdb": "tt8115900",
+      "tmdb": 629542
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BODNlYmQzY2MtZWZiZS00Y2I0LTkwNjItNjg3MjY5YTFkNWI3XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Bad Guys",
+    "originalTitle": "The Bad Guys",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy"
+    ],
+    "overview": "After a lifetime of legendary heists, notorious criminals Mr. Wolf, Mr. Snake, Mr. Piranha, Mr. Shark and Ms. Tarantula are finally caught. To avoid a prison sentence, the animal outlaws must pull off their most challenging con yet -- becoming model citizens. Under the tutelage of their mentor, Professor Marmalade, the dubious gang sets out to fool the world that they're turning good.",
+    "release": 2022,
+    "runtime": 100,
+    "actors": [
+      "Sam Rockwell",
+      "Marc Maron",
+      "Awkwafina"
+    ],
+    "directors": [
+      "Pierre Perifel"
+    ],
+    "writers": [
+      "Aaron Blabey",
+      "Etan Cohen"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1861156609,
+      "location": "U:/The Bad Guys 2 (JP Sans, Pierre Perifel, 2025)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 64,
+      "rotten": 88
+    },
+    "external": {
+      "imdb": "tt30017619",
+      "tmdb": 1175942
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2YwODhmODctMjE2OS00Y2EyLWEyZTEtOGU3ODk5MGIzYmU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Bad Guys 2",
+    "originalTitle": "The Bad Guys 2",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
+    ],
+    "overview": "The Bad Guys are struggling to find trust and acceptance in their newly minted lives as Good Guys, when they are pulled out of retirement and forced to do \"one last job\" by an all-female squad of criminals.",
+    "release": 2025,
+    "runtime": 104,
+    "actors": [
+      "Joey Naber",
+      "Omid Djalili",
+      "Monia Ayachi"
+    ],
+    "directors": [
+      "Pierre Perifel",
+      "JP Sans"
+    ],
+    "writers": [
+      "Yoni Brenner",
+      "Etan Cohen",
+      "Aaron Blabey"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-15",
       "size": 789884835,
       "location": "U:/The Book of Life (Jorge R. Gutiérrez, 2014)"
@@ -21068,7 +21325,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 67,
-      "rotten": 83
+      "rotten": 82
     },
     "external": {
       "imdb": "tt2262227",
@@ -21248,7 +21505,8 @@ const db = [
     "title": "The Call of the Wild",
     "originalTitle": "The Call of the Wild",
     "languages": [
-      "English"
+      "English",
+      "Français"
     ],
     "genres": [
       "Adventure",
@@ -21496,7 +21754,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 31,
-      "rotten": 37
+      "rotten": 36
     },
     "external": {
       "imdb": "tt5779228",
@@ -21539,7 +21797,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 84
+      "rotten": 86
     },
     "external": {
       "imdb": "tt0808506",
@@ -21630,7 +21888,7 @@ const db = [
       "imdb": "tt13634480",
       "tmdb": 774825
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMmE0N2YwZGItNDk5Mi00ZWM4LTkyMWUtNGNmYjk5YzhiMjVlXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjhmNDg4NTQtOWNjYi00NjQ0LTgwNzItZDk5Nzk1ZmZlOWEyXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Ice Age Adventures of Buck Wild",
     "originalTitle": "The Ice Age Adventures of Buck Wild",
     "languages": [
@@ -21753,7 +22011,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 76
+      "rotten": 75
     },
     "external": {
       "imdb": "tt0084237",
@@ -21795,8 +22053,8 @@ const db = [
     },
     "rating": {
       "imdb": 50,
-      "meta": 68,
-      "rotten": 77
+      "meta": 67,
+      "rotten": 75
     },
     "external": {
       "imdb": "tt8866456",
@@ -21826,6 +22084,49 @@ const db = [
     ],
     "writers": [
       "Isaiah Saxon"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-06-27",
+      "size": 6694066699,
+      "location": "U:/The Legend of Tarzan (David Yates, 2016)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 44,
+      "rotten": 35
+    },
+    "external": {
+      "imdb": "tt0918940",
+      "tmdb": 258489
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@._V1_SX300.jpg",
+    "title": "The Legend of Tarzan",
+    "originalTitle": "The Legend of Tarzan",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "overview": "Following his parents' death in Africa, John Clayton has been be raised by an ape, was known by the name Tarzan, but eventually left Africa and for his parents' home in England, along with the woman he fell in love with and married, Jane Porter. He is asked by Belgian King Leopold to go to Africa to see what he has done there to help the country. Initially, he refuses. But an American, George Washington Williams, wants him to accept so he can accompany him. He says that Leopold might be committing all sorts of atrocities to achieve his goal, like slavery. Clayton agrees and his wife insists that she accompany him because she misses Africa. When they arrive, a man named Rom, who works for Leopold, attacks their village and captures Tarzan and Jane. With Washington's help he escapes and sets out to rescue Jane by going across the jungle. Washington joins him despite being told that he might not make it.",
+    "release": 2016,
+    "runtime": 110,
+    "actors": [
+      "Alexander Skarsgård",
+      "Rory J Saper",
+      "Christian Stevens"
+    ],
+    "directors": [
+      "David Yates"
+    ],
+    "writers": [
+      "Adam Cozad",
+      "Craig Brewer",
+      "Edgar Rice Burroughs"
     ]
   },
   {
@@ -22271,7 +22572,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 61,
-      "rotten": 71
+      "rotten": 70
     },
     "external": {
       "imdb": "tt2709768",
@@ -22443,7 +22744,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 58,
-      "rotten": 81
+      "rotten": 80
     },
     "external": {
       "imdb": "tt3885422",
@@ -22656,7 +22957,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 85,
-      "rotten": 96
+      "rotten": 97
     },
     "external": {
       "imdb": "tt29623480",
@@ -22669,8 +22970,9 @@ const db = [
       "English"
     ],
     "genres": [
+      "Adventure",
       "Animation",
-      "Sci-Fi"
+      "Family"
     ],
     "overview": "After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
     "release": 2024,
@@ -23175,7 +23477,7 @@ const db = [
       "imdb": "tt0090248",
       "tmdb": 9463
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjIwOTNmZGYtYTU4Mi00YmNkLWE4NDAtMDQxOGRiN2FiMzM1XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDVlYmU5N2MtYTQxMC00ODk0LThiZTYtZTFkODMwMzFhODIzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Vampire Hunter D",
     "originalTitle": "Kyûketsuki hantâ D",
     "languages": [
@@ -23886,7 +24188,7 @@ const db = [
       "location": "U:/Wonka (Paul King, 2023)"
     },
     "rating": {
-      "imdb": 70,
+      "imdb": 60,
       "meta": 66,
       "rotten": 82
     },
@@ -24117,7 +24419,7 @@ const db = [
       "imdb": "tt0071411",
       "tmdb": 9764
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjgyZTIwOWYtZDhiYi00YjIzLThlNmMtMmQ0OThjYjg2NjRiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzIxZDRmMzctODNiYi00MmE3LTlhZTMtODBiNWYwMTZiNDRiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Dersu Uzala",
     "originalTitle": "Dersu Uzala",
     "languages": [
@@ -24160,7 +24462,7 @@ const db = [
       "imdb": "tt0065649",
       "tmdb": 33205
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNmUzMTk0N2YtMzc3ZC00NjAwLWFiOTgtZWFkOWJlODBmYTlkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2I1ZjQxZTgtNzk4My00MjRhLTlmYTUtYTM5YjQzMTQyMjZjXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Dodes'ka-den",
     "originalTitle": "Dodesukaden",
     "languages": [
@@ -24201,7 +24503,7 @@ const db = [
       "imdb": "tt0100998",
       "tmdb": 12516
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjQ2NDhkZDMtNTdlMi00MDNmLWI1YzItNDZkMzA4M2YxODU4XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDkwYmVkNTgtMGYyOC00NTQzLTkyNmMtODcxM2RmZDg1MTA4XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Dreams",
     "originalTitle": "Yume",
     "languages": [
@@ -24281,7 +24583,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 90,
-      "rotten": 96
+      "rotten": 97
     },
     "external": {
       "imdb": "tt0057565",
@@ -24412,7 +24714,7 @@ const db = [
       "imdb": "tt0080979",
       "tmdb": 11953
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTZmMDQwZjQtY2Y0Yy00ZWVlLWFlY2QtNmVjZTRlMTFjMzc3XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmJlMTQwZmMtNGRhMy00MjgzLTliNDYtZTliYjIxY2I0NTA4XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Kagemusha: The Shadow Warrior",
     "originalTitle": "Kagemusha",
     "languages": [
@@ -24621,7 +24923,7 @@ const db = [
       "imdb": "tt0042876",
       "tmdb": 548
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjEzMzA4NDE2OF5BMl5BanBnXkFtZTcwNTc5MDI2NQ@@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDlkYjViMDAtYjkxNy00ZDk1LWE5MmUtNDc4NDU3ZWJmOTYzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Rashomon",
     "originalTitle": "Rashômon",
     "languages": [
@@ -25572,7 +25874,7 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": null,
+      "meta": 66,
       "rotten": 83
     },
     "external": {
@@ -25658,7 +25960,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 79,
-      "rotten": 92
+      "rotten": 90
     },
     "external": {
       "imdb": "tt0074512",
@@ -25834,7 +26136,7 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": null,
+      "meta": 52,
       "rotten": 54
     },
     "external": {
@@ -26258,7 +26560,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 100,
-      "rotten": 98
+      "rotten": 99
     },
     "external": {
       "imdb": "tt0047396",
@@ -26343,7 +26645,7 @@ const db = [
     },
     "rating": {
       "imdb": 50,
-      "meta": null,
+      "meta": 69,
       "rotten": 69
     },
     "external": {
@@ -26514,7 +26816,7 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": null,
+      "meta": 67,
       "rotten": 86
     },
     "external": {
@@ -26891,8 +27193,7 @@ const db = [
     ],
     "writers": [
       "Daphne Du Maurier",
-      "Evan Hunter",
-      "Jeanne Saintenoy"
+      "Evan Hunter"
     ]
   },
   {
@@ -27082,7 +27383,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 76,
-      "rotten": 88
+      "rotten": 89
     },
     "external": {
       "imdb": "tt0049470",
@@ -27855,7 +28156,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 93,
-      "rotten": 93
+      "rotten": 92
     },
     "external": {
       "imdb": "tt0069293",
@@ -29231,14 +29532,14 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": null,
-      "rotten": 64
+      "meta": 57,
+      "rotten": 63
     },
     "external": {
       "imdb": "tt0107426",
       "tmdb": 1689
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjE4NGViMjktZWNlYS00ZjFiLTgxNTMtYjM3YTMzM2I2NDBlXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTBmMzk1ZDQtNzRlZS00ZWYyLTlmNjYtNDMxMDIzMWJjNjg1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Little Buddha",
     "originalTitle": "Little Buddha",
     "languages": [
@@ -33953,7 +34254,7 @@ const db = [
       "imdb": "tt0038675",
       "tmdb": 30734
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZWU0YWExNTEtMTIzMC00MzMxLWJiMTAtZTU5ZmYyZDYwMjAwXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODVjZjQ0OTUtNGJiNC00N2QyLWFmYmUtNDAxOTVmMDg4MTkzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Crisis",
     "originalTitle": "Kris",
     "languages": [
@@ -35525,7 +35826,7 @@ const db = [
     },
     "rating": {
       "imdb": 70,
-      "meta": null,
+      "meta": 96,
       "rotten": 95
     },
     "external": {
@@ -35781,7 +36082,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": null,
-      "rotten": 64
+      "rotten": 67
     },
     "external": {
       "imdb": "tt0093349",
@@ -35867,7 +36168,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 97,
-      "rotten": 80
+      "rotten": 81
     },
     "external": {
       "imdb": "tt0054177",
@@ -36702,7 +37003,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 52,
-      "rotten": 48
+      "rotten": 49
     },
     "external": {
       "imdb": "tt0072732",
@@ -37501,8 +37802,7 @@ const db = [
     ],
     "writers": [
       "James R. Webb",
-      "Gerald Devriès",
-      "Christian Dura"
+      "John Gay"
     ]
   },
   {
@@ -39742,7 +40042,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 75,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt0056197",
@@ -40071,8 +40371,7 @@ const db = [
     ],
     "writers": [
       "Frank S. Nugent",
-      "Alan Le May",
-      "Charles Dorat"
+      "Alan Le May"
     ]
   },
   {
@@ -40769,7 +41068,7 @@ const db = [
       "imdb": "tt0065126",
       "tmdb": 17529
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTEyZGVlY2QtNGI5Ni00ZTEzLWJlMzYtYTc4YjdiMjJiOTBhXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDM0NjllNDEtYjIzZS00MDZjLWE1NzYtYWEwNGM3NjEwNmVmXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "True Grit",
     "originalTitle": "True Grit",
     "languages": [
@@ -41382,7 +41681,7 @@ const db = [
     },
     "rating": {
       "imdb": 70,
-      "meta": null,
+      "meta": 83,
       "rotten": 82
     },
     "external": {
@@ -41666,7 +41965,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 63,
-      "rotten": 70
+      "rotten": 69
     },
     "external": {
       "imdb": "tt0168629",
@@ -41875,7 +42174,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 81,
-      "rotten": 80
+      "rotten": 79
     },
     "external": {
       "imdb": "tt1527186",
@@ -41915,7 +42214,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 64,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt1937390",
@@ -43256,7 +43555,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 73,
-      "rotten": 75
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0101540",
@@ -43439,8 +43738,8 @@ const db = [
     "originalTitle": "Killers of the Flower Moon",
     "languages": [
       "English",
-      "Français",
-      "Latin"
+      "Latin",
+      "Français"
     ],
     "genres": [
       "Crime",
@@ -43473,7 +43772,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 74,
-      "rotten": 74
+      "rotten": 75
     },
     "external": {
       "imdb": "tt0119485",
@@ -44452,7 +44751,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 96,
-      "rotten": 91
+      "rotten": 92
     },
     "external": {
       "imdb": "tt0063462",
@@ -47250,7 +47549,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 75
+      "rotten": 74
     },
     "external": {
       "imdb": "tt0059170",
@@ -47545,8 +47844,8 @@ const db = [
     "title": "Pandora Peaks",
     "originalTitle": "Pandora Peaks",
     "languages": [
-      "English",
-      "Deutsch"
+      "Deutsch",
+      "English"
     ],
     "genres": [
       "Documentary"
@@ -49259,7 +49558,7 @@ const db = [
       "imdb": "tt0056193",
       "tmdb": 802
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZWViYzBiNDgtNmUyZC00MDIxLTg1ZmQtNjNkZjRkZjcwZmEzXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNmY2ZTEwZTAtOThkZS00MzkxLTk3MDUtOTJiMTgzOGI1MzdjXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Lolita",
     "originalTitle": "Lolita",
     "languages": [
@@ -49340,7 +49639,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 87,
-      "rotten": 94
+      "rotten": 93
     },
     "external": {
       "imdb": "tt0054331",
@@ -49466,7 +49765,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 68,
-      "rotten": 83
+      "rotten": 84
     },
     "external": {
       "imdb": "tt0081505",
@@ -49893,7 +50192,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 32
+      "rotten": 35
     },
     "external": {
       "imdb": "tt0099731",
@@ -50446,7 +50745,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": null,
-      "rotten": 74
+      "rotten": 77
     },
     "external": {
       "imdb": "tt0083946",
@@ -51139,7 +51438,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 50
+      "rotten": 51
     },
     "external": {
       "imdb": "tt1233219",
@@ -52859,7 +53158,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 54,
-      "rotten": 51
+      "rotten": 52
     },
     "external": {
       "imdb": "tt0378947",
@@ -53843,7 +54142,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 45
+      "rotten": 46
     },
     "external": {
       "imdb": "tt1182350",
@@ -53960,7 +54259,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": null,
-      "rotten": 84
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0103767",
@@ -54944,7 +55243,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 65,
-      "rotten": 76
+      "rotten": 75
     },
     "external": {
       "imdb": "tt0770802",
@@ -55235,7 +55534,7 @@ const db = [
       "imdb": "tt0050086",
       "tmdb": 14168
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjQ2OTJmNDEtOGViNi00ZjY3LTlkZDItOWQ2MzZhZTMwMWM4XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDA5NDQwMDUtZjFmNi00NGQ2LTllOGUtMjQ3Y2IxZTUyOWJmXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "3:10 to Yuma",
     "originalTitle": "3:10 to Yuma",
     "languages": [
@@ -55313,7 +55612,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 55,
-      "rotten": 56
+      "rotten": 58
     },
     "external": {
       "imdb": "tt0090567",
@@ -58479,7 +58778,7 @@ const db = [
       "imdb": "tt0021749",
       "tmdb": 901
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BM2U4NjgzODUtODkyOC00YTE2LTlhNTItYzFlYmM1NTEzZDA2XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmMwZDIyZWUtODVhYS00MDRmLTg0N2ItMzU5MGZhN2IxNmZjXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "City Lights",
     "originalTitle": "City Lights",
     "languages": [
@@ -58648,7 +58947,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 41,
-      "rotten": 72
+      "rotten": 73
     },
     "external": {
       "imdb": "tt0088930",
@@ -59204,7 +59503,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 89,
-      "rotten": 93
+      "rotten": 94
     },
     "external": {
       "imdb": "tt0073582",
@@ -59830,7 +60129,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 71,
-      "rotten": 94
+      "rotten": 96
     },
     "external": {
       "imdb": "tt0021814",
@@ -60960,7 +61259,7 @@ const db = [
       "imdb": "tt0113077",
       "tmdb": 26824
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BODYyNjQ0ZWUtZDUwYS00ZDkxLTk0ZTAtMmIzNWM3MjA4MjVhXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2UxNGE2MjUtM2I3OS00ZjFkLWJlNTUtNGU1YmUwY2I1ZWZkXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Flamenco",
     "originalTitle": "Flamenco",
     "languages": [
@@ -61540,6 +61839,48 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-07-17",
+      "size": 1224092066,
+      "location": "V:/Girlfriends (Claudia Weill, 1978)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": null,
+      "rotten": 93
+    },
+    "external": {
+      "imdb": "tt0077613",
+      "tmdb": 111469
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGM4MDU4ZjYtMWVmMC00ZjM2LTllN2MtYWFhNTMwY2RkZWQ4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Girlfriends",
+    "originalTitle": "Girlfriends",
+    "languages": [
+      "English",
+      "Italiano"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "overview": "In New York City, Susan Weinblatt and Anne Munroe are longtime roommates and friends. Susan is a struggling photographer who wants to get out of the wedding and bar mitzvah racket, those jobs which she primarily gets through her friend, Rabbi Gold, to selling the photographs she wants to take, but she realizes that she has to pay the rent. Anne is an aspiring poet and academic who looks to Susan as her primary guidance. As they move into a new apartment, Anne drops the news that she will not be moving in as she is getting married to her boyfriend, Martin. This news is bittersweet for Susan who is somewhat happy for her friend, but isn't sure if she likes all that Martin now represents to her. Both Susan and Anne will have to make professional and personal adjustments to their new situations, especially in what it means for not having the other as a constant in each their lives. While Anne has a \"Martin\", Susan has no one currently to replace all that Anne has been in her life. So Susan goes through a series of new professional and personal relationships all in trying to find her way, while the two of them have to decide how and if to maintain their friendship in light of all these changes.",
+    "release": 1978,
+    "runtime": 88,
+    "actors": [
+      "Melanie Mayron",
+      "Eli Wallach",
+      "Adam Cohen"
+    ],
+    "directors": [
+      "Claudia Weill"
+    ],
+    "writers": [
+      "Claudia Weill",
+      "Vicki Polon"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-17",
       "size": 3512216572,
       "location": "V:/Godzilla vs. the Sea Monster (Jun Fukuda, 1966)"
@@ -61715,7 +62056,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 72,
-      "rotten": 91
+      "rotten": 92
     },
     "external": {
       "imdb": "tt0060472",
@@ -62231,7 +62572,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 89,
-      "rotten": 95
+      "rotten": 94
     },
     "external": {
       "imdb": "tt0044706",
@@ -64863,8 +65204,8 @@ const db = [
       "Anthony Mann"
     ],
     "writers": [
-      "Will C. Brown",
-      "Reginald Rose"
+      "Reginald Rose",
+      "Will C. Brown"
     ]
   },
   {
@@ -66212,7 +66553,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 75,
-      "rotten": 88
+      "rotten": 87
     },
     "external": {
       "imdb": "tt0039661",
@@ -66592,7 +66933,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 75,
-      "rotten": 86
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0087843",
@@ -66691,7 +67032,7 @@ const db = [
       "imdb": "tt0048452",
       "tmdb": 48035
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTVjOGExYjItYzBhMS00N2I3LWI3Y2MtNmRlMzZiNTJhMTcyXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjg1ZmI4YTctOGY2MS00ZTdkLWFkMGEtZTM5ZWRjYjMxODdiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Ordet",
     "originalTitle": "Ordet",
     "languages": [
@@ -66976,8 +67317,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-17",
-      "size": 20667733019,
+      "date": "2025-07-24",
+      "size": 50666805502,
       "location": "V:/Papillon (Franklin J. Schaffner, 1973)"
     },
     "rating": {
@@ -67362,7 +67703,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": null,
-      "rotten": 73
+      "rotten": 71
     },
     "external": {
       "imdb": "tt0059792",
@@ -67412,7 +67753,7 @@ const db = [
       "imdb": "tt0062136",
       "tmdb": 10227
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDA4NTU0YzItNjc0MS00ODE2LWE1MDYtMWY3ZTk3MWE2N2M5XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTlhOWQ3NjgtZTQ2OC00ODY1LThmMjktOTE1YWU1ZGFmNWU1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Playtime",
     "originalTitle": "Playtime",
     "languages": [
@@ -67708,7 +68049,7 @@ const db = [
       "imdb": "tt0048990",
       "tmdb": 17591
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzY0MmU2YjYtMWU4Ni00YmFlLWI0OGItYjAxODQwZmQzMDBiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTc5OTlhYWQtMzU3Yy00YzI2LThiNWYtODNiMDVlZjRjNjA1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Pursuit of the Graf Spee",
     "originalTitle": "The Battle of the River Plate",
     "languages": [
@@ -68304,7 +68645,7 @@ const db = [
       "imdb": "tt0023427",
       "tmdb": 877
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3ZTIwYWUtNDcxOS00MTA2LTg0MTAtZmViZTMxMGNhMjljXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWY2ZWI2NTAtYTkyMy00N2I2LTljODgtYTRlYmVlMTI0NjM0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Scarface",
     "originalTitle": "Scarface",
     "languages": [
@@ -69017,7 +69358,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 41,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt0075223",
@@ -69483,7 +69824,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": null,
-      "rotten": 75
+      "rotten": 78
     },
     "external": {
       "imdb": "tt0070959",
@@ -70579,8 +70920,8 @@ const db = [
     "title": "The African Queen",
     "originalTitle": "The African Queen",
     "languages": [
-      "English",
       "Deutsch",
+      "English",
       "Kiswahili"
     ],
     "genres": [
@@ -70828,7 +71169,7 @@ const db = [
       "imdb": "tt0048990",
       "tmdb": 17591
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzY0MmU2YjYtMWU4Ni00YmFlLWI0OGItYjAxODQwZmQzMDBiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTc5OTlhYWQtMzU3Yy00YzI2LThiNWYtODNiMDVlZjRjNjA1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Pursuit of the Graf Spee",
     "originalTitle": "The Battle of the River Plate",
     "languages": [
@@ -70867,7 +71208,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": null,
-      "rotten": 94
+      "rotten": 95
     },
     "external": {
       "imdb": "tt0045555",
@@ -71805,14 +72146,14 @@ const db = [
     },
     "rating": {
       "imdb": 80,
-      "meta": null,
+      "meta": 76,
       "rotten": 96
     },
     "external": {
       "imdb": "tt0050634",
       "tmdb": 38360
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTVlNzJjY2QtZjM0Zi00OWIwLTlkMWEtZmU0ODliODk4OWZmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjVmNTllYjUtYTc2MS00OTZhLTllMWEtOWYzMGQ2YmYzMzgyXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Cranes Are Flying",
     "originalTitle": "Letyat zhuravli",
     "languages": [
@@ -77219,7 +77560,7 @@ const db = [
       "imdb": "tt0039926",
       "tmdb": 27448
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmZiMDU0YjQtN2FhMC00ZDA4LWFiYTktYTg1Njc5OTFmMjRkXkEyXkFqcGdeQXVyMzg1ODEwNQ@@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWU0YTY2MjYtMDFhZC00ZjY1LWFmZjItN2UzNDcwYTdkODBhXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Two Mrs. Carrolls",
     "originalTitle": "The Two Mrs. Carrolls",
     "languages": [
@@ -77342,7 +77683,7 @@ const db = [
       "imdb": "tt0059894",
       "tmdb": 26508
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZTYxZDYyMjUtZTQ1OS00MjY2LWFlNmEtMDAyMWZmMzU2MmYzXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGYzN2ViZTMtOTQwNS00MjFmLWE5YzYtYzgxN2MxNTY1ZTM0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The War Game",
     "originalTitle": "The War Game",
     "languages": [
@@ -77356,8 +77697,8 @@ const db = [
     "release": 1966,
     "runtime": 48,
     "actors": [
+      "Dick Graham",
       "Michael Aspel",
-      "Peter Graham",
       "Dave Baldwin"
     ],
     "directors": [
@@ -77491,7 +77832,8 @@ const db = [
     ],
     "directors": [
       "Victor Fleming",
-      "King Vidor"
+      "George Cukor",
+      "Norman Taurog"
     ],
     "writers": [
       "Noel Langley",
@@ -77796,7 +78138,7 @@ const db = [
       "location": "V:/Threads (Mick Jackson, 1984)"
     },
     "rating": {
-      "imdb": 80,
+      "imdb": 70,
       "meta": 92,
       "rotten": 100
     },
@@ -78224,7 +78566,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 99,
-      "rotten": 97
+      "rotten": 96
     },
     "external": {
       "imdb": "tt0052311",
@@ -78396,7 +78738,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": null,
-      "rotten": 90
+      "rotten": 89
     },
     "external": {
       "imdb": "tt0023622",
@@ -79115,7 +79457,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 73,
-      "rotten": 89
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0069495",
@@ -79197,7 +79539,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 67,
-      "rotten": 92
+      "rotten": 90
     },
     "external": {
       "imdb": "tt0067992",
@@ -79428,7 +79770,7 @@ const db = [
       "imdb": "tt0049966",
       "tmdb": 69605
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjNkMTEyNGEtMjgwMi00Y2NmLTljZTAtM2EwNjQ2MjcwOWZlXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTQzZmYwNjgtZGE2OS00YzcxLTkxOTQtNjZkZmY2Y2EwZThlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Written on the Wind",
     "originalTitle": "Written on the Wind",
     "languages": [
@@ -80171,7 +80513,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 76
+      "rotten": 75
     },
     "external": {
       "imdb": "tt2395427",
@@ -81284,7 +81626,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 50,
-      "rotten": 62
+      "rotten": 63
     },
     "external": {
       "imdb": "tt10676048",
@@ -81505,7 +81847,7 @@ const db = [
       "imdb": "tt20969586",
       "tmdb": 986056
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDIzNGUwZmYtODM0Yy00NjA3LTgxOGUtOTY0ZGM5MjBkM2I3XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWE2NmNmYTItZGY0ZC00MmY2LTk1NDAtMGUyMGEzMjcxNWM0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Thunderbolts*",
     "originalTitle": "Thunderbolts*",
     "languages": [
@@ -82089,7 +82431,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 62,
-      "rotten": 70
+      "rotten": 71
     },
     "external": {
       "imdb": "tt0217869",
@@ -82257,7 +82599,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 39,
-      "rotten": 34
+      "rotten": 35
     },
     "external": {
       "imdb": "tt0242445",
@@ -83023,7 +83365,7 @@ const db = [
       "imdb": "tt0091828",
       "tmdb": 2099
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTA4NDFlZmYtNTU4Mi00NDdiLTg2NTEtNDhlNjkxNWMxYzg5XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTZkMTdmZjYtMDc3ZC00NWFjLWJjNWUtYWEwODc3Yjk1ODEwXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Raw Deal",
     "originalTitle": "Raw Deal",
     "languages": [
@@ -83104,7 +83446,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 35,
-      "rotten": 21
+      "rotten": 23
     },
     "external": {
       "imdb": "tt0089893",
@@ -83399,7 +83741,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 29,
-      "rotten": 48
+      "rotten": 50
     },
     "external": {
       "imdb": "tt0092675",
@@ -83525,7 +83867,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 40,
-      "rotten": 33
+      "rotten": 32
     },
     "external": {
       "imdb": "tt0101764",
@@ -84036,7 +84378,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 48,
-      "rotten": 45
+      "rotten": 44
     },
     "external": {
       "imdb": "tt1308729",
@@ -84630,7 +84972,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt5463162",
@@ -84770,7 +85112,7 @@ const db = [
       "imdb": "tt1430132",
       "tmdb": 76170
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzg1MDQxMTQ2OF5BMl5BanBnXkFtZTcwMTk3MjAzOQ@@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGU0MzRhMWEtYTBkNS00NzliLWJkMmUtMDFlMjkyOTkyYmZlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Wolverine",
     "originalTitle": "The Wolverine",
     "languages": [
@@ -85253,8 +85595,7 @@ const db = [
     "title": "Blood Hook",
     "originalTitle": "Blood Hook",
     "languages": [
-      "English",
-      "Español"
+      "English"
     ],
     "genres": [
       "Comedy",
@@ -85534,7 +85875,7 @@ const db = [
       "imdb": "tt0089326",
       "tmdb": 85567
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzA0ZjVjMzAtNWM1NS00YTk1LWJjMDgtMDk5NWY4NjM4ZWI2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2UzZjQwNTktNDM1MS00YzQ3LWE1ZGEtNGI4MjExNTE0ZjZiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Igor and the Lunatics",
     "originalTitle": "Igor and the Lunatics",
     "languages": [
@@ -86228,6 +86569,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 18060887072,
+      "location": "X:/28 Years Later (Danny Boyle, 2025)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 77,
+      "rotten": 88
+    },
+    "external": {
+      "imdb": "tt10548174",
+      "tmdb": 1100988
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjgwYTI0YjctMWYzNS00MmI1LWI5YTctNmE1YjBkNDFlNWMxXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "28 Years Later",
+    "originalTitle": "28 Years Later",
+    "languages": [
+      "English",
+      "svenska"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "overview": "A group of survivors of the rage virus live on a small island. When one of the group leaves the island on a mission into the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other su...",
+    "release": 2025,
+    "runtime": 115,
+    "actors": [
+      "Jodie Comer",
+      "Aaron Taylor-Johnson",
+      "Ralph Fiennes"
+    ],
+    "directors": [
+      "Danny Boyle"
+    ],
+    "writers": [
+      "Alex Garland"
+    ]
+  },
+  {
+    "local": {
       "date": "2024-11-01",
       "size": 5157161604,
       "location": "X:/30 Days of Night (David Slade, 2007)"
@@ -86308,6 +86690,50 @@ const db = [
       "Zack Snyder",
       "Kurt Johnstad",
       "Michael B. Gordon"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1711483364,
+      "location": "X:/40 Acres (R.T. Thorne, 2024)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 74,
+      "rotten": 90
+    },
+    "external": {
+      "imdb": "tt29634843",
+      "tmdb": 1319951
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTRmZTIzMzQtZDQwOS00NGM5LWI1YTItMTc0MjE0NjczMDhlXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "40 Acres",
+    "originalTitle": "40 Acres",
+    "languages": [
+      "English",
+      ""
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "overview": "In a post-apocalyptic world with food scarcity, a Black family of Canadian farmers descended from American Civil War migrants defend their homestead against cannibals trying to seize their resources.",
+    "release": 2024,
+    "runtime": 113,
+    "actors": [
+      "Danielle Deadwyler",
+      "Kataem O'Connor",
+      "Michael Greyeyes"
+    ],
+    "directors": [
+      "R.T. Thorne"
+    ],
+    "writers": [
+      "R.T. Thorne",
+      "Glenn Taylor",
+      "Lora Campbell"
     ]
   },
   {
@@ -86913,7 +87339,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 52,
-      "rotten": 48
+      "rotten": 47
     },
     "external": {
       "imdb": "tt9150192",
@@ -87013,8 +87439,9 @@ const db = [
       "English"
     ],
     "genres": [
-      "Horror",
-      "Thriller"
+      "Action",
+      "Comedy",
+      "Crime"
     ],
     "overview": "After a group of criminals kidnap the ballerina daughter of a powerful underworld figure, they retreat to an isolated mansion, unaware that they're locked inside with no normal little girl.",
     "release": 2024,
@@ -87645,7 +88072,7 @@ const db = [
       "imdb": "tt0758730",
       "tmdb": 440
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYWVhYTlmNTAtNTk5ZS00MWYzLWFkZmYtOWE3YTZlYmFkYThjXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTI5NDY2NDUwM15BMl5BanBnXkFtZTYwNzQxMTA3._V1_SX300.jpg",
     "title": "Aliens vs. Predator: Requiem",
     "originalTitle": "AVPR: Aliens vs Predator - Requiem",
     "languages": [
@@ -88346,13 +88773,13 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 28,
-      "rotten": 31
+      "rotten": 30
     },
     "external": {
       "imdb": "tt0078767",
       "tmdb": 11449
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzU4NGM2NjktMzBiNy00OTljLWIwNjQtMzRiNjk3OTc3NzFlXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWRmOTdhMWEtYmExOC00Y2E5LTkwYjEtYTAwY2Q0MTU0MTBlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Amityville Horror",
     "originalTitle": "The Amityville Horror",
     "languages": [
@@ -88387,7 +88814,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": null,
-      "rotten": 100
+      "rotten": 87
     },
     "external": {
       "imdb": "tt32486316",
@@ -88400,6 +88827,7 @@ const db = [
       "English"
     ],
     "genres": [
+      "Crime",
       "Thriller"
     ],
     "overview": "Danny, an ex-soldier homeless in Dublin, meets Will, a teen fleeing a drug gang. Their encounter forces them to confront their pasts while navigating the harsh realities they face.",
@@ -88719,7 +89147,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 49,
-      "rotten": 43
+      "rotten": 44
     },
     "external": {
       "imdb": "tt14371860",
@@ -88831,8 +89259,8 @@ const db = [
     "runtime": 117,
     "actors": [
       "José María Yazpik",
-      "Iria del Río",
-      "Berta Vázquez"
+      "Berta Vázquez",
+      "Iria del Río"
     ],
     "directors": [
       "Carles Torrens"
@@ -89234,7 +89662,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 39,
-      "rotten": 28
+      "rotten": 29
     },
     "external": {
       "imdb": "tt2870612",
@@ -89276,7 +89704,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 63,
-      "rotten": 72
+      "rotten": 70
     },
     "external": {
       "imdb": "tt17489650",
@@ -89951,7 +90379,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 46,
-      "rotten": 29
+      "rotten": 30
     },
     "external": {
       "imdb": "tt21191806",
@@ -90252,7 +90680,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 24
+      "rotten": 23
     },
     "external": {
       "imdb": "tt0172156",
@@ -90294,7 +90722,7 @@ const db = [
       "location": "X:/Ballerina (Len Wiseman, 2025)"
     },
     "rating": {
-      "imdb": 70,
+      "imdb": 60,
       "meta": 59,
       "rotten": null
     },
@@ -90306,7 +90734,10 @@ const db = [
     "title": "Ballerina",
     "originalTitle": "Ballerina",
     "languages": [
-      "English"
+      "English",
+      "Deutsch",
+      "Pусский",
+      "Español"
     ],
     "genres": [
       "Action",
@@ -90637,7 +91068,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 54,
-      "rotten": 39
+      "rotten": 41
     },
     "external": {
       "imdb": "tt0112462",
@@ -90764,7 +91195,7 @@ const db = [
     },
     "rating": {
       "imdb": 90,
-      "meta": 84,
+      "meta": 85,
       "rotten": 94
     },
     "external": {
@@ -90895,7 +91326,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 41,
-      "rotten": 34
+      "rotten": 33
     },
     "external": {
       "imdb": "tt1440129",
@@ -90938,7 +91369,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 68
+      "rotten": 67
     },
     "external": {
       "imdb": "tt13521006",
@@ -91026,7 +91457,7 @@ const db = [
       "imdb": "tt2049403",
       "tmdb": 917496
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmRlYzE3ZTYtNjIyZi00MWYyLWEzZDItOWI5NzM1Yjc0NmI5XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTQ4Y2MzY2MtYzQyMS00ZTQ3LWIzZGQtNjVjYzgwYzA1MDkzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Beetlejuice Beetlejuice",
     "originalTitle": "Beetlejuice Beetlejuice",
     "languages": [
@@ -91716,7 +92147,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 44,
-      "rotten": 53
+      "rotten": 52
     },
     "external": {
       "imdb": "tt2078552",
@@ -92020,9 +92451,9 @@ const db = [
     "languages": [
       "English",
       "",
+      "עִבְרִית",
       "Polski",
-      "Română",
-      "עִבְרִית"
+      "Română"
     ],
     "genres": [
       "Comedy"
@@ -92316,7 +92747,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 73,
-      "rotten": 82
+      "rotten": 81
     },
     "external": {
       "imdb": "tt0372183",
@@ -92333,6 +92764,7 @@ const db = [
     ],
     "genres": [
       "Action",
+      "Mystery",
       "Thriller"
     ],
     "overview": "Two years ago, Jason Bourne thought he had walked away from his past. But now the past catches up to Jason Bourne when the CIA threatens to ruin his new life. Bourne and Marie have maintained their anonymous, underground existence at the cost of permanence. Fueled by splintered nightmares and haunted by the past he cannot remember, Bourne moves Marie from city to city, trying to remain one step ahead of the threat implicit in every unexplained stranger's glance, every \"wrong number\" phone call--that at any second, without any warning, he might get pulled back into the world he hopes he left behind.",
@@ -92738,7 +93170,7 @@ const db = [
   {
     "local": {
       "date": "2025-07-03",
-      "size": 6078656475,
+      "size": 6077786341,
       "location": "X:/Bring Her Back (Danny Philippou, Michael Philippou, 2025)"
     },
     "rating": {
@@ -92913,7 +93345,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 49,
-      "rotten": 53
+      "rotten": 52
     },
     "external": {
       "imdb": "tt12593682",
@@ -92958,7 +93390,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 66,
-      "rotten": 66
+      "rotten": 65
     },
     "external": {
       "imdb": "tt1531901",
@@ -93005,7 +93437,7 @@ const db = [
       "imdb": "tt20048582",
       "tmdb": 976734
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDlhYTdkYjAtZDRiNS00ZWZkLTg1MzctODQxZmM4ZjBiZWNkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDUyZThkMDYtY2FlYy00MmFjLThkZGMtMDgxZTk1Zjg2YjRmXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Canary Black",
     "originalTitle": "Canary Black",
     "languages": [
@@ -93630,7 +94062,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 41,
-      "rotten": 33
+      "rotten": 32
     },
     "external": {
       "imdb": "tt1823672",
@@ -93757,7 +94189,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 45,
-      "rotten": 38
+      "rotten": 36
     },
     "external": {
       "imdb": "tt0087050",
@@ -94183,7 +94615,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 55,
-      "rotten": 66
+      "rotten": 65
     },
     "external": {
       "imdb": "tt1371111",
@@ -94613,7 +95045,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 62,
-      "rotten": 68
+      "rotten": 69
     },
     "external": {
       "imdb": "tt0118884",
@@ -94989,7 +95421,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 70,
-      "rotten": 89
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0104029",
@@ -95123,7 +95555,7 @@ const db = [
       "imdb": "tt0123755",
       "tmdb": 431
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYmYwYzA5NjgtMTg2MC00NDk0LTk5OTYtNjgyMWM4YWM4NDdiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzcyOTE5YTItM2I4OC00MTc0LTkyNWUtMWZmYmY1MWVhNmZiXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Cube",
     "originalTitle": "Cube",
     "languages": [
@@ -95247,7 +95679,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 62,
-      "rotten": 79
+      "rotten": 78
     },
     "external": {
       "imdb": "tt12349832",
@@ -95417,7 +95849,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 56
+      "rotten": 57
     },
     "external": {
       "imdb": "tt13452446",
@@ -95877,7 +96309,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 83
+      "rotten": 81
     },
     "external": {
       "imdb": "tt0099365",
@@ -95920,7 +96352,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 59,
-      "rotten": 77
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0363547",
@@ -96175,7 +96607,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 51,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt28443655",
@@ -96432,7 +96864,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 30
+      "rotten": 29
     },
     "external": {
       "imdb": "tt2377322",
@@ -96941,7 +97373,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 42,
-      "rotten": 29
+      "rotten": 27
     },
     "external": {
       "imdb": "tt23872640",
@@ -97368,6 +97800,46 @@ const db = [
       "Brian Duffield",
       "Akiva Goldsman",
       "Mark Bomback"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 3081071251,
+      "location": "X:/Divinity (Eddie Alcazar, 2023)"
+    },
+    "rating": {
+      "imdb": 50,
+      "meta": 61,
+      "rotten": 57
+    },
+    "external": {
+      "imdb": "tt15444046",
+      "tmdb": 1058619
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTIzOWM3YWItOTk0Ni00YzhmLTg3ZjctOTc5NDlhNjE3MTRhXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Divinity",
+    "originalTitle": "Divinity",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "overview": "Centers on two mysterious brothers, who abduct a mogul during his quest for immortality. Meanwhile, a seductive woman helps them launch a journey of self-discovery.",
+    "release": 2023,
+    "runtime": 88,
+    "actors": [
+      "Stephen Dorff",
+      "Moises Arias",
+      "Jason Genao"
+    ],
+    "directors": [
+      "Eddie Alcazar"
+    ],
+    "writers": [
+      "Eddie Alcazar"
     ]
   },
   {
@@ -97885,7 +98357,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 25
+      "rotten": 26
     },
     "external": {
       "imdb": "tt0829150",
@@ -98314,7 +98786,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt32149847",
@@ -99123,7 +99595,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 33,
-      "rotten": 40
+      "rotten": 39
     },
     "external": {
       "imdb": "tt0238380",
@@ -99205,7 +99677,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 54,
-      "rotten": 54
+      "rotten": 55
     },
     "external": {
       "imdb": "tt0116225",
@@ -99300,8 +99772,8 @@ const db = [
     "title": "Europa Report",
     "originalTitle": "Europa Report",
     "languages": [
-      "普通话",
       "English",
+      "普通话",
       "Pусский"
     ],
     "genres": [
@@ -99467,7 +99939,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 69,
-      "rotten": 84
+      "rotten": 85
     },
     "external": {
       "imdb": "tt13345606",
@@ -99506,7 +99978,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 59,
-      "rotten": 68
+      "rotten": 69
     },
     "external": {
       "imdb": "tt0106308",
@@ -99709,7 +100181,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 56,
-      "rotten": 72
+      "rotten": 73
     },
     "external": {
       "imdb": "tt0082348",
@@ -99793,7 +100265,7 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": 68,
+      "meta": 70,
       "rotten": 76
     },
     "external": {
@@ -100094,7 +100566,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 52,
-      "rotten": 41
+      "rotten": 42
     },
     "external": {
       "imdb": "tt0119099",
@@ -100303,7 +100775,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 40,
-      "rotten": 27
+      "rotten": 28
     },
     "external": {
       "imdb": "tt0120667",
@@ -100606,7 +101078,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 51
+      "rotten": 52
     },
     "external": {
       "imdb": "tt0309593",
@@ -100857,7 +101329,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 33,
-      "rotten": 32
+      "rotten": 33
     },
     "external": {
       "imdb": "tt4589218",
@@ -100982,7 +101454,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 38,
-      "rotten": 30
+      "rotten": 29
     },
     "external": {
       "imdb": "tt10078772",
@@ -101108,7 +101580,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 41,
-      "rotten": 36
+      "rotten": 35
     },
     "external": {
       "imdb": "tt27075958",
@@ -101360,7 +101832,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 33,
-      "rotten": 22
+      "rotten": 23
     },
     "external": {
       "imdb": "tt0087298",
@@ -101577,7 +102049,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 13,
-      "rotten": 33
+      "rotten": 32
     },
     "external": {
       "imdb": "tt0095179",
@@ -102053,7 +102525,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 64,
-      "rotten": 83
+      "rotten": 84
     },
     "external": {
       "imdb": "tt11881160",
@@ -102139,7 +102611,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 27,
-      "rotten": 30
+      "rotten": 29
     },
     "external": {
       "imdb": "tt1034032",
@@ -102223,7 +102695,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 64,
-      "rotten": 82
+      "rotten": 83
     },
     "external": {
       "imdb": "tt0119177",
@@ -102521,7 +102993,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt21235248",
@@ -103958,7 +104430,7 @@ const db = [
       "location": "X:/Havoc (Gareth Evans, 2025)"
     },
     "rating": {
-      "imdb": null,
+      "imdb": 50,
       "meta": 57,
       "rotten": 63
     },
@@ -104682,7 +105154,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 50,
-      "rotten": 38
+      "rotten": 41
     },
     "external": {
       "imdb": "tt0104409",
@@ -105656,7 +106128,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 86,
-      "rotten": 84
+      "rotten": 85
     },
     "external": {
       "imdb": "tt15574270",
@@ -105747,8 +106219,8 @@ const db = [
     "title": "I.S.S.",
     "originalTitle": "I.S.S.",
     "languages": [
-      "English",
-      "Pусский"
+      "Pусский",
+      "English"
     ],
     "genres": [
       "Sci-Fi",
@@ -105901,7 +106373,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 57,
-      "rotten": 71
+      "rotten": 72
     },
     "external": {
       "imdb": "tt23137390",
@@ -105941,7 +106413,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": null,
-      "rotten": 29
+      "rotten": 25
     },
     "external": {
       "imdb": "tt0314063",
@@ -106109,7 +106581,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 41,
-      "rotten": 24
+      "rotten": 23
     },
     "external": {
       "imdb": "tt4419684",
@@ -106119,9 +106591,9 @@ const db = [
     "title": "In the Lost Lands",
     "originalTitle": "In the Lost Lands",
     "languages": [
-      "Deutsch",
+      "",
       "English",
-      ""
+      "Deutsch"
     ],
     "genres": [
       "Action",
@@ -106240,7 +106712,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 58,
-      "rotten": 70
+      "rotten": 71
     },
     "external": {
       "imdb": "tt1462764",
@@ -106807,7 +107279,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 45,
-      "rotten": 40
+      "rotten": 39
     },
     "external": {
       "imdb": "tt13405778",
@@ -106976,7 +107448,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 34,
-      "rotten": 19
+      "rotten": 21
     },
     "external": {
       "imdb": "tt6218010",
@@ -108507,8 +108979,8 @@ const db = [
     ],
     "genres": [
       "Adventure",
-      "Drama",
-      "Horror"
+      "Horror",
+      "Thriller"
     ],
     "overview": "It's a hot summer on Amity Island, a small community whose main business is its beaches. When new Sheriff Martin Brody discovers the remains of a shark attack victim, his first inclination is to close the beaches to swimmers. This doesn't sit well with Mayor Larry Vaughn and several of the local businessmen. Brody backs down to his regret as that weekend a young boy is killed by the predator. The dead boy's mother puts out a bounty on the shark and Amity is soon swamped with amateur hunters and fisherman hoping to cash in on the reward. A local fisherman with much experience hunting sharks, Quint, offers to hunt down the creature for a hefty fee. Soon Quint, Brody and Matt Hooper from the Oceanographic Institute are at sea hunting the Great White shark. As Brody succinctly surmises after their first encounter with the creature, they're going to need a bigger boat.",
     "release": 1975,
@@ -108577,7 +109049,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 51,
-      "rotten": 56
+      "rotten": 57
     },
     "external": {
       "imdb": "tt0077766",
@@ -109063,7 +109535,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 33,
-      "rotten": 12
+      "rotten": 11
     },
     "external": {
       "imdb": "tt1075747",
@@ -109149,7 +109621,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 52,
-      "rotten": 50
+      "rotten": 52
     },
     "external": {
       "imdb": "tt22352848",
@@ -109190,7 +109662,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 40,
-      "rotten": 28
+      "rotten": 27
     },
     "external": {
       "imdb": "tt1617661",
@@ -109275,7 +109747,7 @@ const db = [
       "location": "X:/Jurassic Park III (Joe Johnston, 2001)"
     },
     "rating": {
-      "imdb": 50,
+      "imdb": 60,
       "meta": 42,
       "rotten": 49
     },
@@ -109623,7 +110095,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 43,
-      "rotten": 81
+      "rotten": 79
     },
     "external": {
       "imdb": "tt0095444",
@@ -110664,7 +111136,7 @@ const db = [
       "Horror"
     ],
     "overview": "When Dan O'Grady returns to the U.S. after stealing some Irish leprechaun's pot of gold, he thinks he can settle down and enjoy his newfound wealth. He thought wrong. The leprechaun followed him and O'Grady barely gets away with his life, having locked the little monster in his basement. Ten years later, J.D. and his spoiled daughter Tory move in. By accident, the leprechaun is released and almost immediately the annoying creature starts to look for his gold, not displaying any respect for human life.",
-    "release": 1993,
+    "release": 1992,
     "runtime": 92,
     "actors": [
       "Warwick Davis",
@@ -111249,13 +111721,13 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 40,
-      "rotten": 30
+      "rotten": 31
     },
     "external": {
       "imdb": "tt14371878",
       "tmdb": 955916
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOWRkYmNiNDUtYTY0OC00YTZlLTlmMTYtMTJhMTU4OTBkMDY5XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2FkMDJmNWItYzBlYy00ZDQ0LTgyMzEtZTA2N2U0ZTY5OGMyXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Lift",
     "originalTitle": "Lift",
     "languages": [
@@ -111581,7 +112053,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 43,
-      "rotten": 27
+      "rotten": 28
     },
     "external": {
       "imdb": "tt0120738",
@@ -111748,7 +112220,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 73,
-      "rotten": 88
+      "rotten": 89
     },
     "external": {
       "imdb": "tt0079501",
@@ -111921,7 +112393,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 26,
-      "rotten": 11
+      "rotten": 10
     },
     "external": {
       "imdb": "tt11057302",
@@ -112047,7 +112519,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 83,
-      "rotten": 90
+      "rotten": 91
     },
     "external": {
       "imdb": "tt6998518",
@@ -112090,7 +112562,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 68,
-      "rotten": 62
+      "rotten": 63
     },
     "external": {
       "imdb": "tt2172584",
@@ -112338,7 +112810,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 64,
-      "rotten": 72
+      "rotten": 73
     },
     "external": {
       "imdb": "tt22048412",
@@ -112804,7 +113276,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 72,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt12299608",
@@ -112972,7 +113444,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 56,
-      "rotten": 66
+      "rotten": 67
     },
     "external": {
       "imdb": "tt0119675",
@@ -113226,7 +113698,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 59,
-      "rotten": 65
+      "rotten": 67
     },
     "external": {
       "imdb": "tt0117060",
@@ -113277,7 +113749,7 @@ const db = [
       "imdb": "tt4912910",
       "tmdb": 353081
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmUwZTg2YmMtMmZjOS00ZDYwLWI2ZDgtZDcyY2ZmMWMwZDdlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Mission: Impossible - Fallout",
     "originalTitle": "Mission: Impossible - Fallout",
     "languages": [
@@ -113576,6 +114048,47 @@ const db = [
       "Dev Patel",
       "Paul Angunawela",
       "John Collee"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 4471118516,
+      "location": "X:/Monolith (Matt Vesely, 2022)"
+    },
+    "rating": {
+      "imdb": 50,
+      "meta": 61,
+      "rotten": null
+    },
+    "external": {
+      "imdb": "tt18298588",
+      "tmdb": 1024721
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjRiMWJjNDAtOWUzNi00ZjE3LWFiMDktYzM3OGMzNDdhYTExXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Monolith",
+    "originalTitle": "Monolith",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "overview": "A headstrong journalist whose investigative podcast uncovers a strange artifact, an alien conspiracy, and the lies at the heart of her own story.",
+    "release": 2022,
+    "runtime": 94,
+    "actors": [
+      "Lily Sullivan",
+      "Damon Herriman",
+      "Ling Cooper Tang"
+    ],
+    "directors": [
+      "Matt Vesely"
+    ],
+    "writers": [
+      "Lucy Campbell"
     ]
   },
   {
@@ -113893,7 +114406,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 43,
-      "rotten": 32
+      "rotten": 33
     },
     "external": {
       "imdb": "tt13029044",
@@ -113974,7 +114487,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 63,
-      "rotten": 66
+      "rotten": 64
     },
     "external": {
       "imdb": "tt0485947",
@@ -114097,7 +114610,7 @@ const db = [
       "location": "X:/Myth of Man (Jamin Winans, 2025)"
     },
     "rating": {
-      "imdb": null,
+      "imdb": 50,
       "meta": null,
       "rotten": null
     },
@@ -114221,8 +114734,8 @@ const db = [
     },
     "rating": {
       "imdb": 50,
-      "meta": null,
-      "rotten": null
+      "meta": 54,
+      "rotten": 44
     },
     "external": {
       "imdb": "tt19838620",
@@ -114728,7 +115241,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 56,
-      "rotten": 59
+      "rotten": 60
     },
     "external": {
       "imdb": "tt12810074",
@@ -114769,7 +115282,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 55
+      "rotten": 56
     },
     "external": {
       "imdb": "tt0100260",
@@ -114937,7 +115450,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": null,
-      "rotten": 38
+      "rotten": 36
     },
     "external": {
       "imdb": "tt16253418",
@@ -115014,6 +115527,49 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 16827792615,
+      "location": "X:/Nobody 2 (Timo Tjahjanto, 2025)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 59,
+      "rotten": 78
+    },
+    "external": {
+      "imdb": "tt28996126",
+      "tmdb": 1007734
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWViZjhjYjQtZDI1MC00MWMyLTlhZTktNmIzY2Y0ZWVkMWFhXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Nobody 2",
+    "originalTitle": "Nobody 2",
+    "languages": [
+      "English",
+      ""
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "overview": "Suburban dad Hutch Mansell, a former lethal assassin, is pulled back into his violent past after thwarting a home invasion, setting off a chain of events that unravels secrets about his wife Becca's past and his own.",
+    "release": 2025,
+    "runtime": "",
+    "actors": [
+      "Bob Odenkirk",
+      "Connie Nielsen",
+      "Christopher Lloyd"
+    ],
+    "directors": [
+      "Timo Tjahjanto"
+    ],
+    "writers": [
+      "Derek Kolstad",
+      "Aaron Rabin"
+    ]
+  },
+  {
+    "local": {
       "date": "2023-01-14",
       "size": 2182582502,
       "location": "X:/Nope (Jordan Peele, 2022)"
@@ -115031,9 +115587,9 @@ const db = [
     "title": "Nope",
     "originalTitle": "Nope",
     "languages": [
+      "Español",
       "English",
-      "Português",
-      "Español"
+      "Português"
     ],
     "genres": [
       "Horror",
@@ -115075,10 +115631,10 @@ const db = [
     "originalTitle": "Nosferatu",
     "languages": [
       "English",
+      "Deutsch",
       "Română",
       "Pусский",
-      "Español",
-      "Deutsch"
+      "Español"
     ],
     "genres": [
       "Fantasy",
@@ -115396,7 +115952,7 @@ const db = [
     "runtime": 98,
     "actors": [
       "Carolyn Bracken",
-      "Johnny French",
+      "Gwilym Lee",
       "Steve Wall"
     ],
     "directors": [
@@ -115710,7 +116266,7 @@ const db = [
     },
     "rating": {
       "imdb": 50,
-      "meta": null,
+      "meta": 68,
       "rotten": 85
     },
     "external": {
@@ -116427,7 +116983,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 56
+      "rotten": 58
     },
     "external": {
       "imdb": "tt0098084",
@@ -116895,7 +117451,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 49,
-      "rotten": 59
+      "rotten": 58
     },
     "external": {
       "imdb": "tt0134847",
@@ -117189,7 +117745,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 66,
-      "rotten": 80
+      "rotten": 81
     },
     "external": {
       "imdb": "tt11389872",
@@ -117738,7 +118294,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 88,
-      "rotten": 93
+      "rotten": 92
     },
     "external": {
       "imdb": "tt14230458",
@@ -117813,6 +118369,49 @@ const db = [
     ],
     "writers": [
       "Michael Kingston"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 22925568478,
+      "location": "X:/Poseidon (Wolfgang Petersen, 2006)"
+    },
+    "rating": {
+      "imdb": 50,
+      "meta": 50,
+      "rotten": 33
+    },
+    "external": {
+      "imdb": "tt0409182",
+      "tmdb": 503
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTIwOTMwODM2Nl5BMl5BanBnXkFtZTYwMDY5NjU3._V1_SX300.jpg",
+    "title": "Poseidon",
+    "originalTitle": "Poseidon",
+    "languages": [
+      "English",
+      "Español"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "overview": "It is New Year's Eve, and over 2,000 passengers &amp; crew are ringing in the New Year aboard the huge cruise ship 'Poseidon' when it capsizes on the open sea in the middle of the North Atlantic Ocean! A small group of survivors find themselves unlikely allies in a battle for their lives. Preferring to test the odds alone, career gambler Dylan Johns ignores captain's orders to wait below for possible rescue and sets out to find his own way to safety. What begins as a solo mission soon draws others, as Dylan is followed by a desperate father searching for his daughter and her fiancée--a young couple who hours before couldn't summon the courage to tell him they were engaged and now face much graver challenges. Along the way they are joined by a single mother and her wise-beyond-his-years son, an anxious stowaway and a despondent fellow passenger who boarded the ship not sure he wanted to live but now knows he doesn't want to die. Determined to fight their way to the surface, the group sets off through the disorienting maze of twisted steel in the upside-down wreckage. As the unstable vessel rapidly fills with water each must draw on skills and strengths they didn't even know they possessed, fighting against time for their own survival and for each other.",
+    "release": 2006,
+    "runtime": 98,
+    "actors": [
+      "Richard Dreyfuss",
+      "Kurt Russell",
+      "Emmy Rossum"
+    ],
+    "directors": [
+      "Wolfgang Petersen"
+    ],
+    "writers": [
+      "Mark Protosevich",
+      "Paul Gallico"
     ]
   },
   {
@@ -117908,7 +118507,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 29
+      "rotten": 30
     },
     "external": {
       "imdb": "tt0100403",
@@ -118126,7 +118725,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 77,
-      "rotten": 87
+      "rotten": 88
     },
     "external": {
       "imdb": "tt28249919",
@@ -118255,7 +118854,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": null,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt5017936",
@@ -118382,7 +118981,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 68,
-      "rotten": 75
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0286751",
@@ -118529,7 +119128,7 @@ const db = [
     "actors": [
       "Marilyn Chambers",
       "Frank Moore",
-      "Terry Schonblum"
+      "Terri Hanauer"
     ],
     "directors": [
       "David Cronenberg"
@@ -119081,9 +119680,9 @@ const db = [
     "release": 2024,
     "runtime": 111,
     "actors": [
-      "Andie MacDowell",
-      "Garret Dillahunt",
-      "Orlando Bloom"
+      "Orlando Bloom",
+      "James Neeley",
+      "Scott Haze"
     ],
     "directors": [
       "Eshom Nelms",
@@ -119133,6 +119732,49 @@ const db = [
     ],
     "writers": [
       "Pascal Plante"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 7168207625,
+      "location": "X:/Red Sonja (MJ Bassett, 2025)"
+    },
+    "rating": {
+      "imdb": 40,
+      "meta": 40,
+      "rotten": null
+    },
+    "external": {
+      "imdb": "tt0800175",
+      "tmdb": 13494
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzU2MGI2NGEtZGZlZC00NjQxLThkMWMtMzZlNDY4Mjk4ZThkXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Red Sonja",
+    "originalTitle": "Red Sonja",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "overview": "An adaptation of the comic book, Red Sonja, a vengeful warrior known as a \"She-Devil with a sword\".",
+    "release": 2025,
+    "runtime": 110,
+    "actors": [
+      "Matilda Lutz",
+      "Robert Sheehan",
+      "Wallis Day"
+    ],
+    "directors": [
+      "M.J. Bassett"
+    ],
+    "writers": [
+      "Tasha Huo",
+      "Robert E. Howard",
+      "Roy Thomas"
     ]
   },
   {
@@ -119802,8 +120444,8 @@ const db = [
     "runtime": 122,
     "actors": [
       "Ryu Jun-yeol",
-      "Shin Hyeon-bin",
-      "Han Ji-Hyun"
+      "Woo Kang-min",
+      "Han Sang-chul"
     ],
     "directors": [
       "Yeon Sang-ho"
@@ -120034,7 +120676,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 55,
-      "rotten": 58
+      "rotten": 59
     },
     "external": {
       "imdb": "tt0215129",
@@ -120159,7 +120801,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 42,
-      "rotten": 28
+      "rotten": 29
     },
     "external": {
       "imdb": "tt0100502",
@@ -120490,7 +121132,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 56,
-      "rotten": 69
+      "rotten": 56
     },
     "external": {
       "imdb": "tt0073631",
@@ -120531,7 +121173,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 86
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0088011",
@@ -120686,6 +121328,140 @@ const db = [
     "writers": [
       "Brian Nelson",
       "Steven Shainberg"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1538765304,
+      "location": "X:/Rush Hour (Brett Ratner, 1998)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 61,
+      "rotten": 61
+    },
+    "external": {
+      "imdb": "tt0120812",
+      "tmdb": 2109
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGZiMzViNmEtNTNlZi00MzFmLTk5NTEtNDE2OTUzNmNlMTY4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Rush Hour",
+    "originalTitle": "Rush Hour",
+    "languages": [
+      "广州话 / 廣州話",
+      "普通话",
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "overview": "Cultures clash and tempers flares as the two cops named Detective Inspector Lee a Hong Kong Detective and Detective James Carter FBI, a big-mouthed work-alone Los Angeles cop who are from different worlds discovers one thing in common: they can't stand each other. With time running out, they must join forces to catch the criminals and save the eleven-year-old Chinese girl of the Chinese consul named Soo Yung.",
+    "release": 1998,
+    "runtime": 98,
+    "actors": [
+      "Jackie Chan",
+      "Chris Tucker",
+      "Ken Leung"
+    ],
+    "directors": [
+      "Brett Ratner"
+    ],
+    "writers": [
+      "Ross LaManna",
+      "Jim Kouf"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1371142676,
+      "location": "X:/Rush Hour 2 (Brett Ratner, 2001)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 48,
+      "rotten": 50
+    },
+    "external": {
+      "imdb": "tt0266915",
+      "tmdb": 5175
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGM0OTM4NGYtYzkzMC00OGZmLWEwZTItOTg4ZTdkYTIxOTc0XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Rush Hour 2",
+    "originalTitle": "Rush Hour 2",
+    "languages": [
+      "广州话 / 廣州話",
+      "English",
+      "普通话"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "overview": "It's vacation time for Det. James Carter and he finds himself alongside Det. Lee in Hong Kong wishing for more excitement. While Carter wants to party and meet the ladies, Lee is out to track down a Triad gang lord who may be responsible for killing two men at the American Embassy. Things get complicated as the pair stumble onto a counterfeiting plot by L.A. crime boss Steven Reign and Triad Ricky Tan, an ex-cop who played a mysterious part in the death of Det. Lee's father. Throw in a power struggle between Tan and the gorgeous but dangerous Hu Li and the boys are soon up to their necks in fist fights and life-threatening situations. A trip back to the U.S. may provide the answers about the bombing, the counterfeiting, and the true allegiance of sexy customs agent Isabella. Then again, it may turn up more excitement than Carter was looking for during his vacation.",
+    "release": 2001,
+    "runtime": 90,
+    "actors": [
+      "Jackie Chan",
+      "Chris Tucker",
+      "John Lone"
+    ],
+    "directors": [
+      "Brett Ratner"
+    ],
+    "writers": [
+      "Ross LaManna",
+      "Jeff Nathanson"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1381556398,
+      "location": "X:/Rush Hour 3 (Brett Ratner, 2007)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 44,
+      "rotten": 17
+    },
+    "external": {
+      "imdb": "tt0293564",
+      "tmdb": 5174
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTA0Nzg5NjQ0MDBeQTJeQWpwZ15BbWU3MDE4Mzg5NDE@._V1_SX300.jpg",
+    "title": "Rush Hour 3",
+    "originalTitle": "Rush Hour 3",
+    "languages": [
+      "Latin",
+      "English",
+      "Français",
+      "日本語",
+      "普通话"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "overview": "Almost three years after their last adventure in Rush Hour 2 (2001), Carter is now working as a Los Angeles traffic officer, while his friend and ace Hong Kong Police inspector, Lee, escorts the Chinese Ambassador, Han, to the World Criminal Court, to disclose crucial information about the Triads. However, after a botched assassination attempt, the mismatched duo will find themselves in picturesque Paris, struggling to retrieve a precious list of names, as the murderous crime syndicate's henchmen try their best to stop them. Once more, Lee and Carter must fight their way through dangerous gangsters; however, this time, the past has come back to haunt Lee. Will the boys get the job done once and for all?",
+    "release": 2007,
+    "runtime": 91,
+    "actors": [
+      "Jackie Chan",
+      "Chris Tucker",
+      "Max von Sydow"
+    ],
+    "directors": [
+      "Brett Ratner"
+    ],
+    "writers": [
+      "Jeff Nathanson",
+      "Ross LaManna"
     ]
   },
   {
@@ -120907,7 +121683,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 38
+      "rotten": 39
     },
     "external": {
       "imdb": "tt0432348",
@@ -120948,7 +121724,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 48,
-      "rotten": 29
+      "rotten": 28
     },
     "external": {
       "imdb": "tt0489270",
@@ -121122,7 +121898,7 @@ const db = [
       "imdb": "tt1233227",
       "tmdb": 22804
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTY1MzkzNTYyMl5BMl5BanBnXkFtZTcwOTg4MjE5Ng@@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU0NDA3MTM4M15BMl5BanBnXkFtZTcwOTY4Njg3Mg@@._V1_SX300.jpg",
     "title": "Saw VI",
     "originalTitle": "Saw VI",
     "languages": [
@@ -121450,7 +122226,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 56,
-      "rotten": 57
+      "rotten": 58
     },
     "external": {
       "imdb": "tt9373688",
@@ -121914,7 +122690,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 31,
-      "rotten": 33
+      "rotten": 34
     },
     "external": {
       "imdb": "tt0384537",
@@ -122202,7 +122978,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 43
+      "rotten": 42
     },
     "external": {
       "imdb": "tt0458481",
@@ -122299,7 +123075,6 @@ const db = [
     "title": "Sinners",
     "originalTitle": "Sinners",
     "languages": [
-      "Český",
       "普通话",
       "English"
     ],
@@ -123322,7 +124097,7 @@ const db = [
       "imdb": "tt2106651",
       "tmdb": 324670
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTViYTRlMzMtNjlhMS00OTUxLTk4MTMtNjBkMDI0NTQyMGE4XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2NjOWY0MGItYWJhMC00M2E5LWJkZmEtNzJkMDAwZmQ0MDU5XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Spectral",
     "originalTitle": "Spectral",
     "languages": [
@@ -124003,7 +124778,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 38
+      "rotten": 37
     },
     "external": {
       "imdb": "tt0253754",
@@ -124046,7 +124821,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 50,
-      "rotten": 52
+      "rotten": 51
     },
     "external": {
       "imdb": "tt0079945",
@@ -124132,7 +124907,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 86
+      "rotten": 87
     },
     "external": {
       "imdb": "tt0084726",
@@ -124305,7 +125080,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 43,
-      "rotten": 23
+      "rotten": 22
     },
     "external": {
       "imdb": "tt0098382",
@@ -124470,8 +125245,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 22162449710,
+      "date": "2025-09-05",
+      "size": 51574838173,
       "location": "X:/Star Wars Series/Star Wars - Episode I - The Phantom Menace (George Lucas, 1999)"
     },
     "rating": {
@@ -124511,14 +125286,14 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 22774155040,
+      "date": "2025-09-05",
+      "size": 50973549186,
       "location": "X:/Star Wars Series/Star Wars - Episode II - Attack of the Clones (George Lucas, 2002)"
     },
     "rating": {
       "imdb": 60,
       "meta": 54,
-      "rotten": 61
+      "rotten": 62
     },
     "external": {
       "imdb": "tt0121765",
@@ -124553,8 +125328,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 22032592614,
+      "date": "2025-09-05",
+      "size": 52170576682,
       "location": "X:/Star Wars Series/Star Wars - Episode III - Revenge of the Sith (George Lucas, 2005)"
     },
     "rating": {
@@ -124594,8 +125369,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 19610167148,
+      "date": "2025-09-05",
+      "size": 52636206068,
       "location": "X:/Star Wars Series/Star Wars - Episode IV - A New Hope (George Lucas, 1977)"
     },
     "rating": {
@@ -124635,8 +125410,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-18",
-      "size": 18681530082,
+      "date": "2025-09-05",
+      "size": 56399377891,
       "location": "X:/Star Wars Series/Star Wars - Episode IX - The Rise of Skywalker (J.J. Abrams, 2019)"
     },
     "rating": {
@@ -124678,8 +125453,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 20440694339,
+      "date": "2025-09-05",
+      "size": 52582080307,
       "location": "X:/Star Wars Series/Star Wars - Episode V - The Empire Strikes Back (Irvin Kershner, 1980)"
     },
     "rating": {
@@ -124721,14 +125496,14 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 21532209476,
+      "date": "2025-09-05",
+      "size": 47885440126,
       "location": "X:/Star Wars Series/Star Wars - Episode VI -Return of the Jedi (Richard Marquand, 1983)"
     },
     "rating": {
       "imdb": 80,
       "meta": 58,
-      "rotten": 83
+      "rotten": 84
     },
     "external": {
       "imdb": "tt0086190",
@@ -124763,8 +125538,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 21000913476,
+      "date": "2025-09-05",
+      "size": 54838944936,
       "location": "X:/Star Wars Series/Star Wars - Episode VII - The Force Awakens (J.J. Abrams, 2015)"
     },
     "rating": {
@@ -124806,8 +125581,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 22635072426,
+      "date": "2025-09-05",
+      "size": 59178466501,
       "location": "X:/Star Wars Series/Star Wars - Episode VIII - The Last Jedi (Rian Johnson, 2017)"
     },
     "rating": {
@@ -125318,7 +126093,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 63,
-      "rotten": 76
+      "rotten": 75
     },
     "external": {
       "imdb": "tt9203694",
@@ -125400,7 +126175,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 69
+      "rotten": 70
     },
     "external": {
       "imdb": "tt0114558",
@@ -125737,7 +126512,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 82,
-      "rotten": 93
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0078346",
@@ -125824,7 +126599,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 44,
-      "rotten": 29
+      "rotten": 31
     },
     "external": {
       "imdb": "tt0086393",
@@ -125855,9 +126630,9 @@ const db = [
       "Richard Lester"
     ],
     "writers": [
-      "Jerry Siegel",
-      "Joe Shuster",
-      "David Newman"
+      "David Newman",
+      "Leslie Newman",
+      "Jerry Siegel"
     ]
   },
   {
@@ -125869,7 +126644,7 @@ const db = [
     "rating": {
       "imdb": 30,
       "meta": 24,
-      "rotten": 10
+      "rotten": 14
     },
     "external": {
       "imdb": "tt0094074",
@@ -125915,7 +126690,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 72,
-      "rotten": 74
+      "rotten": 72
     },
     "external": {
       "imdb": "tt0348150",
@@ -126091,7 +126866,7 @@ const db = [
       "imdb": "tt0076786",
       "tmdb": 11906
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzk1MTQxMWUtOGE5Mi00YTUzLWFlYjktZDYwYjdmNTc5YWMxXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTFlZWMwOGUtYWVhZi00NWUzLTgyMmYtMDUyY2ZlMTlhMjAzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Suspiria",
     "originalTitle": "Suspiria",
     "languages": [
@@ -126718,6 +127493,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 32081589218,
+      "location": "X:/The Abyss (James Cameron, 1989)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 62,
+      "rotten": 89
+    },
+    "external": {
+      "imdb": "tt0096754",
+      "tmdb": 2756
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGRkNzJlNjgtZmUwYS00Y2U3LTljZDctMTQxYWIxOWVjMzNjXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Abyss",
+    "originalTitle": "The Abyss",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Mystery"
+    ],
+    "overview": "Formerly married petroleum engineers who still have some issues to work out. They are drafted to assist a gung-ho Navy SEAL with a top-secret recovery operation: a nuclear sub has been ambushed and sunk, under mysterious circumstances, in some of the deepest waters on Earth.",
+    "release": 1989,
+    "runtime": 140,
+    "actors": [
+      "Ed Harris",
+      "Mary Elizabeth Mastrantonio",
+      "Michael Biehn"
+    ],
+    "directors": [
+      "James Cameron"
+    ],
+    "writers": [
+      "James Cameron"
+    ]
+  },
+  {
+    "local": {
       "date": "2025-03-28",
       "size": 20939597216,
       "location": "X:/The Addiction (Abel Ferrara, 1995)"
@@ -126882,9 +127698,9 @@ const db = [
       "James Hawes"
     ],
     "writers": [
+      "Robert Littell",
       "Ken Nolan",
-      "Gary Spinelli",
-      "Robert Littell"
+      "Gary Spinelli"
     ]
   },
   {
@@ -127146,7 +127962,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 62,
-      "rotten": 82
+      "rotten": 83
     },
     "external": {
       "imdb": "tt32768323",
@@ -128077,7 +128893,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 45
+      "rotten": 46
     },
     "external": {
       "imdb": "tt0209958",
@@ -128118,7 +128934,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 28
+      "rotten": 29
     },
     "external": {
       "imdb": "tt0296572",
@@ -128195,6 +129011,51 @@ const db = [
       "Brett Matthews (screenplay)",
       "Ken Wheat (characters)",
       "Jim Wheat (characters)"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 50894142430,
+      "location": "X:/The City of Lost Children (Jean-Pierre Jeunet, 1995)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 73,
+      "rotten": 80
+    },
+    "external": {
+      "imdb": "tt0112682",
+      "tmdb": 902
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTc5YWUxOGUtYWQ2OC00ZTMyLWI5MTktNjNkZjNmZTA1OWYyXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The City of Lost Children",
+    "originalTitle": "La cité des enfants perdus",
+    "languages": [
+      "广州话 / 廣州話",
+      "Français"
+    ],
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "overview": "Set in a dystopian society, someone is kidnapping the children. Krank and his band of clones are using the children to harvest their dreams. Then they kidnap Denree, the brother of One, a fairground strongman. One sets out to find his brother.",
+    "release": 1995,
+    "runtime": 112,
+    "actors": [
+      "Ron Perlman",
+      "Daniel Emilfork",
+      "Judith Vittet"
+    ],
+    "directors": [
+      "Marc Caro",
+      "Jean-Pierre Jeunet"
+    ],
+    "writers": [
+      "Gilles Adrien",
+      "Jean-Pierre Jeunet",
+      "Marc Caro"
     ]
   },
   {
@@ -128541,7 +129402,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 68
+      "rotten": 67
     },
     "external": {
       "imdb": "tt11858890",
@@ -128896,7 +129757,7 @@ const db = [
     "genres": [
       "Action",
       "Adventure",
-      "Fantasy"
+      "Drama"
     ],
     "overview": "11-year-old Jake Chambers experiences visions involving a Man in Black who seeks to destroy a Tower and bring ruin to the Universe while a Gunslinger opposes him. However, Jake's mother, stepfather and psychiatrists dismiss these as dreams resulting from the trauma of his father's death the previous year. At his apartment home in New York City, a group of workers from an alleged psychiatric facility offer to rehabilitate Jake; recognizing them from his visions as monsters wearing human skin, he flees from the workers who give chase. Jake tracks down an abandoned house from one of his visions where he discovers a high-tech portal that leads to a post-apocalyptic world called Mid-World..",
     "release": 2017,
@@ -129307,7 +130168,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 58,
-      "rotten": 57
+      "rotten": 56
     },
     "external": {
       "imdb": "tt1645170",
@@ -129958,7 +130819,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 29
+      "rotten": 28
     },
     "external": {
       "imdb": "tt1013752",
@@ -130393,7 +131254,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 52,
-      "rotten": 71
+      "rotten": 72
     },
     "external": {
       "imdb": "tt0119116",
@@ -130813,7 +131674,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 62,
-      "rotten": 58
+      "rotten": 57
     },
     "external": {
       "imdb": "tt0219699",
@@ -130895,7 +131756,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 47,
-      "rotten": 35
+      "rotten": 34
     },
     "external": {
       "imdb": "tt0435651",
@@ -130938,7 +131799,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 57,
-      "rotten": 63
+      "rotten": 62
     },
     "external": {
       "imdb": "tt13654226",
@@ -131115,7 +131976,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 64,
-      "rotten": 67
+      "rotten": 68
     },
     "external": {
       "imdb": "tt0077681",
@@ -131668,7 +132529,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 64
+      "rotten": 63
     },
     "external": {
       "imdb": "tt1054606",
@@ -132130,7 +132991,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 34,
-      "rotten": 39
+      "rotten": 42
     },
     "external": {
       "imdb": "tt0085780",
@@ -132259,7 +133120,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 41,
-      "rotten": 33
+      "rotten": 35
     },
     "external": {
       "imdb": "tt13468602",
@@ -132470,7 +133331,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 30,
-      "rotten": 16
+      "rotten": 17
     },
     "external": {
       "imdb": "tt0311429",
@@ -132515,7 +133376,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 80
+      "rotten": 81
     },
     "external": {
       "imdb": "tt0093409",
@@ -132944,7 +133805,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 57,
-      "rotten": 47
+      "rotten": 45
     },
     "external": {
       "imdb": "tt1731697",
@@ -133661,6 +134522,49 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 16192124286,
+      "location": "X:/The Naked Gun (Akiva Schaffer, 2025)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 75,
+      "rotten": 87
+    },
+    "external": {
+      "imdb": "tt3402138",
+      "tmdb": 1035259
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGFlNDhkNzItZjgxNC00OGYzLWFjZDAtZTJmNDY5ZmEyZDc0XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Naked Gun",
+    "originalTitle": "The Naked Gun",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "overview": "Only one man has the particular set of skills - to lead Police Squad and save the world.",
+    "release": 2025,
+    "runtime": 85,
+    "actors": [
+      "Liam Neeson",
+      "Pamela Anderson",
+      "Paul Walter Hauser"
+    ],
+    "directors": [
+      "Akiva Schaffer"
+    ],
+    "writers": [
+      "Dan Gregor",
+      "Doug Mand",
+      "Akiva Schaffer"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-14",
       "size": 11299840044,
       "location": "X:/The Naked Gun Series/The Naked Gun - From the Files of Police Squad! (David Zucker, 1988)"
@@ -133668,7 +134572,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 76,
-      "rotten": 86
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0095705",
@@ -133710,7 +134614,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 58
+      "rotten": 77
     },
     "external": {
       "imdb": "tt0102510",
@@ -133752,7 +134656,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 58
+      "rotten": 65
     },
     "external": {
       "imdb": "tt0110622",
@@ -134001,6 +134905,98 @@ const db = [
       "Ian Goldberg",
       "Richard Naing",
       "Akela Cooper"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-07-04",
+      "size": 5954348170,
+      "location": "X:/The Old Guard (Gina Prince-Bythewood, 2020)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 70,
+      "rotten": 80
+    },
+    "external": {
+      "imdb": "tt7556122",
+      "tmdb": 547016
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzMwNjVjNTEtZDVhOC00NzQzLTg0MGYtMGI1Yzc0Nzg2MjNmXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Old Guard",
+    "originalTitle": "The Old Guard",
+    "languages": [
+      "English",
+      "Italiano",
+      "Pусский",
+      "العربية",
+      "Français"
+    ],
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "overview": "Led by a warrior named Andy (Charlize Theron), a covert group of tight-knit mercenaries with a mysterious inability to die have fought to protect the mortal world for centuries. But when the team is recruited to take on an emergency mission and their extraordinary abilities are suddenly exposed, it's up to Andy and Nile (Kiki Layne), the newest soldier to join their ranks, to help the group eliminate the threat of those who seek to replicate and monetize their power by any means necessary.",
+    "release": 2020,
+    "runtime": 125,
+    "actors": [
+      "Charlize Theron",
+      "KiKi Layne",
+      "Matthias Schoenaerts"
+    ],
+    "directors": [
+      "Gina Prince-Bythewood"
+    ],
+    "writers": [
+      "Greg Rucka",
+      "Leandro Fernandez"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-07-03",
+      "size": 19267233813,
+      "location": "X:/The Old Guard 2 (Victoria Mahoney, 2025)"
+    },
+    "rating": {
+      "imdb": 50,
+      "meta": 44,
+      "rotten": 26
+    },
+    "external": {
+      "imdb": "tt14961624",
+      "tmdb": 846422
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmFhNWY1MjEtZTkyZS00ZWIzLTk4ZWItMDM0MzliNmE1ZGZhXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Old Guard 2",
+    "originalTitle": "The Old Guard 2",
+    "languages": [
+      "普通话",
+      "English",
+      "Français",
+      "Italiano",
+      "Tiếng Việt"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "overview": "Andy leads immortal warriors against a powerful enemy threatening their group. They grapple with the resurfacing of a long-lost immortal, complicating their mission to safeguard humanity.",
+    "release": 2025,
+    "runtime": 107,
+    "actors": [
+      "Charlize Theron",
+      "KiKi Layne",
+      "Matthias Schoenaerts"
+    ],
+    "directors": [
+      "Victoria Mahoney"
+    ],
+    "writers": [
+      "Greg Rucka",
+      "Sarah L. Walker",
+      "Leandro Fernandez"
     ]
   },
   {
@@ -134475,7 +135471,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 45,
-      "rotten": 50
+      "rotten": 51
     },
     "external": {
       "imdb": "tt13375076",
@@ -134529,7 +135525,7 @@ const db = [
       "imdb": "tt0482571",
       "tmdb": 1124
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3MzQ5MjQ5OF5BMl5BanBnXkFtZTcwMTQ3NzMzMw@@._V1_SX300.jpg",
     "title": "The Prestige",
     "originalTitle": "The Prestige",
     "languages": [
@@ -134871,7 +135867,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 33,
-      "rotten": 29
+      "rotten": 30
     },
     "external": {
       "imdb": "tt0330793",
@@ -134954,7 +135950,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 50,
-      "rotten": 59
+      "rotten": 58
     },
     "external": {
       "imdb": "tt2975578",
@@ -135122,7 +136118,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 55,
-      "rotten": 91
+      "rotten": 92
     },
     "external": {
       "imdb": "tt0120004",
@@ -135188,15 +136184,15 @@ const db = [
     "release": 2024,
     "runtime": 103,
     "actors": [
-      "Jessica Carroll",
-      "Zoe Croft",
-      "Kelsey Ellison"
+      "Mats Steen",
+      "Robert Steen",
+      "Trude Steen"
     ],
     "directors": [
       "Benjamin Ree"
     ],
     "writers": [
-      "N/A"
+      "Mats Steen"
     ]
   },
   {
@@ -135249,7 +136245,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 47,
-      "rotten": 55
+      "rotten": 58
     },
     "external": {
       "imdb": "tt0107953",
@@ -135330,7 +136326,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 91
+      "rotten": 69
     },
     "external": {
       "imdb": "tt0089907",
@@ -135837,20 +136833,20 @@ const db = [
   },
   {
     "local": {
-      "date": "2025-06-26",
-      "size": 2366097399,
+      "date": "2025-07-22",
+      "size": 2366229250,
       "location": "X:/The Shrouds (David Cronenberg, 2024)"
     },
     "rating": {
       "imdb": 50,
-      "meta": null,
+      "meta": 72,
       "rotten": 75
     },
     "external": {
       "imdb": "tt20212786",
       "tmdb": 970947
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzczOGNlMjYtYzcxOC00MTgzLTk1NDEtZGYzMTFjZmMyZDIxXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk4ODIyOGEtZjk0MS00MGZmLTkxNGItMjgxZDRjZDUzMGFlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Shrouds",
     "originalTitle": "The Shrouds",
     "languages": [
@@ -136229,7 +137225,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 67,
-      "rotten": 86
+      "rotten": 84
     },
     "external": {
       "imdb": "tt27813235",
@@ -136258,6 +137254,47 @@ const db = [
     ],
     "writers": [
       "Thomas Martin"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1109000235,
+      "location": "X:/The Surrender (Julia Max, 2025)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": null,
+      "rotten": 85
+    },
+    "external": {
+      "imdb": "tt33270263",
+      "tmdb": 1339206
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjdlNjFhNWEtOTBlYy00MmEwLWI1OTktMDYzOGIyYTRhMTdhXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Surrender",
+    "originalTitle": "The Surrender",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "overview": "When the family patriarch dies, a grieving mother and daughter risk their lives to perform a brutal resurrection ritual and bring him back from the dead.",
+    "release": 2025,
+    "runtime": 96,
+    "actors": [
+      "Colby Minifie",
+      "Kate Burton",
+      "Chelsea Alden"
+    ],
+    "directors": [
+      "Julia Max"
+    ],
+    "writers": [
+      "Julia Max"
     ]
   },
   {
@@ -136561,7 +137598,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt0293662",
@@ -137328,7 +138365,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 50,
-      "rotten": 50
+      "rotten": 49
     },
     "external": {
       "imdb": "tt2333804",
@@ -137752,7 +138789,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 79,
-      "rotten": 91
+      "rotten": 92
     },
     "external": {
       "imdb": "tt0081633",
@@ -138009,7 +139046,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 73,
-      "rotten": 95
+      "rotten": 94
     },
     "external": {
       "imdb": "tt5700672",
@@ -138074,8 +139111,8 @@ const db = [
     "runtime": 116,
     "actors": [
       "Gang Dong-won",
-      "Geoffrey Giuliano",
-      "John D. Michaels"
+      "Nazeeh Tarsha",
+      "Koo Kyo-hwan"
     ],
     "directors": [
       "Yeon Sang-ho"
@@ -138186,8 +139223,8 @@ const db = [
     "title": "The Transformers: The Movie",
     "originalTitle": "The Transformers: The Movie",
     "languages": [
-      "English",
-      "العربية"
+      "العربية",
+      "English"
     ],
     "genres": [
       "Action",
@@ -138207,8 +139244,7 @@ const db = [
     ],
     "writers": [
       "Ron Friedman",
-      "Flint Dille",
-      "Douglas Booth"
+      "Henry Orenstein"
     ]
   },
   {
@@ -138468,6 +139504,49 @@ const db = [
       "Art Marcum",
       "Matt Holloway",
       "Ken Nolan"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 18700203917,
+      "location": "X:/Transformers Series/Transformers One (Josh Cooley, 2024)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 65,
+      "rotten": 89
+    },
+    "external": {
+      "imdb": "tt8864596",
+      "tmdb": 698687
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWI1ZDY1YTQtMjRkNy00ZDZhLWE3OTItMTIwNzliY2Y1MTZhXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Transformers One",
+    "originalTitle": "Transformers One",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Animation"
+    ],
+    "overview": "The untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but who once were friends bonded like brothers who changed the fate of Cybertron forever.",
+    "release": 2024,
+    "runtime": 104,
+    "actors": [
+      "Chris Hemsworth",
+      "Brian Tyree Henry",
+      "Scarlett Johansson"
+    ],
+    "directors": [
+      "Josh Cooley"
+    ],
+    "writers": [
+      "Eric Pearson",
+      "Andrew Barrer",
+      "Gabriel Ferrari"
     ]
   },
   {
@@ -138881,7 +139960,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 58,
-      "rotten": 74
+      "rotten": 73
     },
     "external": {
       "imdb": "tt0084827",
@@ -139282,9 +140361,9 @@ const db = [
     "release": 2016,
     "runtime": 84,
     "actors": [
+      "Bobby Naderi",
       "Narges Rashidi",
-      "Avin Manshadi",
-      "Bobby Naderi"
+      "Mia Sinclair Jenness"
     ],
     "directors": [
       "Babak Anvari"
@@ -139385,7 +140464,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 42,
-      "rotten": 31
+      "rotten": 30
     },
     "external": {
       "imdb": "tt0320691",
@@ -139896,7 +140975,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 47,
-      "rotten": 53
+      "rotten": 52
     },
     "external": {
       "imdb": "tt30955489",
@@ -140453,7 +141532,7 @@ const db = [
       "imdb": "tt5862312",
       "tmdb": 441701
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZGNmYjkwZTAtNzdlYS00NTE3LTgzZDUtZWMyNzExYjVkMTE2XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDI3MjMxYTktZjQ0My00MDVlLWE1MzYtYjliNjFmNmNjMzQxXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Veronica",
     "originalTitle": "Verónica",
     "languages": [
@@ -140870,7 +141949,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 77,
-      "rotten": 94
+      "rotten": 93
     },
     "external": {
       "imdb": "tt0086567",
@@ -140997,7 +142076,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 56,
-      "rotten": 65
+      "rotten": 64
     },
     "external": {
       "imdb": "tt0409459",
@@ -141073,6 +142152,134 @@ const db = [
       "Dave Gibbons",
       "Alan Moore",
       "J. Michael Straczynski"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 32203650536,
+      "location": "X:/Waterworld (Kevin Reynolds, 1995)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 56,
+      "rotten": 59
+    },
+    "external": {
+      "imdb": "tt0114898",
+      "tmdb": 9804
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI5ZmQ3NTAtNWVhMi00ZmI2LTg3YTMtN2Q1MmNjYzMwZGI1XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Waterworld",
+    "originalTitle": "Waterworld",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "overview": "The polar ice caps have melted, and the earth is covered by water. The remaining people travel the seas, in search of survival. Several different societies exist. The Mariner falls from his customary and solitary existence into having to care for a woman and a young girl while being pursued by the evil forces of the Deacon.",
+    "release": 1995,
+    "runtime": 135,
+    "actors": [
+      "Kevin Costner",
+      "Jeanne Tripplehorn",
+      "Dennis Hopper"
+    ],
+    "directors": [
+      "Kevin Reynolds"
+    ],
+    "writers": [
+      "Peter Rader",
+      "David Twohy"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-06-27",
+      "size": 1749492880,
+      "location": "X:/Wayne's World (Penelope Spheeris, 1992)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 57,
+      "rotten": 79
+    },
+    "external": {
+      "imdb": "tt0105793",
+      "tmdb": 8872
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGNlZDY1ZTEtZTMxOS00ZjQ5LThjODUtYTBmMWYyMjAxZDdiXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Wayne's World",
+    "originalTitle": "Wayne's World",
+    "languages": [
+      "English",
+      "广州话 / 廣州話"
+    ],
+    "genres": [
+      "Comedy",
+      "Music"
+    ],
+    "overview": "Wayne is still living at home. He has a world class collection of name tags from jobs he's tried, but he does have his own public access TV show. A local station decides to hire him and his sidekick, Garth, to do their show professionally and Wayne &amp; Garth find that it is no longer the same. Wayne falls for a bass guitarist and uses his and Garth's Video contacts to help her career along, knowing that Ben Oliver, the sleazy advertising guy who is ruining their show will probably take her away from him if they fail.",
+    "release": 1992,
+    "runtime": 94,
+    "actors": [
+      "Mike Myers",
+      "Dana Carvey",
+      "Rob Lowe"
+    ],
+    "directors": [
+      "Penelope Spheeris"
+    ],
+    "writers": [
+      "Mike Myers",
+      "Bonnie Turner",
+      "Terry Turner"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-06-27",
+      "size": 1804474751,
+      "location": "X:/Wayne's World 2 (Stephen Surjik, 1993)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 60,
+      "rotten": 59
+    },
+    "external": {
+      "imdb": "tt0108525",
+      "tmdb": 8873
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTBmNzQ0OGUtYWY5ZC00ZjBhLTkwMzQtNjUxZGVlYTczMjEwXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Wayne's World 2",
+    "originalTitle": "Wayne's World 2",
+    "languages": [
+      "English",
+      "广州话 / 廣州話"
+    ],
+    "genres": [
+      "Comedy",
+      "Music"
+    ],
+    "overview": "Wayne is back, this time trying to organize a rock festival with help from friend Garth and the spirit of Jim Morrison (Doors). Meanwhile, his girlfriend's manager is busy trying to woo her away from Wayne and move her to LA. Life gets interesting when Wayne must rush from the concert to try and stop the wedding. Aerosmith are featured at the concert.",
+    "release": 1993,
+    "runtime": 95,
+    "actors": [
+      "Mike Myers",
+      "Dana Carvey",
+      "Christopher Walken"
+    ],
+    "directors": [
+      "Stephen Surjik"
+    ],
+    "writers": [
+      "Mike Myers",
+      "Bonnie Turner",
+      "Terry Turner"
     ]
   },
   {
@@ -141334,7 +142541,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 52,
-      "rotten": 54
+      "rotten": 55
     },
     "external": {
       "imdb": "tt22478818",
@@ -141363,14 +142570,14 @@ const db = [
       "Nick Hamm"
     ],
     "writers": [
-      "Friedrich Schiller",
-      "Nick Hamm"
+      "Nick Hamm",
+      "Friedrich Schiller"
     ]
   },
   {
     "local": {
-      "date": "2021-08-14",
-      "size": 1990390321,
+      "date": "2025-09-05",
+      "size": 23519343217,
       "location": "X:/Willow (Ron Howard, 1988)"
     },
     "rating": {
@@ -141799,7 +143006,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 50,
-      "rotten": 49
+      "rotten": 48
     },
     "external": {
       "imdb": "tt4216984",
@@ -142540,7 +143747,6 @@ const db = [
     ],
     "writers": [
       "Hallgrímur Helgason",
-      "Baltasar Kormákur",
       "Baltasar Kormákur"
     ]
   },
@@ -142559,7 +143765,7 @@ const db = [
       "imdb": "tt0331811",
       "tmdb": 9282
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTk2YjI3MTctN2JhOC00YjBmLThmZjktMTFlZGZjMGRlYjhmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUwYWFhMzAtNmQ5MC00YWJmLTliMTMtMmI2OTNmZDg0NGI1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "11:14",
     "originalTitle": "11:14",
     "languages": [
@@ -143518,8 +144724,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 1464672074,
+      "date": "2025-09-05",
+      "size": 6929983213,
       "location": "Y:/25th Hour (Spike Lee, 2002)"
     },
     "rating": {
@@ -145013,7 +146219,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 75
+      "rotten": 76
     },
     "external": {
       "imdb": "tt22687790",
@@ -146163,7 +147369,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 53,
-      "rotten": 47
+      "rotten": 46
     },
     "external": {
       "imdb": "tt1540741",
@@ -146286,7 +147492,7 @@ const db = [
       "location": "Y:/A Thousand and One (A.V. Rockwell, 2023)"
     },
     "rating": {
-      "imdb": 70,
+      "imdb": 60,
       "meta": 81,
       "rotten": 97
     },
@@ -147151,6 +148357,49 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 61347699210,
+      "location": "Y:/Airplane! (Jim Abrahams, David Zucker, Jerry Zucker, 1980)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 78,
+      "rotten": 97
+    },
+    "external": {
+      "imdb": "tt0080339",
+      "tmdb": 813
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGMxMDRhMjItMDNlZi00MDIzLWE5MDQtODljMDQ3MWM1Y2E4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Airplane!",
+    "originalTitle": "Airplane!",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Comedy"
+    ],
+    "overview": "Drowning his sorrows after that botched mission during WWII, the traumatised former fighter pilot with a fear of flying, Ted Striker, still hasn't got over his old flame and flight attendant, Elaine Dickinson. Determined to win her back, Ted boards a domestic flight from Los Angeles to Chicago, only to come face-to-face with a severe case of in-flight food poisoning that is threatening everyone's lives. Now, with most of the passengers and the entire cockpit crew down with the food-borne illness, Striker has no other choice but to confront his inner demons and take over the control of the ungovernable aircraft with the help of a gruff air-traffic controller and his former commander. Can Ted land the plane and save them all?",
+    "release": 1980,
+    "runtime": 88,
+    "actors": [
+      "Robert Hays",
+      "Julie Hagerty",
+      "Leslie Nielsen"
+    ],
+    "directors": [
+      "Jim Abrahams",
+      "David Zucker",
+      "Jerry Zucker"
+    ],
+    "writers": [
+      "Jim Abrahams",
+      "David Zucker",
+      "Jerry Zucker"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 13644824713,
       "location": "Y:/Airport '77 (Jerry Jameson, 1977)"
@@ -147841,9 +149090,9 @@ const db = [
     "title": "All We Imagine as Light",
     "originalTitle": "All We Imagine as Light",
     "languages": [
-      "हिन्दी",
       "",
-      ""
+      "",
+      "हिन्दी"
     ],
     "genres": [
       "Drama",
@@ -148889,7 +150138,7 @@ const db = [
       "imdb": "tt10195452",
       "tmdb": 621476
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTdhNTZhMWYtZTBhYy00N2M4LThmZWMtOWE5ZjEyMDZkNWU3XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWQxZmRmYTYtMDQyNi00OGIyLTk1YTQtNGY5M2VkYzA1ODM0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "American Skin",
     "originalTitle": "American Skin",
     "languages": [
@@ -150269,7 +151518,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 52,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt26047818",
@@ -150825,7 +152074,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 74,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt10343028",
@@ -150988,7 +152237,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 54,
-      "rotten": 60
+      "rotten": 59
     },
     "external": {
       "imdb": "tt0398712",
@@ -151378,7 +152627,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 38,
-      "rotten": 37
+      "rotten": 36
     },
     "external": {
       "imdb": "tt0426931",
@@ -151464,7 +152713,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt0455824",
@@ -151770,7 +153019,7 @@ const db = [
       "imdb": "tt6850578",
       "tmdb": 618386
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTgzNjc5ZmUtOWY5MS00NDNhLWJjMTMtZjIzYTQwYTdiNzhjXkEyXkFqcGdeQXVyNTg3NjM3NzU@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWU2M2Q3MGEtNjFkMS00OWU5LWJlYjQtZjNmZjY1OTkzN2QyXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Babenco: Tell Me When I Die",
     "originalTitle": "Babenco: Alguém Tem que Ouvir o Coração e Dizer Parou",
     "languages": [
@@ -152229,7 +153478,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt0103759",
@@ -153325,7 +154574,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 52,
-      "rotten": 48
+      "rotten": 47
     },
     "external": {
       "imdb": "tt1559547",
@@ -153583,7 +154832,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 63,
-      "rotten": 75
+      "rotten": 76
     },
     "external": {
       "imdb": "tt5929776",
@@ -154044,7 +155293,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 38,
-      "rotten": 25
+      "rotten": 24
     },
     "external": {
       "imdb": "tt2638144",
@@ -154137,7 +155386,7 @@ const db = [
       "imdb": "tt7282468",
       "tmdb": 491584
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGU0YzFmZDYtODgxMC00NmQ0LTg0MjQtZDJlNzcwZDU5ZjFkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjVlOGRmMTgtZDU4NS00Y2JmLTgxYTMtZmNhMGE1ODIwNTkzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Burning",
     "originalTitle": "Beoning",
     "languages": [
@@ -154146,7 +155395,8 @@ const db = [
     ],
     "genres": [
       "Drama",
-      "Mystery"
+      "Mystery",
+      "Thriller"
     ],
     "overview": "Deliveryman Jongsu is out on a job when he runs into Haemi, a girl who once lived in his neighbourhood. She asks if he'd mind looking after her cat while she's away on a trip to Africa. On her return, she introduces to Jongsu an enigmatic young man named Ben, who she met during her trip. One day Ben tells Jongsu about his most unusual hobby.",
     "release": 2018,
@@ -155277,7 +156527,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 74,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt0265086",
@@ -155349,9 +156599,9 @@ const db = [
       "Scott Cooper"
     ],
     "writers": [
-      "Mark Mallouk",
-      "Jez Butterworth",
-      "Dick Lehr"
+      "Dick Lehr",
+      "Gerard O'Neill",
+      "Jez Butterworth"
     ]
   },
   {
@@ -155504,6 +156754,7 @@ const db = [
     ],
     "genres": [
       "Biography",
+      "Drama",
       "History"
     ],
     "overview": "The story of the meteoric rise and catastrophic demise of the world's first smartphone.",
@@ -155788,7 +157039,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 50,
-      "rotten": 42
+      "rotten": 43
     },
     "external": {
       "imdb": "tt1655389",
@@ -156382,7 +157633,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 66,
-      "rotten": 78
+      "rotten": 79
     },
     "external": {
       "imdb": "tt0085255",
@@ -157067,7 +158318,7 @@ const db = [
     },
     "poster": "https://m.media-amazon.com/images/M/MV5BYzJjODA2MTUtODg4YS00NjU0LWJlMjUtOGYyZjhmYjdjNjU1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Borg vs. McEnroe",
-    "originalTitle": "Borg McEnroe",
+    "originalTitle": "Borg",
     "languages": [
       "English",
       "Français",
@@ -157231,7 +158482,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 64,
-      "rotten": 87
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0115736",
@@ -157644,7 +158895,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 74,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt0401997",
@@ -158101,8 +159352,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 733689118,
+      "date": "2025-09-05",
+      "size": 4739167216,
       "location": "Y:/Broken Flowers (Jim Jarmusch, 2005)"
     },
     "rating": {
@@ -158234,7 +159485,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 57,
-      "rotten": 73
+      "rotten": 74
     },
     "external": {
       "imdb": "tt0237534",
@@ -158709,7 +159960,7 @@ const db = [
       "imdb": "tt7282468",
       "tmdb": 491584
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOGU0YzFmZDYtODgxMC00NmQ0LTg0MjQtZDJlNzcwZDU5ZjFkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjVlOGRmMTgtZDU4NS00Y2JmLTgxYTMtZmNhMGE1ODIwNTkzXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Burning",
     "originalTitle": "Beoning",
     "languages": [
@@ -158718,7 +159969,8 @@ const db = [
     ],
     "genres": [
       "Drama",
-      "Mystery"
+      "Mystery",
+      "Thriller"
     ],
     "overview": "Deliveryman Jongsu is out on a job when he runs into Haemi, a girl who once lived in his neighbourhood. She asks if he'd mind looking after her cat while she's away on a trip to Africa. On her return, she introduces to Jongsu an enigmatic young man named Ben, who she met during her trip. One day Ben tells Jongsu about his most unusual hobby.",
     "release": 2018,
@@ -159034,7 +160286,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 49,
-      "rotten": 48
+      "rotten": 49
     },
     "external": {
       "imdb": "tt3442006",
@@ -159449,7 +160701,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 71,
-      "rotten": 67
+      "rotten": 68
     },
     "external": {
       "imdb": "tt0293007",
@@ -159574,7 +160826,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 84
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0106519",
@@ -159657,7 +160909,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 77,
-      "rotten": 88
+      "rotten": 89
     },
     "external": {
       "imdb": "tt0066892",
@@ -159725,8 +160977,8 @@ const db = [
       "Todd Haynes"
     ],
     "writers": [
-      "Phyllis Nagy",
-      "Patricia Highsmith"
+      "Patricia Highsmith",
+      "Phyllis Nagy"
     ]
   },
   {
@@ -160164,7 +161416,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 88,
-      "rotten": 97
+      "rotten": 96
     },
     "external": {
       "imdb": "tt2818654",
@@ -160174,6 +161426,7 @@ const db = [
     "title": "Cemetery of Splendor",
     "originalTitle": "Rak ti Khon Kaen",
     "languages": [
+      "English",
       "ภาษาไทย"
     ],
     "genres": [
@@ -160205,7 +161458,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 88,
-      "rotten": 97
+      "rotten": 96
     },
     "external": {
       "imdb": "tt2818654",
@@ -160215,6 +161468,7 @@ const db = [
     "title": "Cemetery of Splendor",
     "originalTitle": "Rak ti Khon Kaen",
     "languages": [
+      "English",
       "ภาษาไทย"
     ],
     "genres": [
@@ -160374,7 +161628,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 63,
-      "rotten": 62
+      "rotten": 61
     },
     "external": {
       "imdb": "tt0824747",
@@ -160927,7 +162181,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": null,
-      "rotten": 57
+      "rotten": 63
     },
     "external": {
       "imdb": "tt21301418",
@@ -162393,7 +163647,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 57,
-      "rotten": 64
+      "rotten": 63
     },
     "external": {
       "imdb": "tt0393162",
@@ -162519,7 +163773,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 57,
-      "rotten": 51
+      "rotten": 52
     },
     "external": {
       "imdb": "tt0345061",
@@ -162553,8 +163807,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-12-02",
-      "size": 7033025133,
+      "date": "2025-09-05",
+      "size": 4701375769,
       "location": "Y:/Coffee and Cigarettes (Jim Jarmusch, 2003)"
     },
     "rating": {
@@ -162770,7 +164024,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 45,
-      "rotten": 28
+      "rotten": 29
     },
     "external": {
       "imdb": "tt1657507",
@@ -163109,9 +164363,9 @@ const db = [
     "originalTitle": "Conclave",
     "languages": [
       "English",
-      "Español",
       "Italiano",
-      "Latin"
+      "Latin",
+      "Español"
     ],
     "genres": [
       "Drama",
@@ -163736,7 +164990,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 28
+      "rotten": 29
     },
     "external": {
       "imdb": "tt0424908",
@@ -163821,7 +165075,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 76,
-      "rotten": 86
+      "rotten": 85
     },
     "external": {
       "imdb": "tt11992694",
@@ -164626,7 +165880,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 58,
-      "rotten": 58
+      "rotten": 57
     },
     "external": {
       "imdb": "tt1924245",
@@ -165448,7 +166702,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 69,
-      "rotten": 82
+      "rotten": 81
     },
     "external": {
       "imdb": "tt5700176",
@@ -165781,14 +167035,14 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 14632159694,
+      "date": "2025-07-08",
+      "size": 34249747612,
       "location": "Y:/Days of Thunder (Tony Scott, 1990)"
     },
     "rating": {
       "imdb": 60,
       "meta": 60,
-      "rotten": 38
+      "rotten": 37
     },
     "external": {
       "imdb": "tt0099371",
@@ -165946,8 +167200,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 708677103,
+      "date": "2025-09-05",
+      "size": 5976762715,
       "location": "Y:/Dead Man (Jim Jarmusch, 1995)"
     },
     "rating": {
@@ -165995,7 +167249,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 80,
-      "rotten": 95
+      "rotten": 97
     },
     "external": {
       "imdb": "tt0112818",
@@ -166036,7 +167290,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 79,
-      "rotten": 85
+      "rotten": 84
     },
     "external": {
       "imdb": "tt0097165",
@@ -166520,8 +167774,8 @@ const db = [
     "release": 2022,
     "runtime": 139,
     "actors": [
-      "Park Hae-il",
       "Tang Wei",
+      "Park Hae-il",
       "Lee Jung-hyun"
     ],
     "directors": [
@@ -166922,7 +168176,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 49,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt1172049",
@@ -167760,7 +169014,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 53,
-      "rotten": 52
+      "rotten": 51
     },
     "external": {
       "imdb": "tt4054654",
@@ -168426,8 +169680,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 8999308591,
+      "date": "2025-09-05",
+      "size": 6477461035,
       "location": "Y:/Down by Law (Jim Jarmusch, 1986)"
     },
     "rating": {
@@ -168772,7 +170026,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 56,
-      "rotten": 63
+      "rotten": 64
     },
     "external": {
       "imdb": "tt19356262",
@@ -169027,7 +170281,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 50,
-      "rotten": 35
+      "rotten": 36
     },
     "external": {
       "imdb": "tt0266489",
@@ -169320,6 +170574,46 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-07-08",
+      "size": 2329608063,
+      "location": "Y:/Eden (Ron Howard, 2024)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 58,
+      "rotten": null
+    },
+    "external": {
+      "imdb": "tt23149780",
+      "tmdb": 1042834
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmU3YjQ1YzAtMGU4OS00MWJkLTg2NGMtM2NmMmQ3NTM3NjNjXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Eden",
+    "originalTitle": "Eden",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Thriller"
+    ],
+    "overview": "Based on a factual account of a group of outsiders who settle on a remote island only to discover their greatest threat isn't the brutal climate or deadly wildlife, but each other.",
+    "release": 2024,
+    "runtime": 120,
+    "actors": [
+      "Jude Law",
+      "Ana de Armas",
+      "Vanessa Kirby"
+    ],
+    "directors": [
+      "Ron Howard"
+    ],
+    "writers": [
+      "Noah Pink",
+      "Ron Howard"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-18",
       "size": 1641622078,
       "location": "Y:/Edges of the Lord (Yurek Bogayevicz, 2001)"
@@ -169456,7 +170750,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 72,
-      "rotten": 82
+      "rotten": 81
     },
     "external": {
       "imdb": "tt5198890",
@@ -169965,7 +171259,7 @@ const db = [
       "imdb": "tt0331811",
       "tmdb": 9282
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTk2YjI3MTctN2JhOC00YjBmLThmZjktMTFlZGZjMGRlYjhmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUwYWFhMzAtNmQ5MC00YWJmLTliMTMtMmI2OTNmZDg0NGI1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "11:14",
     "originalTitle": "11:14",
     "languages": [
@@ -170307,8 +171601,8 @@ const db = [
     "title": "Emancipation",
     "originalTitle": "Emancipation",
     "languages": [
-      "English",
-      ""
+      "",
+      "English"
     ],
     "genres": [
       "Action",
@@ -170385,7 +171679,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 75,
-      "rotten": 94
+      "rotten": 93
     },
     "external": {
       "imdb": "tt15255876",
@@ -170513,7 +171807,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 54,
-      "rotten": 45
+      "rotten": 44
     },
     "external": {
       "imdb": "tt14402146",
@@ -170848,7 +172142,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 53,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt0215750",
@@ -170976,7 +172270,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 68,
-      "rotten": 81
+      "rotten": 82
     },
     "external": {
       "imdb": "tt3958780",
@@ -171099,7 +172393,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 51,
-      "rotten": 34
+      "rotten": 33
     },
     "external": {
       "imdb": "tt0343663",
@@ -171270,7 +172564,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 89,
-      "rotten": 92
+      "rotten": 93
     },
     "external": {
       "imdb": "tt0338013",
@@ -171696,7 +172990,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": null,
-      "rotten": 62
+      "rotten": 61
     },
     "external": {
       "imdb": "tt1258197",
@@ -172022,6 +173316,48 @@ const db = [
     ],
     "writers": [
       "Merav Doster"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 29045508134,
+      "location": "Y:/F1 (Joseph Kosinski, 2025)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 68,
+      "rotten": 82
+    },
+    "external": {
+      "imdb": "tt16311594",
+      "tmdb": 911430
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTYwYjJhNzYtY2ZiZS00ZmYxLWJkZjctYjRlNGIxYjI3ZTU0XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "F1: The Movie",
+    "originalTitle": "F1",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Action",
+      "Drama",
+      "Sport"
+    ],
+    "overview": "A Formula One driver comes out of retirement to mentor and team up with a younger driver.",
+    "release": 2025,
+    "runtime": 155,
+    "actors": [
+      "Brad Pitt",
+      "Damson Idris",
+      "Javier Bardem"
+    ],
+    "directors": [
+      "Joseph Kosinski"
+    ],
+    "writers": [
+      "Ehren Kruger",
+      "Joseph Kosinski"
     ]
   },
   {
@@ -172537,14 +173873,14 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 1477899274,
+      "date": "2025-09-05",
+      "size": 63363011289,
       "location": "Y:/Fargo (Coen Brothers, 1996)"
     },
     "rating": {
       "imdb": 80,
       "meta": 88,
-      "rotten": 95
+      "rotten": 94
     },
     "external": {
       "imdb": "tt0116282",
@@ -172920,7 +174256,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 61,
-      "rotten": 57
+      "rotten": 56
     },
     "external": {
       "imdb": "tt0289944",
@@ -173000,7 +174336,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 74
+      "rotten": 73
     },
     "external": {
       "imdb": "tt0446059",
@@ -173032,8 +174368,8 @@ const db = [
     ],
     "writers": [
       "Chris Chow",
-      "Richard Epcar",
-      "Chi-Long To"
+      "Chi-Long To",
+      "Bin Wang"
     ]
   },
   {
@@ -173207,7 +174543,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 73,
-      "rotten": 72
+      "rotten": 73
     },
     "external": {
       "imdb": "tt3758542",
@@ -173417,7 +174753,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 74,
-      "rotten": 88
+      "rotten": 86
     },
     "external": {
       "imdb": "tt7765120",
@@ -173458,7 +174794,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 56,
-      "rotten": 67
+      "rotten": 66
     },
     "external": {
       "imdb": "tt1450321",
@@ -174444,7 +175780,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 47,
-      "rotten": 31
+      "rotten": 30
     },
     "external": {
       "imdb": "tt0377062",
@@ -174488,7 +175824,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 37
+      "rotten": 36
     },
     "external": {
       "imdb": "tt0408790",
@@ -174620,7 +175956,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 65
+      "rotten": 66
     },
     "external": {
       "imdb": "tt1896747",
@@ -174749,7 +176085,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 42,
-      "rotten": 54
+      "rotten": 55
     },
     "external": {
       "imdb": "tt0087277",
@@ -174790,7 +176126,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 58,
-      "rotten": 65
+      "rotten": 66
     },
     "external": {
       "imdb": "tt20256448",
@@ -175083,7 +176419,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": null,
-      "rotten": 89
+      "rotten": 90
     },
     "external": {
       "imdb": "tt0067641",
@@ -175249,7 +176585,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 73
+      "rotten": 72
     },
     "external": {
       "imdb": "tt0488120",
@@ -175325,14 +176661,14 @@ const db = [
   },
   {
     "local": {
-      "date": "2022-01-08",
-      "size": 1669641074,
+      "date": "2025-07-15",
+      "size": 63827328109,
       "location": "Y:/Frailty (Bill Paxton, 2001)"
     },
     "rating": {
       "imdb": 70,
       "meta": 64,
-      "rotten": 75
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0264616",
@@ -175840,7 +177176,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 40,
-      "rotten": 25
+      "rotten": 24
     },
     "external": {
       "imdb": "tt23319892",
@@ -175998,6 +177334,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 5185664890,
+      "location": "Y:/Freud's Last Session (Matt Brown, 2023)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 48,
+      "rotten": 43
+    },
+    "external": {
+      "imdb": "tt20420628",
+      "tmdb": 1025491
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTZiNzRhYzMtNjYxYS00ZTAzLWI3OGQtYzU0MWYyYzJiZmE4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Freud's Last Session",
+    "originalTitle": "Freud's Last Session",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Drama"
+    ],
+    "overview": "Psychoanalyst Sigmund Freud invites professor C.S. Lewis to debate the existence of God, Freud's unique relationship with his daughter, and Lewis' unconventional relationship with his best friend's mother.",
+    "release": 2023,
+    "runtime": 110,
+    "actors": [
+      "Anthony Hopkins",
+      "Matthew Goode",
+      "Liv Lisa Fries"
+    ],
+    "directors": [
+      "Matt Brown"
+    ],
+    "writers": [
+      "Mark St. Germain",
+      "Matt Brown",
+      "Armand M. Nicholi Jr."
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 3652042852,
       "location": "Y:/Frida (Julie Taymor, 2002)"
@@ -176005,7 +177382,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 61,
-      "rotten": 76
+      "rotten": 77
     },
     "external": {
       "imdb": "tt0120679",
@@ -176517,7 +177894,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 64,
-      "rotten": 76
+      "rotten": 75
     },
     "external": {
       "imdb": "tt2713180",
@@ -177303,6 +178680,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 61100387421,
+      "location": "Y:/Ghost (Jerry Zucker, 1990)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 52,
+      "rotten": 74
+    },
+    "external": {
+      "imdb": "tt0099653",
+      "tmdb": 251
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjkwOWM2MWMtMWE1YS00MTBlLTg1ODctYTI3M2I0NGIxMGYyXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Ghost",
+    "originalTitle": "Ghost",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "overview": "Sam Wheat is a banker, Molly Jensen is an artist, and the two are madly in love. However, when Sam is murdered by friend and corrupt business partner Carl Bruner over a shady business deal, he is left to roam the Earth as a powerless spirit. When he learns of Carl's betrayal, Sam must seek the help of psychic Oda Mae Brown to set things right and protect Molly from Carl and his goons.",
+    "release": 1990,
+    "runtime": 126,
+    "actors": [
+      "Patrick Swayze",
+      "Demi Moore",
+      "Whoopi Goldberg"
+    ],
+    "directors": [
+      "Jerry Zucker"
+    ],
+    "writers": [
+      "Bruce Joel Rubin"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-12-02",
       "size": 5200430834,
       "location": "Y:/Ghost Dog - The Way of the Samurai (Jim Jarmusch, 1999)"
@@ -177591,6 +179009,46 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 8530904124,
+      "location": "Y:/Gimme Danger (Jim Jarmusch, 2016)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 72,
+      "rotten": 95
+    },
+    "external": {
+      "imdb": "tt1714917",
+      "tmdb": 392820
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTYyOTc5NzI4Ml5BMl5BanBnXkFtZTgwMjIwNzczMDI@._V1_SX300.jpg",
+    "title": "Gimme Danger",
+    "originalTitle": "Gimme Danger",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "overview": "An in-depth look at legendary punk band The Stooges.",
+    "release": 2016,
+    "runtime": 108,
+    "actors": [
+      "Iggy Pop",
+      "Jim Jarmusch",
+      "Bob Waller"
+    ],
+    "directors": [
+      "Jim Jarmusch"
+    ],
+    "writers": [
+      "Jim Jarmusch"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 7646402156,
       "location": "Y:/Gimme Shelter (Albert Maysles, David Maysles, 1970)"
@@ -177765,7 +179223,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 51,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt0172493",
@@ -178504,7 +179962,6 @@ const db = [
       "Rebecca Romijn"
     ],
     "directors": [
-      "Frank M. Calo",
       "Nick Hamm"
     ],
     "writers": [
@@ -178560,7 +180017,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 49,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt1800302",
@@ -178813,7 +180270,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 35,
-      "rotten": 26
+      "rotten": 25
     },
     "external": {
       "imdb": "tt0187078",
@@ -179686,7 +181143,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 66
+      "rotten": 65
     },
     "external": {
       "imdb": "tt0077631",
@@ -179729,7 +181186,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 55,
-      "rotten": 39
+      "rotten": 41
     },
     "external": {
       "imdb": "tt0119223",
@@ -179759,46 +181216,6 @@ const db = [
     "writers": [
       "Charles Dickens",
       "Mitch Glazer"
-    ]
-  },
-  {
-    "local": {
-      "date": "2024-11-01",
-      "size": 2227285564,
-      "location": "Y:/Greedy People (Potsy Ponciroli, 2024)"
-    },
-    "rating": {
-      "imdb": 60,
-      "meta": 45,
-      "rotten": 59
-    },
-    "external": {
-      "imdb": "tt20201748",
-      "tmdb": 974250
-    },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYzBlM2E0M2EtMjBhNy00NTEwLWJlZTgtNTg5NGFiYTNmNGZkXkEyXkFqcGc@._V1_SX300.jpg",
-    "title": "Greedy People",
-    "originalTitle": "Greedy People",
-    "languages": [
-      "English"
-    ],
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "overview": "Follows the residents of a small island town who must navigate a sensational murder and the discovery of a million dollars; a series of increasingly bad decisions upend the once peaceful community.",
-    "release": 2024,
-    "runtime": 112,
-    "actors": [
-      "Himesh Patel",
-      "Joseph Gordon-Levitt",
-      "Lily James"
-    ],
-    "directors": [
-      "Potsy Ponciroli"
-    ],
-    "writers": [
-      "Mike Vukadinovich"
     ]
   },
   {
@@ -180066,36 +181483,41 @@ const db = [
     },
     "rating": {
       "imdb": 70,
-      "meta": null,
-      "rotten": 67
+      "meta": 77,
+      "rotten": 84
     },
     "external": {
-      "imdb": "tt1028528",
-      "tmdb": 1991
+      "imdb": "tt0462322",
+      "tmdb": 285923
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjRlOTM0OTktZTBjNi00ZjZiLWJkMzktMmU2ZDBkMTQxN2FmXkEyXkFqcGc@._V1_SX300.jpg",
-    "title": "Death Proof",
-    "originalTitle": "Death Proof",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA0MzExNzc3MV5BMl5BanBnXkFtZTcwODAxMzM0MQ@@._V1_SX300.jpg",
+    "title": "Grindhouse",
+    "originalTitle": "Grindhouse",
     "languages": [
+      "Español",
       "English"
     ],
     "genres": [
-      "Drama",
+      "Horror",
       "Thriller"
     ],
-    "overview": "In Austin, Texas, the girlfriends Julia, Arlene and Shanna meet in a bar to drink, smoke and make out with their boyfriends before traveling alone to Lake LBJ to spend the weekend together. They meet the former Hollywood stuntman Mike, who takes Pam out in his \"death-proof\" stunt car. Fourteen months later, Mike turns up in Lebanon, Tennessee and chase Abernathy, Zoë and Kim, but these girls are tough and decide to pay-back the attack.",
+    "overview": "A double-bill of thrillers that recall both filmmakers' favorite exploitation films. \"Grindhouse\" (a downtown movie theater in disrepair since its glory days as a movie palace known for \"grinding out\" non-stop double-bill programs of B-movies) is presented as one full-length feature comprised of two individual films helmed separately by each director. \"Death Proof,\" is a rip-roaring slasher flick where the killer pursues his victims with a car rather than a knife, while \"Planet Terror\" shows us a view of the world in the midst of a zombie outbreak. The films are joined together by clever faux trailers that recall the '50s exploitation drive-in classics.",
     "release": 2007,
-    "runtime": 127,
+    "runtime": 191,
     "actors": [
       "Kurt Russell",
-      "Zoë Bell",
-      "Rosario Dawson"
+      "Rose McGowan",
+      "Danny Trejo"
     ],
     "directors": [
+      "Robert Rodriguez",
+      "Eli Roth",
       "Quentin Tarantino"
     ],
     "writers": [
-      "Quentin Tarantino"
+      "Robert Rodriguez",
+      "Rob Zombie",
+      "Edgar Wright"
     ]
   },
   {
@@ -180695,7 +182117,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 31,
-      "rotten": 63
+      "rotten": 64
     },
     "external": {
       "imdb": "tt0116483",
@@ -180899,7 +182321,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 55,
-      "rotten": 63
+      "rotten": 64
     },
     "external": {
       "imdb": "tt1289406",
@@ -181679,9 +183101,9 @@ const db = [
     "release": 1956,
     "runtime": 118,
     "actors": [
-      "Stanley Baker",
       "Rossana Podestà",
-      "Brigitte Bardot"
+      "Jacques Sernas",
+      "Cedric Hardwicke"
     ],
     "directors": [
       "Robert Wise",
@@ -181827,7 +183249,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 39,
-      "rotten": 36
+      "rotten": 35
     },
     "external": {
       "imdb": "tt18272208",
@@ -181952,7 +183374,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 45,
-      "rotten": 55
+      "rotten": 54
     },
     "external": {
       "imdb": "tt1403177",
@@ -182076,7 +183498,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 35,
-      "rotten": 13
+      "rotten": 12
     },
     "external": {
       "imdb": "tt0382077",
@@ -182453,7 +183875,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 42,
-      "rotten": 20
+      "rotten": 21
     },
     "external": {
       "imdb": "tt3045628",
@@ -182470,7 +183892,7 @@ const db = [
       "Drama",
       "Mystery"
     ],
-    "overview": "A woman's picture-perfect life in quaint Holland, Michigan crumbles, when she and a friend uncover a twisted secret in their midst.",
+    "overview": "A woman's picture-perfect life in quaint Holland, Michigan, crumbles when she and a friend uncover a twisted secret in their midst.",
     "release": 2025,
     "runtime": 110,
     "actors": [
@@ -182535,7 +183957,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 73,
-      "rotten": 95
+      "rotten": 94
     },
     "external": {
       "imdb": "tt8151874",
@@ -182782,7 +184204,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 62
+      "rotten": 61
     },
     "external": {
       "imdb": "tt11214590",
@@ -182830,7 +184252,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 71,
-      "rotten": 75
+      "rotten": 74
     },
     "external": {
       "imdb": "tt0315983",
@@ -183249,7 +184671,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 60
+      "rotten": 59
     },
     "external": {
       "imdb": "tt1435513",
@@ -183463,7 +184885,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 57,
-      "rotten": 52
+      "rotten": 51
     },
     "external": {
       "imdb": "tt2884206",
@@ -183844,7 +185266,7 @@ const db = [
       "imdb": "tt0296042",
       "tmdb": 9696
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWZhMGExZGMtYThlMS00YjNjLTliN2MtNTg4N2ZiYjc5OTlmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWRlYjQ2NDktZDI5NC00NzAyLWE1NjEtY2M2YjFhZTg2Y2ZlXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Ichi the Killer",
     "originalTitle": "Koroshiya 1",
     "languages": [
@@ -184250,6 +185672,53 @@ const db = [
       "Marc Furmie",
       "Steve M. Albert",
       "Luke Flynn"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 6712327166,
+      "location": "Y:/In Order of Disappearance (Hans Petter Moland, 2014)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 74,
+      "rotten": 86
+    },
+    "external": {
+      "imdb": "tt2675914",
+      "tmdb": 252822
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUzNTA0NTY0Nl5BMl5BanBnXkFtZTgwNTI1NDgzOTE@._V1_SX300.jpg",
+    "title": "In Order of Disappearance",
+    "originalTitle": "Kraftidioten",
+    "languages": [
+      "Deutsch",
+      "Norsk",
+      "svenska",
+      "Dansk",
+      "English",
+      "Srpski"
+    ],
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "overview": "Nils ploughs snow in the wild winter mountains of Norway, and is recently awarded a Citizen of the Year Award. When his son is murdered for something he did not do, Nils wants revenge. And justice. His actions ignite a war between the vegan gangster \"the Count\" and the Serbian mafia boss \"Papa\". Winning a blood feud isn't easy, especially not in a welfare state. But Nils has something going for him: Heavy machinery and beginners luck.",
+    "release": 2014,
+    "runtime": 116,
+    "actors": [
+      "Stellan Skarsgård",
+      "Bruno Ganz",
+      "Pål Sverre Hagen"
+    ],
+    "directors": [
+      "Hans Petter Moland"
+    ],
+    "writers": [
+      "Kim Fupz Aakeson",
+      "Finn Gjerdrum"
     ]
   },
   {
@@ -184852,9 +186321,9 @@ const db = [
     "title": "Infernal Affairs",
     "originalTitle": "Mou gaan dou",
     "languages": [
-      "普通话",
+      "广州话 / 廣州話",
       "ภาษาไทย",
-      "广州话 / 廣州話"
+      "普通话"
     ],
     "genres": [
       "Crime",
@@ -184897,9 +186366,9 @@ const db = [
     "title": "Infernal Affairs",
     "originalTitle": "Mou gaan dou",
     "languages": [
-      "普通话",
+      "广州话 / 廣州話",
       "ภาษาไทย",
-      "广州话 / 廣州話"
+      "普通话"
     ],
     "genres": [
       "Crime",
@@ -184942,8 +186411,8 @@ const db = [
     "title": "Infernal Affairs III",
     "originalTitle": "Mou gaan dou III: Jung gik mou gaan",
     "languages": [
-      "普通话",
-      "广州话 / 廣州話"
+      "广州话 / 廣州話",
+      "普通话"
     ],
     "genres": [
       "Action",
@@ -185911,7 +187380,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 74,
-      "rotten": 77
+      "rotten": 76
     },
     "external": {
       "imdb": "tt1057500",
@@ -186590,7 +188059,7 @@ const db = [
       "imdb": "tt3393786",
       "tmdb": 343611
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTA2MDIwNzAyNzReQTJeQWpwZ15BbWU4MDAxNjI5Njkx._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODQ3ODQ3NDI4NV5BMl5BanBnXkFtZTgwMDY1Mzk5OTE@._V1_SX300.jpg",
     "title": "Jack Reacher: Never Go Back",
     "originalTitle": "Jack Reacher: Never Go Back",
     "languages": [
@@ -186712,7 +188181,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 33,
-      "rotten": 16
+      "rotten": 18
     },
     "external": {
       "imdb": "tt0113451",
@@ -187168,7 +188637,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 72,
-      "rotten": 84
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0102138",
@@ -187233,8 +188702,8 @@ const db = [
     "runtime": 118,
     "actors": [
       "Donald Sutherland",
-      "Whoopi Goldberg",
-      "Oliver Stone"
+      "Oliver Stone",
+      "Whoopi Goldberg"
     ],
     "directors": [
       "Oliver Stone"
@@ -187258,7 +188727,7 @@ const db = [
       "imdb": "tt0107259",
       "tmdb": 142373
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTIwMGUwMmEtYzY2NS00ZjRmLTlmYmEtNGQ0NDFiMDAyN2EwXkEyXkFqcGdeQXVyMjUzMTYzMDI@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWI1NDhlNGEtMzliNy00YWU1LWI2NDAtMjZlMTEyYmM1MjU0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Joan the Maid 1: The Battles",
     "originalTitle": "Jeanne la Pucelle I - Les batailles",
     "languages": [
@@ -187464,7 +188933,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 32
+      "rotten": 33
     },
     "external": {
       "imdb": "tt0274166",
@@ -188311,7 +189780,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 49,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt0272152",
@@ -189063,7 +190532,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 33,
-      "rotten": 18
+      "rotten": 17
     },
     "external": {
       "imdb": "tt27419292",
@@ -189360,7 +190829,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 66,
-      "rotten": 73
+      "rotten": 74
     },
     "external": {
       "imdb": "tt0099939",
@@ -189442,7 +190911,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 63,
-      "rotten": 40
+      "rotten": 39
     },
     "external": {
       "imdb": "tt0320661",
@@ -191557,7 +193026,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 47,
-      "rotten": 44
+      "rotten": 45
     },
     "external": {
       "imdb": "tt0947802",
@@ -191721,7 +193190,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 75,
-      "rotten": 92
+      "rotten": 91
     },
     "external": {
       "imdb": "tt3841424",
@@ -192976,7 +194445,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 82,
-      "rotten": 91
+      "rotten": 90
     },
     "external": {
       "imdb": "tt0113627",
@@ -193019,7 +194488,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 62,
-      "rotten": 67
+      "rotten": 68
     },
     "external": {
       "imdb": "tt5112584",
@@ -194415,7 +195884,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 75,
-      "rotten": 80
+      "rotten": 81
     },
     "external": {
       "imdb": "tt0404203",
@@ -194744,7 +196213,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 45,
-      "rotten": 64
+      "rotten": 65
     },
     "external": {
       "imdb": "tt26671996",
@@ -194871,7 +196340,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 52,
-      "rotten": 38
+      "rotten": 39
     },
     "external": {
       "imdb": "tt1213648",
@@ -195580,7 +197049,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 43,
-      "rotten": 26
+      "rotten": 25
     },
     "external": {
       "imdb": "tt0484740",
@@ -196376,7 +197845,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 36,
-      "rotten": 40
+      "rotten": 42
     },
     "external": {
       "imdb": "tt9224288",
@@ -196882,7 +198351,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 47,
-      "rotten": 38
+      "rotten": 39
     },
     "external": {
       "imdb": "tt0328107",
@@ -197342,7 +198811,7 @@ const db = [
       "imdb": "tt0369702",
       "tmdb": 1913
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjE0NDk2NjgwMV5BMl5BanBnXkFtZTYwMTgyMzA3._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjFlNzg5ZTYtNDhkOC00Y2EwLTk2YzUtODNmZDMyOTMyMjhkXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Sea Inside",
     "originalTitle": "Mar adentro",
     "languages": [
@@ -197756,7 +199225,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 41,
-      "rotten": 26
+      "rotten": 25
     },
     "external": {
       "imdb": "tt6722802",
@@ -198050,7 +199519,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 61,
-      "rotten": 83
+      "rotten": 82
     },
     "external": {
       "imdb": "tt0325805",
@@ -198488,6 +199957,7 @@ const db = [
       "English"
     ],
     "genres": [
+      "Drama",
       "Mystery",
       "Thriller"
     ],
@@ -198642,7 +200112,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 71,
-      "rotten": 82
+      "rotten": 81
     },
     "external": {
       "imdb": "tt1259014",
@@ -198856,7 +200326,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 60,
-      "rotten": 40
+      "rotten": 39
     },
     "external": {
       "imdb": "tt1251757",
@@ -200193,7 +201663,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 74,
-      "rotten": 82
+      "rotten": 81
     },
     "external": {
       "imdb": "tt0340855",
@@ -200818,7 +202288,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 94,
-      "rotten": 97
+      "rotten": 96
     },
     "external": {
       "imdb": "tt2473794",
@@ -201034,7 +202504,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 53,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt7475578",
@@ -201538,7 +203008,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 50,
-      "rotten": 44
+      "rotten": 45
     },
     "external": {
       "imdb": "tt13139228",
@@ -201696,8 +203166,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 734101205,
+      "date": "2025-09-05",
+      "size": 5335130342,
       "location": "Y:/Mysterious Skin (Gregg Araki, 2004)"
     },
     "rating": {
@@ -201736,8 +203206,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 735192809,
+      "date": "2025-09-05",
+      "size": 5078565483,
       "location": "Y:/Mystery Train (Jim Jarmusch, 1989)"
     },
     "rating": {
@@ -201994,7 +203464,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt0272207",
@@ -202036,7 +203506,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 46
+      "rotten": 47
     },
     "external": {
       "imdb": "tt0368891",
@@ -202253,7 +203723,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 74,
-      "rotten": 68
+      "rotten": 69
     },
     "external": {
       "imdb": "tt1714918",
@@ -202618,8 +204088,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 728939149,
+      "date": "2025-09-05",
+      "size": 6240968855,
       "location": "Y:/Night on Earth (Jim Jarmusch, 1991)"
     },
     "rating": {
@@ -202838,7 +204308,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 47,
-      "rotten": 27
+      "rotten": 26
     },
     "external": {
       "imdb": "tt0113986",
@@ -203009,7 +204479,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 54,
-      "rotten": 62
+      "rotten": 63
     },
     "external": {
       "imdb": "tt7550014",
@@ -203425,7 +204895,7 @@ const db = [
       "imdb": "tt9770150",
       "tmdb": 581734
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjE3OTU3YTctMWRjOS00MTJiLWJjYWItYzJiMjk0OGQ3MTY0XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGNkOWQ0ZjMtMTc4Ny00NDRhLTgyMjUtNzFmZDM0MTc3N2JjXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Nomadland",
     "originalTitle": "Nomadland",
     "languages": [
@@ -203742,6 +205212,48 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 1636268738,
+      "location": "Y:/Nowhere (Gregg Araki, 1997)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 44,
+      "rotten": 50
+    },
+    "external": {
+      "imdb": "tt0119809",
+      "tmdb": 1811
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2M3NjE1MjItNjI3My00ODI3LWIwMWQtM2ExOTQ2ZTdlNDYyXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Nowhere",
+    "originalTitle": "Nowhere",
+    "languages": [
+      "English",
+      "Íslenska"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "overview": "A group of teenagers try to sort out their lives and emotions while bizarre experiences happen to each one, including alien abductions, bad acid trips, bisexual experiences, suicides, bizarre deaths, and a rape by a TV star. All of this happens before \"the greatest party of the year\".",
+    "release": 1997,
+    "runtime": 82,
+    "actors": [
+      "James Duval",
+      "Rachel True",
+      "Nathan Bexton"
+    ],
+    "directors": [
+      "Gregg Araki"
+    ],
+    "writers": [
+      "Gregg Araki"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 733939914,
       "location": "Y:/Nowhere Boy (Sam Taylor-Johnson, 2009)"
@@ -203875,7 +205387,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 71,
-      "rotten": 91
+      "rotten": 90
     },
     "external": {
       "imdb": "tt0132477",
@@ -204290,7 +205802,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 48,
-      "rotten": 37
+      "rotten": 36
     },
     "external": {
       "imdb": "tt1563738",
@@ -204455,7 +205967,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 69,
-      "rotten": 90
+      "rotten": 91
     },
     "external": {
       "imdb": "tt13097932",
@@ -204543,7 +206055,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 87
+      "rotten": 86
     },
     "external": {
       "imdb": "tt0120776",
@@ -205180,7 +206692,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 42,
-      "rotten": 60
+      "rotten": 59
     },
     "external": {
       "imdb": "tt1148204",
@@ -205430,7 +206942,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 64,
-      "rotten": 59
+      "rotten": 60
     },
     "external": {
       "imdb": "tt0114069",
@@ -206348,7 +207860,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 86
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0401711",
@@ -206397,7 +207909,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 42,
-      "rotten": 41
+      "rotten": 42
     },
     "external": {
       "imdb": "tt1904996",
@@ -206438,7 +207950,7 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": 57,
+      "meta": 52,
       "rotten": 46
     },
     "external": {
@@ -206456,7 +207968,7 @@ const db = [
       "Drama",
       "Fantasy"
     ],
-    "overview": "Partenope is a woman who bears the name of her city. Is she a siren or a myth?",
+    "overview": "A woman born in the sea of Naples in 1950 searches for happiness over the long summers of her youth, falling in love with her home city and its many memorable characters.",
     "release": 2024,
     "runtime": 137,
     "actors": [
@@ -206729,7 +208241,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 53,
-      "rotten": 59
+      "rotten": 60
     },
     "external": {
       "imdb": "tt0070518",
@@ -206802,6 +208314,50 @@ const db = [
       "Patch Adams",
       "Maureen Mylander",
       "Steve Oedekerk"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 3327691691,
+      "location": "Y:/Paterson (Jim Jarmusch, 2016)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 90,
+      "rotten": 96
+    },
+    "external": {
+      "imdb": "tt5247022",
+      "tmdb": 370755
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUzODA4Nzk0OF5BMl5BanBnXkFtZTgwNzE1MDIwMDI@._V1_SX300.jpg",
+    "title": "Paterson",
+    "originalTitle": "Paterson",
+    "languages": [
+      "English",
+      "Italiano"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "overview": "Exactly one week in the life of a young man named Paterson of Paterson, New Jersey is presented. He lives an extremely regimented and routinized life, that routine perhaps most vividly displayed by the fact that he is able to wake up at exactly the same time every day without an alarm. That life includes eating Cheerios for breakfast, walking to work carrying his brown bag lunch packed in his lunch pail by his wife Laura, having a casual chat with his colleague Donny before he begins his shift driving the #23 Paterson bus for the local public transit company, walking home where he straightens out the exterior mailbox which somehow during the day gets knocked crooked, eating dinner with Laura and listening to her goings-on of the day, taking Laura's English bulldog Marvin - who he would admit to himself he doesn't much like - out for a walk to his neighborhood bar where he has one and only one beer before walking home with Marvin. There are day to day variations which are often the result of how certain other routines associated to him manifest themselves, such as what drama will occur in the relationship of Marie and Everett who are always at the bar together despite her always saying that they are no longer together, or in what form Laura's unique and distinctive design sense will affect Paterson's life directly or indirectly. Paterson's keen observances of what happens around him are largely the bases for the poems he writes, he constantly thinking of these and writing them in his secret notebook whenever he has a spare moment during his day. He is influenced by among others Paterson natives such as William Carlos Williams and his epic poem \"Paterson\". Paterson's writing are largely for himself, although Laura would like him to share more with her and the rest of the world. Something that happens to Paterson this week has the potential to knock his routinized world into a tailspin.",
+    "release": 2016,
+    "runtime": 118,
+    "actors": [
+      "Adam Driver",
+      "Golshifteh Farahani",
+      "Nellie"
+    ],
+    "directors": [
+      "Jim Jarmusch"
+    ],
+    "writers": [
+      "Jim Jarmusch",
+      "William Carlos Williams",
+      "Ron Padgett"
     ]
   },
   {
@@ -207318,7 +208874,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": null,
-      "rotten": 77
+      "rotten": 79
     },
     "external": {
       "imdb": "tt4901306",
@@ -207393,6 +208949,92 @@ const db = [
       "Andrew Birkin",
       "Bernd Eichinger",
       "Tom Tykwer"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1275802487,
+      "location": "Y:/Permanent Vacation (Jim Jarmusch, 1980)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 69,
+      "rotten": null
+    },
+    "external": {
+      "imdb": "tt0084488",
+      "tmdb": 37997
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjQ1MzU5ZTMtNWVjMC00ZGI4LWE2NTYtZGQyMjY5MDBkOWRkXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Permanent Vacation",
+    "originalTitle": "Permanent Vacation",
+    "languages": [
+      "English",
+      "Español"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "overview": "In downtown Manhattan, a twenty-something boy ('Chris Parker')whose Father is not around and whose Mother is institutionalized, is a big Charlie Parker fan. He almost subconsciously searches for more meaning in his life and meets a few characters along the way.",
+    "release": 1980,
+    "runtime": 75,
+    "actors": [
+      "Chris Parker",
+      "Leila Gastil",
+      "John Lurie"
+    ],
+    "directors": [
+      "Jim Jarmusch"
+    ],
+    "writers": [
+      "Jim Jarmusch"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 9392019552,
+      "location": "Y:/Permanent Vacation (Jim Jarmusch, 1980)/The Limits of Control (Jim Jarmusch, 2009)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 41,
+      "rotten": 43
+    },
+    "external": {
+      "imdb": "tt1135092",
+      "tmdb": 8284
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA5ODk3NjE1NF5BMl5BanBnXkFtZTcwNTE3MTA0Mg@@._V1_SX300.jpg",
+    "title": "The Limits of Control",
+    "originalTitle": "The Limits of Control",
+    "languages": [
+      "العربية",
+      "English",
+      "Français",
+      "日本語",
+      "Español"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "overview": "A solitary man who does not speak Spanish is an underground courier. Two men who are both thuggish and philosophical send him to Madrid with cryptic instructions. Over the course of a few days, he receives his instructions from a series of distinctive individuals who provide words of philosophy or of warning and also give him a matchbox with a tiny piece of paper, which he reads then eats, accompanied by espresso served in two cups. He is quiet, self-contained, focused on his work. He has rules. He encounters and at times transmits a violin, diamonds, a guitar, and a map. Is he a smuggler? Merely an independent conduit? Or, something else?",
+    "release": 2009,
+    "runtime": 116,
+    "actors": [
+      "Isaach De Bankolé",
+      "Alex Descas",
+      "Jean-François Stévenin"
+    ],
+    "directors": [
+      "Jim Jarmusch"
+    ],
+    "writers": [
+      "Jim Jarmusch"
     ]
   },
   {
@@ -207614,7 +209256,7 @@ const db = [
       "imdb": "tt0073540",
       "tmdb": 11020
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTFiMDE3M2EtMzFkZi00OTU1LTg0MGQtMTIwOWEyNDczMjBkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDg0ZWUyMGYtMmY5NC00MmYzLTkyYjUtYWJmYmRiOTZhZjVkXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Picnic at Hanging Rock",
     "originalTitle": "Picnic at Hanging Rock",
     "languages": [
@@ -207689,7 +209331,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 84
+      "rotten": 83
     },
     "external": {
       "imdb": "tt0311648",
@@ -207814,7 +209456,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 62,
-      "rotten": 79
+      "rotten": 78
     },
     "external": {
       "imdb": "tt5884796",
@@ -208230,7 +209872,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 34,
-      "rotten": 11
+      "rotten": 12
     },
     "external": {
       "imdb": "tt2058673",
@@ -209363,7 +211005,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 77,
-      "rotten": 82
+      "rotten": 80
     },
     "external": {
       "imdb": "tt0100436",
@@ -209538,12 +211180,12 @@ const db = [
     "title": "Purple Rain",
     "originalTitle": "Purple Rain",
     "languages": [
-      "English",
-      "Français",
       "Deutsch",
+      "English",
+      "Español",
+      "Français",
       "日本語",
-      "Português",
-      "Español"
+      "Português"
     ],
     "genres": [
       "Drama",
@@ -210040,7 +211682,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 52,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt1075417",
@@ -211543,7 +213185,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 71,
-      "rotten": 78
+      "rotten": 80
     },
     "external": {
       "imdb": "tt0180093",
@@ -212843,13 +214485,13 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": null,
-      "rotten": 83
+      "rotten": 82
     },
     "external": {
       "imdb": "tt0479528",
       "tmdb": 13022
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTYxNzAxNDU3Ml5BMl5BanBnXkFtZTcwMDU0ODg2MQ@@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzY0YjlkMjEtM2IzOS00ZGQyLTgzM2YtZGIxYTVmMDVkMGU1XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Rogue",
     "originalTitle": "Rogue",
     "languages": [
@@ -212890,7 +214532,7 @@ const db = [
       "imdb": "tt10127684",
       "tmdb": 671039
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTc4MjcyOTUtNzUxZS00MmY2LTg2NTAtYWZmODEwZWI3ZDZmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNmRmNDdkZDEtYTEyNy00ZmRkLTgyYjUtYTM5MzBiZWVmZjgxXkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Rogue City",
     "originalTitle": "Bronx",
     "languages": [
@@ -213386,7 +215028,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 45,
-      "rotten": 37
+      "rotten": 36
     },
     "external": {
       "imdb": "tt0160797",
@@ -213681,7 +215323,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 74,
-      "rotten": 88
+      "rotten": 89
     },
     "external": {
       "imdb": "tt1979320",
@@ -214105,7 +215747,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 61,
-      "rotten": 71
+      "rotten": 72
     },
     "external": {
       "imdb": "tt17351924",
@@ -214177,6 +215819,49 @@ const db = [
     ],
     "writers": [
       "David Hare"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-02",
+      "size": 80357408528,
+      "location": "Y:/Salvador (Oliver Stone, 1986)"
+    },
+    "rating": {
+      "imdb": 70,
+      "meta": 69,
+      "rotten": 90
+    },
+    "external": {
+      "imdb": "tt0091886",
+      "tmdb": 6106
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDRiMjdlNDMtYjJiNC00MGQyLWE5NzQtZWZlNDY2MTY0Nzg4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Salvador",
+    "originalTitle": "Salvador",
+    "languages": [
+      "Español",
+      "English"
+    ],
+    "genres": [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
+    "overview": "A journalist, down on his luck in the US, drives to El Salvador to chronicle the events of the 1980 military dictatorship, including the assasination of Archbishop Oscar Romero. He forms an uneasy alliance with both guerillas in the countryside who want him to get pictures out to the US press, and the right-wing military, who want him to bring them photographs of the rebels. Meanwhile he has to find a way of protecting his Salvadorean girlfriend and getting her out of the country.",
+    "release": 1986,
+    "runtime": 122,
+    "actors": [
+      "James Woods",
+      "Jim Belushi",
+      "Michael Murphy"
+    ],
+    "directors": [
+      "Oliver Stone"
+    ],
+    "writers": [
+      "Oliver Stone",
+      "Richard Boyle"
     ]
   },
   {
@@ -214469,8 +216154,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 23323947289,
+      "date": "2025-09-05",
+      "size": 49698734676,
       "location": "Y:/Saving Private Ryan (Steven Spielberg, 1998)"
     },
     "rating": {
@@ -214551,8 +216236,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 2203048448,
+      "date": "2025-09-05",
+      "size": 24241862836,
       "location": "Y:/Scarface (Brian De Palma, 1983)"
     },
     "rating": {
@@ -215110,7 +216795,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 76,
-      "rotten": 93
+      "rotten": 92
     },
     "external": {
       "imdb": "tt28082769",
@@ -215402,15 +217087,15 @@ const db = [
       "location": "Y:/Seven Veils (Atom Egoyan, 2023)"
     },
     "rating": {
-      "imdb": 60,
-      "meta": null,
-      "rotten": 77
+      "imdb": 50,
+      "meta": 62,
+      "rotten": 76
     },
     "external": {
       "imdb": "tt26671415",
       "tmdb": 1083782
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjU5NmY4MjUtYjA3NC00M2NmLTlmNmYtNThlY2E4MzgwMmJmXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWQ4ZjQ1MDQtMDBiMS00OGEwLTk3OWQtMWNjY2MyZmJjOGM0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Seven Veils",
     "originalTitle": "Seven Veils",
     "languages": [
@@ -215424,8 +217109,8 @@ const db = [
     "runtime": 107,
     "actors": [
       "Amanda Seyfried",
-      "Douglas Smith",
-      "Mark O'Brien"
+      "Ambur Braid",
+      "Vinessa Antoine"
     ],
     "directors": [
       "Atom Egoyan"
@@ -215950,7 +217635,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": null,
-      "rotten": 36
+      "rotten": 40
     },
     "external": {
       "imdb": "tt0102900",
@@ -215981,6 +217666,47 @@ const db = [
     "writers": [
       "Richard Neely",
       "Wolfgang Petersen"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 2051088238,
+      "location": "Y:/She Rides Shotgun (Nick Rowland, 2025)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 74,
+      "rotten": 87
+    },
+    "external": {
+      "imdb": "tt27986457",
+      "tmdb": 1196573
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGY1NGU4ZDMtMTNiZS00ZDVlLTllNjQtNDViZTI3M2MxYTkxXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "She Rides Shotgun",
+    "originalTitle": "She Rides Shotgun",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Thriller"
+    ],
+    "overview": "A girl marked for death must fight and steal to stay alive, learning from the most frightening man she knows: her father. An adaptation of Jordan Harper's award-winning novel.",
+    "release": 2025,
+    "runtime": 120,
+    "actors": [
+      "Ana Sophia Heger",
+      "Jamie Bernadette",
+      "Goldie Tom"
+    ],
+    "directors": [
+      "Nick Rowland"
+    ],
+    "writers": [
+      "Ben Collins",
+      "Jordan Harper",
+      "Luke Piotrowski"
     ]
   },
   {
@@ -216577,7 +218303,7 @@ const db = [
     },
     "rating": {
       "imdb": 50,
-      "meta": 23,
+      "meta": 25,
       "rotten": 24
     },
     "external": {
@@ -217460,7 +219186,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 26,
-      "rotten": 14
+      "rotten": 15
     },
     "external": {
       "imdb": "tt1564585",
@@ -218461,12 +220187,12 @@ const db = [
     "release": 2018,
     "runtime": 118,
     "actors": [
-      "Konstantin Khabenskiy",
+      "Konstantin Khabensky",
       "Christopher Lambert",
       "Felice Jankell"
     ],
     "directors": [
-      "Konstantin Khabenskiy"
+      "Konstantin Khabensky"
     ],
     "writers": [
       "Michael Edelstein",
@@ -218867,8 +220593,8 @@ const db = [
     "title": "Son of Rambow",
     "originalTitle": "Son of Rambow",
     "languages": [
-      "Français",
-      "English"
+      "English",
+      "Français"
     ],
     "genres": [
       "Action",
@@ -219235,7 +220961,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 83
+      "rotten": 84
     },
     "external": {
       "imdb": "tt0076740",
@@ -219443,6 +221169,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 5300701828,
+      "location": "Y:/Sovereign (Christian Swegal, 2025)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 68,
+      "rotten": 94
+    },
+    "external": {
+      "imdb": "tt26843513",
+      "tmdb": 1130022
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjNmZmI5YzMtMzgyZC00MTBiLWJmNDktYWNkZDM3YmZmZTIxXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Sovereign",
+    "originalTitle": "Sovereign",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "overview": "A father and son who identify as Sovereign Citizens, a group of anti-government extremists, find themselves in a standoff with a chief of police that sets off a manhunt.",
+    "release": 2025,
+    "runtime": 100,
+    "actors": [
+      "Nick Offerman",
+      "Jacob Tremblay",
+      "Dennis Quaid"
+    ],
+    "directors": [
+      "Christian Swegal"
+    ],
+    "writers": [
+      "Christian Swegal"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 856990948,
       "location": "Y:/Spare Parts (Sean McNamara, 2015)"
@@ -219492,7 +221259,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 60,
-      "rotten": 65
+      "rotten": 66
     },
     "external": {
       "imdb": "tt0360009",
@@ -219828,7 +221595,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 35,
-      "rotten": 44
+      "rotten": 45
     },
     "external": {
       "imdb": "tt0090060",
@@ -219869,7 +221636,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 64,
-      "rotten": 77
+      "rotten": 78
     },
     "external": {
       "imdb": "tt2170593",
@@ -220718,7 +222485,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 52,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt1772264",
@@ -220836,8 +222603,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-18",
-      "size": 1500596269,
+      "date": "2025-09-05",
+      "size": 7012076267,
       "location": "Y:/Stranger Than Paradise (Jim Jarmusch, 1984)"
     },
     "rating": {
@@ -221298,6 +223065,7 @@ const db = [
       "Emmanuelle Bercot"
     ],
     "writers": [
+      "Laura D",
       "Emmanuelle Bercot"
     ]
   },
@@ -221582,7 +223350,7 @@ const db = [
     "runtime": 82,
     "actors": [
       "Tim Roth",
-      "Albertine Kotting McMillan",
+      "Charlotte Gainsbourg",
       "Samuel Bottomley"
     ],
     "directors": [
@@ -221893,7 +223661,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 70,
-      "rotten": 83
+      "rotten": 84
     },
     "external": {
       "imdb": "tt0324133",
@@ -222364,7 +224132,7 @@ const db = [
       "imdb": "tt0089866",
       "tmdb": 106380
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjAwMGMyMTItODdlYS00MzI4LWFjZDYtOGRlZmYxNGJlZDVkXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzE0MTdhOTgtMjVhYi00Yjk0LTkyZDAtN2M3MzAzNzQwYzU0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Taipei Story",
     "originalTitle": "Qing mei zhu ma",
     "languages": [
@@ -222653,7 +224421,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 22
+      "rotten": 21
     },
     "external": {
       "imdb": "tt0364045",
@@ -223419,7 +225187,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 65,
-      "rotten": 71
+      "rotten": 72
     },
     "external": {
       "imdb": "tt0964185",
@@ -223706,47 +225474,6 @@ const db = [
   {
     "local": {
       "date": "2021-08-16",
-      "size": 1715517440,
-      "location": "Y:/The Abyss (James Cameron, 1989)"
-    },
-    "rating": {
-      "imdb": 70,
-      "meta": 62,
-      "rotten": 89
-    },
-    "external": {
-      "imdb": "tt0096754",
-      "tmdb": 2756
-    },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGRkNzJlNjgtZmUwYS00Y2U3LTljZDctMTQxYWIxOWVjMzNjXkEyXkFqcGc@._V1_SX300.jpg",
-    "title": "The Abyss",
-    "originalTitle": "The Abyss",
-    "languages": [
-      "English"
-    ],
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Mystery"
-    ],
-    "overview": "Formerly married petroleum engineers who still have some issues to work out. They are drafted to assist a gung-ho Navy SEAL with a top-secret recovery operation: a nuclear sub has been ambushed and sunk, under mysterious circumstances, in some of the deepest waters on Earth.",
-    "release": 1989,
-    "runtime": 140,
-    "actors": [
-      "Ed Harris",
-      "Mary Elizabeth Mastrantonio",
-      "Michael Biehn"
-    ],
-    "directors": [
-      "James Cameron"
-    ],
-    "writers": [
-      "James Cameron"
-    ]
-  },
-  {
-    "local": {
-      "date": "2021-08-16",
       "size": 10562410352,
       "location": "Y:/The Accountant (Gavin O'Connor, 2016)"
     },
@@ -223879,7 +225606,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 60,
-      "rotten": 72
+      "rotten": 71
     },
     "external": {
       "imdb": "tt1385826",
@@ -224498,7 +226225,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 77
+      "rotten": 76
     },
     "external": {
       "imdb": "tt0443680",
@@ -224672,7 +226399,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 47
+      "rotten": 46
     },
     "external": {
       "imdb": "tt0357110",
@@ -225272,7 +226999,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 28,
-      "rotten": 6
+      "rotten": 7
     },
     "external": {
       "imdb": "tt1931435",
@@ -225358,7 +227085,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 70,
-      "rotten": 80
+      "rotten": 79
     },
     "external": {
       "imdb": "tt21454134",
@@ -225443,7 +227170,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 71,
-      "rotten": 84
+      "rotten": 85
     },
     "external": {
       "imdb": "tt0115685",
@@ -225484,7 +227211,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 49,
-      "rotten": 32
+      "rotten": 31
     },
     "external": {
       "imdb": "tt0387877",
@@ -225527,7 +227254,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 84,
-      "rotten": 91
+      "rotten": 90
     },
     "external": {
       "imdb": "tt0078872",
@@ -226426,10 +228153,10 @@ const db = [
     "title": "The Brutalist",
     "originalTitle": "The Brutalist",
     "languages": [
-      "עִבְרִית",
       "English",
-      "Italiano",
+      "עִבְרִית",
       "Magyar",
+      "Italiano",
       "Pусский",
       ""
     ],
@@ -226544,7 +228271,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 65,
-      "rotten": 71
+      "rotten": 72
     },
     "external": {
       "imdb": "tt1327773",
@@ -226752,7 +228479,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 45
+      "rotten": 44
     },
     "external": {
       "imdb": "tt1911644",
@@ -227256,7 +228983,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 43,
-      "rotten": 15
+      "rotten": 16
     },
     "external": {
       "imdb": "tt4287320",
@@ -227287,51 +229014,6 @@ const db = [
     "writers": [
       "James Ponsoldt",
       "Dave Eggers"
-    ]
-  },
-  {
-    "local": {
-      "date": "2021-08-16",
-      "size": 728463360,
-      "location": "Y:/The City of Lost Children (Jean-Pierre Jeunet, 1995)"
-    },
-    "rating": {
-      "imdb": 70,
-      "meta": 73,
-      "rotten": 80
-    },
-    "external": {
-      "imdb": "tt0112682",
-      "tmdb": 902
-    },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTc5YWUxOGUtYWQ2OC00ZTMyLWI5MTktNjNkZjNmZTA1OWYyXkEyXkFqcGc@._V1_SX300.jpg",
-    "title": "The City of Lost Children",
-    "originalTitle": "La cité des enfants perdus",
-    "languages": [
-      "广州话 / 廣州話",
-      "Français"
-    ],
-    "genres": [
-      "Adventure",
-      "Drama",
-      "Fantasy"
-    ],
-    "overview": "Set in a dystopian society, someone is kidnapping the children. Krank and his band of clones are using the children to harvest their dreams. Then they kidnap Denree, the brother of One, a fairground strongman. One sets out to find his brother.",
-    "release": 1995,
-    "runtime": 112,
-    "actors": [
-      "Ron Perlman",
-      "Daniel Emilfork",
-      "Judith Vittet"
-    ],
-    "directors": [
-      "Marc Caro",
-      "Jean-Pierre Jeunet"
-    ],
-    "writers": [
-      "Gilles Adrien",
-      "Jean-Pierre Jeunet",
-      "Marc Caro"
     ]
   },
   {
@@ -228015,7 +229697,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 48,
-      "rotten": 33
+      "rotten": 34
     },
     "external": {
       "imdb": "tt2193215",
@@ -228057,7 +229739,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 75,
-      "rotten": 96
+      "rotten": 97
     },
     "external": {
       "imdb": "tt26446278",
@@ -228233,7 +229915,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 63,
-      "rotten": 83
+      "rotten": 82
     },
     "external": {
       "imdb": "tt4873118",
@@ -228532,7 +230214,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 66,
-      "rotten": 65
+      "rotten": 66
     },
     "external": {
       "imdb": "tt0810819",
@@ -228743,6 +230425,47 @@ const db = [
     "writers": [
       "David Scarpa",
       "Edmund H. North"
+    ]
+  },
+  {
+    "local": {
+      "date": "2021-08-18",
+      "size": 2952131560,
+      "location": "Y:/The Dead Don't Die (Jim Jarmusch, 2019)"
+    },
+    "rating": {
+      "imdb": 50,
+      "meta": 53,
+      "rotten": 55
+    },
+    "external": {
+      "imdb": "tt8695030",
+      "tmdb": 535581
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGQzMTFkM2UtZDhmOC00OGY4LWFjYzctMjljZDkzYTAxN2VmXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Dead Don't Die",
+    "originalTitle": "The Dead Don't Die",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Horror"
+    ],
+    "overview": "As the warm, bright sun refuses to set, and a series of equally perplexing events start to take place, the world, and the blissfully unsuspecting residents of the sleepy town of Centerville, are about to face the effects of corporate greed. Then, as the stone-faced police officers, Chief Cliff Robertson and Officer Ronnie Peterson, stop for doughnuts and coffee at the town's diner, unusual activity in the moon-lit cemetery and a blood-soaked scene of carnage could only mean one thing: this is the work of flesh-eating zombies. Before long, Officer Mindy Morrison and the glacially beautiful, katana-wielding undertaker, Zelda Winston, join the team of defenders, as hordes of relentless, ravenous undead swarm into the once-peaceful town craving meat. More and more, humans are at risk of becoming an endangered species. What happens when the dead just don't want to die?",
+    "release": 2019,
+    "runtime": 104,
+    "actors": [
+      "Bill Murray",
+      "Adam Driver",
+      "Tilda Swinton"
+    ],
+    "directors": [
+      "Jim Jarmusch"
+    ],
+    "writers": [
+      "Jim Jarmusch"
     ]
   },
   {
@@ -229344,6 +231067,47 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 45940730430,
+      "location": "Y:/The Doom Generation (Gregg Araki, 1995)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 48,
+      "rotten": 55
+    },
+    "external": {
+      "imdb": "tt0112887",
+      "tmdb": 13552
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjQ2MmE3NzctZjYzZS00ZGVjLWEyODUtYjM3MTAwYTQ2YmU4XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "The Doom Generation",
+    "originalTitle": "The Doom Generation",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "overview": "Jordan White and Amy Blue, two troubled teens, pick up an adolescent drifter, Xavier Red. Together, the threesome embark on a sex-and-violence-filled journey through an America of psychos and quickie marts.",
+    "release": 1995,
+    "runtime": 83,
+    "actors": [
+      "James Duval",
+      "Rose McGowan",
+      "Johnathon Schaech"
+    ],
+    "directors": [
+      "Gregg Araki"
+    ],
+    "writers": [
+      "Gregg Araki"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 14910569348,
       "location": "Y:/The Door in the Floor (Tod Williams, 2004)"
@@ -229685,7 +231449,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 39,
-      "rotten": 38
+      "rotten": 39
     },
     "external": {
       "imdb": "tt0819714",
@@ -230021,7 +231785,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 45,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt1320253",
@@ -230190,7 +231954,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 73,
-      "rotten": 81
+      "rotten": 82
     },
     "external": {
       "imdb": "tt1684562",
@@ -230527,7 +232291,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 68,
-      "rotten": 78
+      "rotten": 79
     },
     "external": {
       "imdb": "tt0079240",
@@ -231982,10 +233746,10 @@ const db = [
     "title": "The Good German",
     "originalTitle": "The Good German",
     "languages": [
-      "English",
       "Deutsch",
-      "Pусский",
-      "普通话"
+      "普通话",
+      "English",
+      "Pусский"
     ],
     "genres": [
       "Drama",
@@ -232441,7 +234205,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 71
+      "rotten": 70
     },
     "external": {
       "imdb": "tt0460810",
@@ -233122,7 +234886,7 @@ const db = [
     "rating": {
       "imdb": 80,
       "meta": 62,
-      "rotten": 76
+      "rotten": 75
     },
     "external": {
       "imdb": "tt1454029",
@@ -233451,7 +235215,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 80,
-      "rotten": 80
+      "rotten": 79
     },
     "external": {
       "imdb": "tt0274558",
@@ -233492,7 +235256,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 53,
-      "rotten": 64
+      "rotten": 65
     },
     "external": {
       "imdb": "tt0110074",
@@ -233536,7 +235300,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 57,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt0308383",
@@ -233830,7 +235594,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 30
+      "rotten": 29
     },
     "external": {
       "imdb": "tt0269347",
@@ -234122,14 +235886,14 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 48476,
+      "date": "2025-09-02",
+      "size": 15252139078,
       "location": "Y:/The Illusionist (Neil Burger, 2006)"
     },
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 73
+      "rotten": 74
     },
     "external": {
       "imdb": "tt0443543",
@@ -234561,7 +236325,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 48,
-      "rotten": 40
+      "rotten": 41
     },
     "external": {
       "imdb": "tt24169886",
@@ -234988,7 +236752,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 73
+      "rotten": 72
     },
     "external": {
       "imdb": "tt0317740",
@@ -235373,7 +237137,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 76,
-      "rotten": 93
+      "rotten": 91
     },
     "external": {
       "imdb": "tt0087553",
@@ -236104,7 +237868,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 55,
-      "rotten": 66
+      "rotten": 65
     },
     "external": {
       "imdb": "tt0325710",
@@ -236153,7 +237917,7 @@ const db = [
       "imdb": "tt0110308",
       "tmdb": 25284
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjBhMGY1M2MtZTUxZi00ZTZlLWFlYWItNjYyM2RkN2FmNmE1XkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjE1YmMwNmYtNDQ2MS00ZTJhLWJhNGEtN2M3ZjdmYTAzNWQ2XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "The Last Seduction",
     "originalTitle": "The Last Seduction",
     "languages": [
@@ -236313,7 +238077,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 85,
-      "rotten": 82
+      "rotten": 78
     },
     "external": {
       "imdb": "tt0076299",
@@ -236357,7 +238121,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 40,
-      "rotten": 41
+      "rotten": 40
     },
     "external": {
       "imdb": "tt5023260",
@@ -236952,51 +238716,6 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-18",
-      "size": 1958779144,
-      "location": "Y:/The Limits Of Control (Jim Jarmusch, 2009)"
-    },
-    "rating": {
-      "imdb": 60,
-      "meta": 41,
-      "rotten": 43
-    },
-    "external": {
-      "imdb": "tt1135092",
-      "tmdb": 8284
-    },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjA5ODk3NjE1NF5BMl5BanBnXkFtZTcwNTE3MTA0Mg@@._V1_SX300.jpg",
-    "title": "The Limits of Control",
-    "originalTitle": "The Limits of Control",
-    "languages": [
-      "العربية",
-      "English",
-      "Français",
-      "日本語",
-      "Español"
-    ],
-    "genres": [
-      "Crime",
-      "Drama",
-      "Mystery"
-    ],
-    "overview": "A solitary man who does not speak Spanish is an underground courier. Two men who are both thuggish and philosophical send him to Madrid with cryptic instructions. Over the course of a few days, he receives his instructions from a series of distinctive individuals who provide words of philosophy or of warning and also give him a matchbox with a tiny piece of paper, which he reads then eats, accompanied by espresso served in two cups. He is quiet, self-contained, focused on his work. He has rules. He encounters and at times transmits a violin, diamonds, a guitar, and a map. Is he a smuggler? Merely an independent conduit? Or, something else?",
-    "release": 2009,
-    "runtime": 116,
-    "actors": [
-      "Isaach De Bankolé",
-      "Alex Descas",
-      "Jean-François Stévenin"
-    ],
-    "directors": [
-      "Jim Jarmusch"
-    ],
-    "writers": [
-      "Jim Jarmusch"
-    ]
-  },
-  {
-    "local": {
       "date": "2024-11-13",
       "size": 51578792325,
       "location": "Y:/The Lincoln Lawyer (Brad Furman, 2011)"
@@ -237293,7 +239012,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 82,
-      "rotten": 88
+      "rotten": 87
     },
     "external": {
       "imdb": "tt3464902",
@@ -238011,7 +239730,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 56,
-      "rotten": 63
+      "rotten": 62
     },
     "external": {
       "imdb": "tt0787524",
@@ -238496,8 +240215,7 @@ const db = [
       "English"
     ],
     "genres": [
-      "Drama",
-      "History"
+      "Drama"
     ],
     "overview": "Following his discharge from the US Navy after WWII, Freddie Quell is having difficulties adjusting to non-military life partly due to his war experiences in the tropics. He has a violent temper. He is obsessed with sex, which is partly why he can't and won't commit to his teenaged girlfriend, Doris Solstad. And he is an alcoholic, drinking primarily concoctions he creates himself with dangerous ingredients. It is these factors in combination that lead to him being fired from one job after another, from department store portrait photographer to cabbage picker. Wandering one night in 1950 while drunk, he stumbles upon a yacht being used by Lancaster and Peggy Dodd, the yacht aboard which their daughter Elizabeth will get married. Feeling a connection to the stranger, Lancaster invites Freddie to stay aboard to work. In addition to that work, Lancaster indoctrinates him into his cult, named the Cause, which purports to do things as varied as cure serious maladies and create world peace. Peggy, Elizabeth and Elizabeth's husband Clark all subscribe to and support Lancaster's teachings. The only one of the Dodd family that doesn't is Lancaster and Peggy's son, Val Dodd, who believes his father is just making things up as he goes along. Because of being lost psychologically, Freddie is easy prey, he who is looking for something or someone to guide him to a higher plane. But as Freddie travels with the Dodd family as they spout the gospel, he and the Dodds may become at odds with each other if Freddie cannot or does not find from them and the Cause what he needs in life to survive emotionally.",
     "release": 2012,
@@ -239388,7 +241106,7 @@ const db = [
     "originalTitle": "The Mother",
     "languages": [
       "English",
-      "Español"
+      "Український"
     ],
     "genres": [
       "Action",
@@ -239722,7 +241440,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 74,
-      "rotten": 80
+      "rotten": 79
     },
     "external": {
       "imdb": "tt3184934",
@@ -240017,7 +241735,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 38,
-      "rotten": 35
+      "rotten": 36
     },
     "external": {
       "imdb": "tt2402157",
@@ -240394,7 +242112,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 75,
-      "rotten": 92
+      "rotten": 93
     },
     "external": {
       "imdb": "tt26625693",
@@ -240479,7 +242197,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 39,
-      "rotten": 27
+      "rotten": 26
     },
     "external": {
       "imdb": "tt2203939",
@@ -240616,8 +242334,7 @@ const db = [
     "title": "The Outrun",
     "originalTitle": "The Outrun",
     "languages": [
-      "English",
-      "Español"
+      "English"
     ],
     "genres": [
       "Drama"
@@ -240902,7 +242619,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 63,
-      "rotten": 62
+      "rotten": 61
     },
     "external": {
       "imdb": "tt0187393",
@@ -240917,7 +242634,7 @@ const db = [
     "genres": [
       "Action",
       "Drama",
-      "History"
+      "War"
     ],
     "overview": "It is 1776 in colonial South Carolina. Benjamin Martin, a French-Indian war hero who is haunted by his past, now wants nothing more than to live peacefully on his small plantation, and wants no part of a war with the most powerful nation in the world, Great Britain. Meanwhile, his two eldest sons, Gabriel and Thomas, can't wait to enlist in the newly formed \"Continental Army.\" When South Carolina decides to join the rebellion against England, Gabriel immediately signs up to fight...without his father's permission. But when Colonel William Tavington, British dragoon, infamous for his brutal tactics, comes and burns the Martin Plantation to the ground, tragedy strikes. Benjamin quickly finds himself torn between protecting his family, and seeking revenge along with being a part of the birth of a new, young, and ambitious nation.",
     "release": 2000,
@@ -241031,7 +242748,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 54
+      "rotten": 55
     },
     "external": {
       "imdb": "tt0107798",
@@ -241073,7 +242790,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 52,
-      "rotten": 78
+      "rotten": 77
     },
     "external": {
       "imdb": "tt26677014",
@@ -241083,8 +242800,8 @@ const db = [
     "title": "The Penguin Lessons",
     "originalTitle": "The Penguin Lessons",
     "languages": [
-      "Español",
-      "English"
+      "English",
+      "Español"
     ],
     "genres": [
       "Drama"
@@ -241239,7 +242956,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 40,
-      "rotten": 33
+      "rotten": 32
     },
     "external": {
       "imdb": "tt0293508",
@@ -241282,7 +242999,7 @@ const db = [
     },
     "rating": {
       "imdb": 60,
-      "meta": 69,
+      "meta": 70,
       "rotten": 78
     },
     "external": {
@@ -241294,8 +243011,8 @@ const db = [
     "originalTitle": "The Phoenician Scheme",
     "languages": [
       "English",
-      "Español",
-      "Français"
+      "Français",
+      "Español"
     ],
     "genres": [
       "Action",
@@ -242299,7 +244016,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 56,
-      "rotten": 44
+      "rotten": 43
     },
     "external": {
       "imdb": "tt0292506",
@@ -242555,7 +244272,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 66
+      "rotten": 67
     },
     "external": {
       "imdb": "tt2509850",
@@ -242931,7 +244648,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 70,
-      "rotten": 81
+      "rotten": 80
     },
     "external": {
       "imdb": "tt29439114",
@@ -243099,7 +244816,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 56,
-      "rotten": 51
+      "rotten": 52
     },
     "external": {
       "imdb": "tt0376136",
@@ -243341,8 +245058,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2021-08-16",
-      "size": 788762624,
+      "date": "2025-09-05",
+      "size": 82974038003,
       "location": "Y:/The Score (Frank Oz, 2001)"
     },
     "rating": {
@@ -243641,7 +245358,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 68,
-      "rotten": 69
+      "rotten": 71
     },
     "external": {
       "imdb": "tt0430576",
@@ -243766,7 +245483,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 82,
-      "rotten": 93
+      "rotten": 94
     },
     "external": {
       "imdb": "tt10370812",
@@ -243933,7 +245650,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 47,
-      "rotten": 54
+      "rotten": 53
     },
     "external": {
       "imdb": "tt0120824",
@@ -244313,7 +246030,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 70,
-      "rotten": 82
+      "rotten": 81
     },
     "external": {
       "imdb": "tt1189073",
@@ -244483,7 +246200,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 61,
-      "rotten": 57
+      "rotten": 56
     },
     "external": {
       "imdb": "tt0821642",
@@ -244758,6 +246475,51 @@ const db = [
     ],
     "writers": [
       "Noah Baumbach"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 2845114881,
+      "location": "Y:/The Statement (Norman Jewison, 2003)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 45,
+      "rotten": 24
+    },
+    "external": {
+      "imdb": "tt0340376",
+      "tmdb": 41488
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTI5MDIzNDAzN15BMl5BanBnXkFtZTcwMTM0NjQyMQ@@._V1_SX300.jpg",
+    "title": "The Statement",
+    "originalTitle": "The Statement",
+    "languages": [
+      "Français",
+      "Deutsch",
+      "English",
+      "Italiano",
+      "Latin"
+    ],
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "overview": "1992. The French government has passed a law punishing crimes against humanity allowing them to prosecute Nazi collaborators from WWII. Magistrate Annemarie Livi has been assigned the case of Pierre Brossard, a police officer in Dombey, France in June, 1944, when he helped round up a group of Jewish persons and personally chose seven of them to be executed. Brossard was captured and held in police custody in 1955 following a trial where he was sentenced to death for being a collaborator, before he was able to escape. Brossard has since received a Presidential pardon for those crimes. Livi enlists the help of Colonel Roux of the French Army to assist in this case in she not trusting the police who assisted the Vichy regime during the war. While Roux informs her that he is aware of an unknown Jewish organization that is also tracking and wanting to execute Brossard, Livi knows that the pardon was arranged by someone who must have been an associate of Brossard - who she refers to as \"The Old Man\" - now probably high up in the government. They are also both aware that the Catholic church has actively been assisting Brossard all these years, probably in providing him both with funds and shelter, them being able to break through the closed ranks of the church a major hurdle they will have to overcome. Livi is further given a warning by a close family friend, Armand Bertier, a government minster, that she is walking into a land mine of a case. Brossard, who is aware that he is being tracked both by the Jewish and by the national authorities, is indeed what he considers a devout Catholic in the realm of the traditionalists, he, who trying to stay one step ahead of those tracking him, looking for absolution from the church, while not prepared to give himself up to either the Jewish or the authorities. The Jewish have their own additional motive beyond killing Brossard for his crimes, while those pulling their strings have one more additional motive in protecting themselves.",
+    "release": 2003,
+    "runtime": 120,
+    "actors": [
+      "Michael Caine",
+      "Tilda Swinton",
+      "Alan Bates"
+    ],
+    "directors": [
+      "Norman Jewison"
+    ],
+    "writers": [
+      "Ronald Harwood",
+      "Brian Moore"
     ]
   },
   {
@@ -245569,7 +247331,7 @@ const db = [
       "imdb": "tt0362227",
       "tmdb": 594
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTU1Mzg0ZTctNWNkNi00Mzk3LTgzY2ItYWY2MTczYzI3MWRiXkEyXkFqcGc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM1MTIwNTMxOF5BMl5BanBnXkFtZTcwNjIxMjQyMw@@._V1_SX300.jpg",
     "title": "The Terminal",
     "originalTitle": "The Terminal",
     "languages": [
@@ -245696,7 +247458,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 55,
-      "rotten": 80
+      "rotten": 81
     },
     "external": {
       "imdb": "tt4058618",
@@ -245868,7 +247630,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 37,
-      "rotten": 20
+      "rotten": 21
     },
     "external": {
       "imdb": "tt1243957",
@@ -245999,7 +247761,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 85,
-      "rotten": 85
+      "rotten": 86
     },
     "external": {
       "imdb": "tt0478304",
@@ -247008,7 +248770,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 43,
-      "rotten": 31
+      "rotten": 30
     },
     "external": {
       "imdb": "tt1606389",
@@ -247132,7 +248894,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 80,
-      "rotten": 83
+      "rotten": 84
     },
     "external": {
       "imdb": "tt0098621",
@@ -248458,9 +250220,9 @@ const db = [
     "release": 2009,
     "runtime": 104,
     "actors": [
-      "Ivan Petrushinov",
-      "Victor Boichev",
-      "Nickolay Hadjiminev"
+      "Morgan Freeman",
+      "Antonio Banderas",
+      "Tom Hardy"
     ],
     "directors": [
       "Mimi Leder"
@@ -248484,7 +250246,7 @@ const db = [
       "imdb": "tt0080755",
       "tmdb": 47860
     },
-    "poster": "https://m.media-amazon.com/images/M/MV5BNmZhYTU1ZGMtNzBiMC00NGRkLTkzN2EtYzJjZDI2ZjY1ZjVhXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTNkY2IyZGQtZWQwOS00YzFkLTg3NGEtMjUyNzc0YjJkNDE0XkEyXkFqcGc@._V1_SX300.jpg",
     "title": "Things I Like, Things I Don't Like",
     "originalTitle": "Foutaises",
     "languages": [
@@ -249104,7 +250866,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 55,
-      "rotten": 77
+      "rotten": 78
     },
     "external": {
       "imdb": "tt0170691",
@@ -249189,7 +250951,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 50,
-      "rotten": 78
+      "rotten": 76
     },
     "external": {
       "imdb": "tt2669336",
@@ -249620,7 +251382,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 60,
-      "rotten": 48
+      "rotten": 49
     },
     "external": {
       "imdb": "tt0114682",
@@ -249861,8 +251623,8 @@ const db = [
   },
   {
     "local": {
-      "date": "2023-02-06",
-      "size": 26848090763,
+      "date": "2025-07-19",
+      "size": 71126582318,
       "location": "Y:/Top Gun - Maverick (Joseph Kosinski, 2022)"
     },
     "rating": {
@@ -250002,7 +251764,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 42,
-      "rotten": 22
+      "rotten": 24
     },
     "external": {
       "imdb": "tt0114702",
@@ -250032,6 +251794,47 @@ const db = [
     ],
     "writers": [
       "Christopher Hampton"
+    ]
+  },
+  {
+    "local": {
+      "date": "2025-09-05",
+      "size": 1420336423,
+      "location": "Y:/Totally Fucked Up (Gregg Araki, 1993)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": 62,
+      "rotten": 100
+    },
+    "external": {
+      "imdb": "tt0108366",
+      "tmdb": 33560
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BODE3MTQzNmEtMDk2Ni00NTlmLTkyNTMtMjI3MTk1ZjVmMTUxXkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Totally F***ed Up",
+    "originalTitle": "Totally F***ed Up",
+    "languages": [
+      "English"
+    ],
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "overview": "Life really sucks for a group of gay and lesbian teenagers living in Los Angeles. Their parents kicked them out, they're broke and bored, their lovers cheat on them, they're harassed by gay-bashers. If things are going to be this way, maybe suicide isn't a bad idea; at least not in the mind of Andy, our major protagonist, who gives the film its title by describing himself as \"totally fucked up.\"",
+    "release": 1993,
+    "runtime": 78,
+    "actors": [
+      "James Duval",
+      "Roko Belic",
+      "Susan Behshid"
+    ],
+    "directors": [
+      "Gregg Araki"
+    ],
+    "writers": [
+      "Gregg Araki"
     ]
   },
   {
@@ -250355,6 +252158,7 @@ const db = [
       "English"
     ],
     "genres": [
+      "Crime",
       "Drama"
     ],
     "overview": "A wild, freeform, Rabelaisian trip through the darkest recesses of Edinburgh low-life, focusing on Mark Renton and his attempt to give up his heroin habit, and how the latter affects his relationship with family and friends: Sean Connery wannabe Sick Boy, dimbulb Spud, psycho Begbie, 14-year-old girlfriend Diane, and clean-cut athlete Tommy, who's never touched drugs but can't help being curious about them...",
@@ -250921,6 +252725,50 @@ const db = [
   },
   {
     "local": {
+      "date": "2025-09-05",
+      "size": 7427751757,
+      "location": "Y:/Triumph of the Spirit (Robert M. Young, 1989)"
+    },
+    "rating": {
+      "imdb": 60,
+      "meta": null,
+      "rotten": 63
+    },
+    "external": {
+      "imdb": "tt0098513",
+      "tmdb": 56179
+    },
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWIyNTgxYzQtZDlkYS00YmY2LTlmOTYtNjhiN2Y2YjEwYjM3XkEyXkFqcGc@._V1_SX300.jpg",
+    "title": "Triumph of the Spirit",
+    "originalTitle": "Triumph of the Spirit",
+    "languages": [
+      "English",
+      "Deutsch"
+    ],
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "overview": "Fact based story about a former Greek Olympic boxer who was taken as a prisoner during World war II and placed in the Auschwitz prison camp. There he was permitted to survive as long as he fought for the amusement of his captors. His father and brother were also held as insurance that he would continue to fight.",
+    "release": 1989,
+    "runtime": 120,
+    "actors": [
+      "Willem Dafoe",
+      "Edward James Olmos",
+      "Robert Loggia"
+    ],
+    "directors": [
+      "Robert M. Young"
+    ],
+    "writers": [
+      "Shimon Arama",
+      "Zion Haen",
+      "Andrzej Krakowski"
+    ]
+  },
+  {
+    "local": {
       "date": "2021-08-16",
       "size": 16601177799,
       "location": "Y:/Tropic Thunder (Ben Stiller, 2008)"
@@ -250972,7 +252820,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 68,
-      "rotten": 69
+      "rotten": 71
     },
     "external": {
       "imdb": "tt0083232",
@@ -251823,7 +253671,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 42,
-      "rotten": 43
+      "rotten": 42
     },
     "external": {
       "imdb": "tt0313737",
@@ -251949,7 +253797,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 62,
-      "rotten": 68
+      "rotten": 67
     },
     "external": {
       "imdb": "tt0141926",
@@ -252383,7 +254231,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 50
+      "rotten": 51
     },
     "external": {
       "imdb": "tt0250797",
@@ -252806,7 +254654,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 78
+      "rotten": 76
     },
     "external": {
       "imdb": "tt21830902",
@@ -253055,7 +254903,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 45,
-      "rotten": 42
+      "rotten": 41
     },
     "external": {
       "imdb": "tt0259711",
@@ -253806,7 +255654,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 74
+      "rotten": 75
     },
     "external": {
       "imdb": "tt0841046",
@@ -254292,8 +256140,8 @@ const db = [
       "Cosmo Jarvis"
     ],
     "directors": [
-      "Ray Mendoza",
-      "Alex Garland"
+      "Alex Garland",
+      "Ray Mendoza"
     ],
     "writers": [
       "Ray Mendoza",
@@ -254547,48 +256395,6 @@ const db = [
     "writers": [
       "Graham Swift",
       "Peter Prince"
-    ]
-  },
-  {
-    "local": {
-      "date": "2021-08-16",
-      "size": 10868072839,
-      "location": "Y:/Waterworld (Kevin Reynolds, 1995)"
-    },
-    "rating": {
-      "imdb": 60,
-      "meta": 56,
-      "rotten": 45
-    },
-    "external": {
-      "imdb": "tt0114898",
-      "tmdb": 9804
-    },
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjI5ZmQ3NTAtNWVhMi00ZmI2LTg3YTMtN2Q1MmNjYzMwZGI1XkEyXkFqcGc@._V1_SX300.jpg",
-    "title": "Waterworld",
-    "originalTitle": "Waterworld",
-    "languages": [
-      "English"
-    ],
-    "genres": [
-      "Action",
-      "Adventure",
-      "Sci-Fi"
-    ],
-    "overview": "The polar ice caps have melted, and the earth is covered by water. The remaining people travel the seas, in search of survival. Several different societies exist. The Mariner falls from his customary and solitary existence into having to care for a woman and a young girl while being pursued by the evil forces of the Deacon.",
-    "release": 1995,
-    "runtime": 135,
-    "actors": [
-      "Kevin Costner",
-      "Jeanne Tripplehorn",
-      "Dennis Hopper"
-    ],
-    "directors": [
-      "Kevin Reynolds"
-    ],
-    "writers": [
-      "Peter Rader",
-      "David Twohy"
     ]
   },
   {
@@ -255143,7 +256949,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 44,
-      "rotten": 52
+      "rotten": 51
     },
     "external": {
       "imdb": "tt0120889",
@@ -255228,7 +257034,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 59,
-      "rotten": 74
+      "rotten": 73
     },
     "external": {
       "imdb": "tt1486834",
@@ -255270,7 +257076,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 51,
-      "rotten": 48
+      "rotten": 49
     },
     "external": {
       "imdb": "tt0161081",
@@ -255439,7 +257245,7 @@ const db = [
     "rating": {
       "imdb": 70,
       "meta": 76,
-      "rotten": 89
+      "rotten": 88
     },
     "external": {
       "imdb": "tt0098635",
@@ -255520,7 +257326,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 61,
-      "rotten": 63
+      "rotten": 62
     },
     "external": {
       "imdb": "tt12121582",
@@ -256744,9 +258550,9 @@ const db = [
       "English"
     ],
     "genres": [
+      "Crime",
       "Drama",
-      "Romance",
-      "Thriller"
+      "Romance"
     ],
     "overview": "An 8 year old Amish boy and his mother are traveling to Philadelphia, on their way to visit the mother's sister. While waiting at the train station, the young boy witnesses a brutal murder inside one of the bathroom stalls. Police detective John Book is assigned to investigate the murder of the man, who was an undercover cop. Soon after, Book finds out that he's in great danger when the culprits know about his investigation and hides out in the Amish community. There, he learns the way of living among the Amish locals, which consists of non-violence and agriculture. Book soon starts a romance with the mother of the little boy, but their romance is forbidden by the Amish standards. But, it's not long before the bad guys find out Book's whereabouts.",
     "release": 1985,
@@ -257148,7 +258954,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 64,
-      "rotten": 70
+      "rotten": 75
     },
     "external": {
       "imdb": "tt8679660",
@@ -257352,7 +259158,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 58,
-      "rotten": 53
+      "rotten": 55
     },
     "external": {
       "imdb": "tt0090350",
@@ -257523,7 +259329,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 46,
-      "rotten": 45
+      "rotten": 44
     },
     "external": {
       "imdb": "tt1068680",
@@ -257609,7 +259415,7 @@ const db = [
     "rating": {
       "imdb": 50,
       "meta": 54,
-      "rotten": 38
+      "rotten": 37
     },
     "external": {
       "imdb": "tt0960144",
@@ -257776,7 +259582,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 63,
-      "rotten": 74
+      "rotten": 73
     },
     "external": {
       "imdb": "tt2752200",
@@ -257945,7 +259751,7 @@ const db = [
     "rating": {
       "imdb": 60,
       "meta": 56,
-      "rotten": 66
+      "rotten": 65
     },
     "external": {
       "imdb": "tt1007028",
@@ -258240,7 +260046,7 @@ const db = [
     "rating": {
       "imdb": 40,
       "meta": 34,
-      "rotten": 22
+      "rotten": 21
     },
     "external": {
       "imdb": "tt1608290",

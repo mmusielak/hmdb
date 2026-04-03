@@ -292,7 +292,7 @@ async function importTableFromTsv3(db, dataset) {
     db.exec(`BEGIN IMMEDIATE`);
 
     let zlibStream = zlib.createGunzip();
-    let tsvStream = fs.createReadStream(filePath); //await fs.open(filePath, "r");
+    let tsvStream = fs.createReadStream(filePath);
 
     let readLinesInterface = createInterface({
         input: tsvStream.pipe(zlibStream),
@@ -300,7 +300,7 @@ async function importTableFromTsv3(db, dataset) {
     });
 
     let lines = 0;
-    let insertStatement;
+    let insertStatement = null;
 
     for await (let line of readLinesInterface) {
         if (lines++) {

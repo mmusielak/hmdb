@@ -50,7 +50,7 @@ pragma temp_store = memory;
 At the end we call VACUUM and OPTIMIZE to reclaim space and optimize the database. (ANALYZE will be called automatically with OPTIMIZE).
 
 Previously we imported all data from IMDB datasets and then prune unnecessary records.
-Now, since we only need a small subset of data, we can start by actively filtering `title` data and creating a hashmap with `tconsts` to later add relecant `akas`, `principals`, and `ratings`. Finally we add only relevant `name` data based on another hashmap with `nconsts`.
+Now, since we only need a small subset of data, we can start by actively filtering `title` data and creating a hashmap with `tconsts` to later add relevant `akas`, `principals`, and `ratings`. Finally we add only relevant `name` data based on another hashmap with `nconsts`.
 
 Reference:
 https://fractaledmind.github.io/2023/09/07/enhancing-rails-sqlite-fine-tuning/
